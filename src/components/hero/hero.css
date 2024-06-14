@@ -1,0 +1,91 @@
+.hero-main{
+    background-color: #050505;
+    padding: 3rem 0;
+    width: 100%;
+    height: 76vh;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hero-left{
+    /* background: #ffffff; */
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: auto;
+}
+.hero-left h1{
+    font-size: 2.5rem;
+    font-family: 'sf-bold';
+    color: #ffffff;
+}
+.hero-left p{
+    font-size: 1.125rem;
+    font-family: 'sf-regular';
+    color: #b4b4b4;
+    margin: 0rem;
+    width: 100%;
+}
+.hero-left .btn-download{
+    background-color: #007AFF;
+    border: none;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    gap: 0.5rem;
+    width: 12rem;
+    font-size: 1rem;
+    align-self: start;
+}
+.btn-download:hover{
+    background-color: #0056b3;
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.empty-place{
+    width: 100%;
+    height: 10rem;
+}
+.hero-left-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-self:flex-end;
+}
+.hero-left-bottom p{
+    font-size: 0.8rem;
+    font-family: sf-thin;
+    color: #8d8c8c;
+    margin: 0rem;
+}
+.hero-left-bottom :hover{
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.hero-right{
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-right img{
+    width: 100%;
+    height: auto;
+}
+

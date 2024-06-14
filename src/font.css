@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'sf-bold';
+    src: local('sf-Bold'),
+      url(./fonts/sanfranciscodisplay-bold-webfont.woff) format('woff'),;
+  }
+  @font-face {
+    font-family: 'sf-medium';
+    src: local('sf-medium'),
+      url('./fonts/sanfranciscodisplay-medium-webfont.woff') format('woff'),;
+  }
+  @font-face {
+    font-family: 'sf-regular';
+    src: local('sf-regular'),
+      url('./fonts/sanfranciscodisplay-regular-webfont.woff') format('woff'),;
+  }
+  @font-face {
+    font-family: 'sf-semibold';
+    src: local('sf-semibold'),
+      url('./fonts/sanfranciscodisplay-semibold-webfont.woff') format('woff'),;
+  }
+  @font-face {
+    font-family: 'sf-thin';
+    src: local('sf-thin'),
+      url('./fonts/sanfranciscodisplay-thin-webfont.woff') format('woff'),;
+  }
+  @font-face {
+    font-family: 'sf-ultralight';
+    src: local('sf-ultralight'),
+      url('./fonts/sanfranciscodisplay-ultralight-webfont.woff') format('woff'),;
+  }

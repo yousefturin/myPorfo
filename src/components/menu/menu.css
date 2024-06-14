@@ -1,0 +1,53 @@
+.menu-bar{
+  width: 100%;
+  height: 8vh;
+  background-color: #050505;
+  display: flex;
+  justify-content: space-evenly;
+}
+.left-menu-bar{
+  width: 18%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1rem;
+}
+
+.text-logo {
+  font-family: sf-bold;
+  color: #ffffff;
+  font-size: 1.375rem;
+}
+.middle-menu-bar{
+  font-family: sf-regular;
+  color:#ffffff;
+  font-size: 1.125rem;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.middle-menu-bar p{
+  padding: 30px 20px;
+}
+.middle-menu-bar p:hover{
+  color: #007AFF;
+  transition: 0.3s;
+  cursor: pointer;
+  background: #f2ffff;
+}
+.right-menu-bar{
+  width: 16%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+  flex-direction: row;
+}
+.right-menu-bar a:hover{
+  cursor: pointer;
+}
