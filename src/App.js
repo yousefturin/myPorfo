@@ -5,7 +5,7 @@ import LatestProject from './components/latestProject/LatestProject';
 import ProjectsCardsSection from './components/project/ProjectsCardsSection';
 import EducationSection from './components/education/EducationSection';
 import SkillSection from './components/skills/SkillSection';
-import EmployeeSection from './components/education/EmployeeSection';
+import EmployeeSection from './components/employee/EmployeeSection';
 import MenuBarSection from './components/menu/MenuBarSection';
 
 function App() {

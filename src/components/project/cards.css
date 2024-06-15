@@ -1,0 +1,181 @@
+.project-cards-main {
+  padding: 5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.project-cards-main h1 {
+  font-size: 2rem;
+  font-family: "sf-bold";
+  color: #ffffff;
+}
+
+.project-cards-wrapper {
+  width: 88%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-padding {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  /* overflow: hidden; */
+}
+
+.cards-container {
+  display: flex;
+  transition: transform 0.9s ease;
+  gap: 2rem;
+}
+
+.card-main {
+  flex: 0 0 calc(33.3333% - 2rem); /* Three cards per row */
+  box-sizing: border-box;
+}
+
+/* -------------------------------cards.css-------------------------------- */
+.card-main {
+  min-width: 300px;
+  max-width: 364px;
+  height: 450px;
+  background: #1c1c1e;
+  border-radius: 19px;
+  overflow: hidden;
+  margin-top: 3rem;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.card-main:hover {
+  transform: scale(1.1);
+}
+
+
+.card-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2rem;
+  padding-top: 2rem;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.card-main h2 {
+  font-size: 1.2rem;
+  font-family: "sf-bold";
+  color: #ffffff;
+  margin: 0;
+}
+
+.card-main p {
+  font-size: 1rem;
+  font-family: "sf-regular";
+  color: #b4b4b4;
+}
+
+.btn-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.btn-actions .btn-download {
+  background-color: #007aff;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  align-self: start;
+  width: 50%;
+  justify-content: center;
+}
+
+.btn-actions .btn-read-more {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-family: sf-bold;
+  width: 50%;
+  justify-content: end;
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.controls {
+  margin: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.controls .btn-card-navigation {
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: sf-bold;
+  background: rgba(158, 158, 158, 0.121);
+  border-radius: 50%;
+  display: flex;
+  padding: 0.8rem;
+  transition: transform 0.4s ease;
+}
+
+.btn-card-navigation:hover {
+  background-color: rgba(64, 64, 64, 0.366);
+  color: #ffffff;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.controls .btn-card-navigation.disabled {
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.067);
+  transition: 0.3s;
+  transform: scale(0.98);
+}
+
+.controls .btn-card-navigation.disabled:hover {
+  background-color: rgba(255, 255, 255, 0.121);
+  color: #ffffff;
+  transform: none;
+  transition: none;
+}
