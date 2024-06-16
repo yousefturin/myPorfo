@@ -19,7 +19,7 @@
 
 .employee-top-header {
   width: 100%;
-  height: 10vh;
+  /* height: 10vh; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -156,9 +156,11 @@
   padding-left: 3rem;
   padding-top: 2rem;
 }
+
 .employee-bottom-info-right-bottom {
   padding-bottom: 1rem;
 }
+
 .employee-bottom-info-left-bottom,
 .employee-bottom-info-right-bottom {
   justify-content: flex-end;
@@ -266,4 +268,96 @@
 .employee-bottom-info-middle-bottom-left:hover {
   transform: scale(1.03);
   cursor: pointer;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .employee-main {
+    margin-inline: 3rem;
+  }
+
+  .employee-wrapper {
+    justify-content: center;
+  }
+
+  .employee-top-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .employee-top-info {
+    height: 32%;
+  }
+
+  .employee-top-info-left {
+    width: 50%;
+  }
+
+  .employee-top-info-middle {
+    width: 50%;
+  }
+
+  .employee-top-info-middle h2 {
+    font-size: 1rem;
+  }
+
+  .employee-top-info-right h3 {
+    font-size: 0.8rem;
+  }
+
+  .employee-top-info-middle p {
+    font-size: 0.6rem;
+    margin-bottom: 0;
+    margin-top: revert;
+  }
+
+  .employee-top-info-right svg {
+    display: none;
+  }
+
+  .employee-top-info-right {
+    gap: 2rem;
+  }
+
+  .employee-bottom-info {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .employee-bottom-info-left {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .employee-bottom-info-left-top {
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+
+  .employee-bottom-info-left-bottom {
+    height: 100%;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+  }
+
+  .employee-bottom-info-middle {
+    width: 100%;
+  }
+
+  .employee-bottom-info-middle-top-right {
+    width: 100%;
+  }
+
+  .employee-bottom-info-middle-top-right-right h4,
+  .employee-bottom-info-middle-top-right-right h4 {
+    width: 100%;
+  }
+
+  .employee-bottom-info-right {
+    width: 100%;
+  }
+
+  .employee-bottom-info-middle-top-left,
+  .employee-bottom-info-middle-bottom-right {
+    height: 12vh;
+
+  }
 }

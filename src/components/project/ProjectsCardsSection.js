@@ -1,36 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Card from './cards';
 import './cards.css';
 import SvgComponent from '../../utils/SvgComponent';
 
 export default function ProjectsCardsSection() {
     const [offset, setOffset] = useState(0);
+    const [cardWidth, setCardWidth] = useState(0);
+    const cardsContainerRef = useRef(null);
     const cards = Array.from({ length: 10 }); // Example with 10 cards
+
+    // Update card width on load and resize
+    useEffect(() => {
+        const updateCardWidth = () => {
+            if (cardsContainerRef.current) {
+                const cardElement = cardsContainerRef.current.querySelector('.card-main');
+                if (cardElement) {
+                    const cardElementWidth = cardElement.offsetWidth;
+                    setCardWidth(cardElementWidth + 32); // Assuming 32px is the gap between cards
+                }
+            }
+        };
+
+        updateCardWidth();
+        window.addEventListener('resize', updateCardWidth);
+        return () => window.removeEventListener('resize', updateCardWidth);
+    }, []);
 
     const handleLeftClick = () => {
         setOffset(prevOffset => Math.max(prevOffset - 1, 0));
     };
 
     const handleRightClick = () => {
-        setOffset(prevOffset => Math.min(prevOffset + 1, cards.length - 3)); // Ensure we don't go past the last card in view
+        const visibleCardsCount = Math.floor(window.innerWidth / cardWidth);
+        setOffset(prevOffset => Math.min(prevOffset + 1, cards.length - visibleCardsCount));
     };
 
     const getTransformValue = () => {
-        return `translateX(calc(-${offset * 12}% + ${0}rem))`;
+        return `translateX(-${offset * cardWidth}px)`;
     };
-    
-    // Big Screen setup
-
-        // const getTransformValue = () => {
-    //     if (offset === 0) {
-    //     return `translateX(0%)`;
-    //     } else if (offset === 1) {
-    //     return `translateX(-16.5%)`;
-    //     } else {
-    //     const baseValue = 16.5 + (offset - 1) * 12;
-    //     return `translateX(${-baseValue}%)`;
-    //     }
-    //    };
 
     return (
         <div className='project-cards-main'>
@@ -39,7 +46,7 @@ export default function ProjectsCardsSection() {
                     <h1>Projects I worked.</h1>
                 </div>
 
-                <div className='project-card-padding'>
+                <div className='project-card-padding' ref={cardsContainerRef}>
                     <div className='cards-container' style={{ transform: getTransformValue() }}>
                         {cards.map((_, index) => (
                             <Card key={index} />
@@ -56,12 +63,12 @@ export default function ProjectsCardsSection() {
                             fill='none'
                         />
                     </button>
-                    <button onClick={handleRightClick} className={`btn-card-navigation ${offset === cards.length - 3 ? 'disabled' : ''}`}>
+                    <button onClick={handleRightClick} className={`btn-card-navigation ${offset >= cards.length - Math.floor(window.innerWidth / cardWidth) ? 'disabled' : ''}`}>
                         <SvgComponent
                             svgKey="ArrowRightSvg"
                             width={16}
                             height={16}
-                            stroke={offset === cards.length - 3 ? '#b4b4b4' : '#007AFF'}
+                            stroke={offset >= cards.length - Math.floor(window.innerWidth / cardWidth) ? '#b4b4b4' : '#007AFF'}
                             fill='none'
                         />
                     </button>

@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
 }
 
 .latest-top-header {
@@ -218,53 +218,46 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
     .latest-project-main {
         display: block;
-        height: auto;
     }
 
     .latest-wrapper {
         margin-inline: 3rem;
     }
 
-    .latest-top-header {
-        margin-left: 3rem;
-    }
-
     .latest-top-header h1 {
         font-size: 1.6rem;
     }
 
-    .latest-lef-right-wrapper {
-        display: block;
-    }
-
     .latest-right {
-        display: block;
         width: auto;
+        height: auto;
         position: absolute;
         z-index: -1;
-        left: -48%;
+        left: -9rem;
     }
 
     .latest-right img {
         height: 68vh;
+        margin: 0;
     }
 
     .latest-left {
-        width: auto;
-        position: relative;
-        padding-left: 7rem;
+        width: 50%;
+        height: auto;
+        position: absolute;
+        right: 2rem;
     }
 
     .latest-left h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .latest-left p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .latest-left h2 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .latest-tools {
@@ -301,8 +294,50 @@
         scale: 0.8;
     }
 }
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
+    .latest-project-main {
+        display: block;
+    }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .latest-wrapper {
+        margin-inline: 3rem;
+    }
+
+    .latest-top-header h1 {
+        font-size: 2rem;
+    }
+
+    .latest-right {
+        width: auto;
+        height: auto;
+        position: absolute;
+        z-index: -1;
+        left: 2rem;
+    }
+
+    .latest-right img {
+        height: 68vh;
+        margin: 0;
+    }
+
+    .latest-left {
+        width: 40%;
+        height: auto;
+        position: absolute;
+        right: 2rem;
+    }
+
+    .latest-left h1 {
+        font-size: 2rem;
+    }
+
+    .latest-left p {
+        font-size: 1rem;
+    }
+
+    .latest-left h2 {
+        font-size: 1.2rem;
+    }
 
     .latest-tools {
         align-items: stretch;
@@ -311,7 +346,7 @@
     }
 
     .latest-tools h3 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .tools-left,
@@ -323,5 +358,18 @@
 
     .tools-middle-top {
         margin-bottom: 0.2rem;
+    }
+
+    .latest-left .btn-download {
+        color: #ffffff;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        width: auto;
+        transition: background-color 0.4s ease;
+        justify-content: space-evenly;
+    }
+
+    .latest-left svg {
+        scale: 1;
     }
 }
