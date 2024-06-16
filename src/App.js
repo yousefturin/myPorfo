@@ -7,10 +7,13 @@ import EducationSection from './components/education/EducationSection';
 import SkillSection from './components/skills/SkillSection';
 import EmployeeSection from './components/employee/EmployeeSection';
 import MenuBarSection from './components/menu/MenuBarSection';
+import FooterSection from './components/footer/footerSection';
+import Banner from './components/banner/banner';
 
 function App() {
   return (
     <div className="App">
+      <Banner />
       <MenuBarSection />
       <HeroSection />
       <LatestProject />
@@ -18,6 +21,7 @@ function App() {
       <EmployeeSection />
       <EducationSection />
       <SkillSection />
+      <FooterSection />
     </div>
   );
 }

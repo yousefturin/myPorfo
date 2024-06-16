@@ -1,15 +1,16 @@
-.hero-main{
+.hero-main {
     padding: 3rem 0;
-    width: 100%;
-    height: 76vh;
-    justify-content: space-evenly;
+    height: 84vh;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-inline: 6rem;
 }
-.hero-left{
+
+.hero-left {
     /* background: #ffffff; */
-    width: 32%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -18,19 +19,22 @@
     text-align: left;
     margin-bottom: auto;
 }
-.hero-left h1{
+
+.hero-left h1 {
     font-size: 2.5rem;
     font-family: 'sf-bold';
     color: #ffffff;
 }
-.hero-left p{
+
+.hero-left p {
     font-size: 1.125rem;
     font-family: 'sf-regular';
     color: #b4b4b4;
     margin: 0rem;
     width: 100%;
 }
-.hero-left .btn-download{
+
+.hero-left .btn-download {
     background-color: #007AFF;
     border: none;
     color: #ffffff;
@@ -44,38 +48,44 @@
     align-self: start;
     transition: background-color 0.4s ease;
 }
-.btn-download:hover{
+
+.btn-download:hover {
     background-color: #0056b3;
     color: #ffffff;
     transition: 0.3s;
     cursor: pointer;
 }
-.empty-place{
+
+.empty-place {
     width: 100%;
     height: 10rem;
 }
-.hero-left-bottom{
+
+.hero-left-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     text-align: center;
     flex-direction: column;
-    align-self:flex-end;
+    align-self: flex-end;
 }
-.hero-left-bottom p{
+
+.hero-left-bottom p {
     font-size: 0.8rem;
     font-family: sf-thin;
     color: #8d8c8c;
     margin: 0rem;
 }
-.hero-left-bottom :hover{
+
+.hero-left-bottom :hover {
     color: #ffffff;
     transition: 0.3s;
     cursor: pointer;
 }
-.hero-right{
-    width: 32%;
+
+.hero-right {
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -83,8 +93,52 @@
     align-items: center;
     text-align: center;
 }
-.hero-right img{
+
+.hero-right img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
 }
 
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    .hero-right {
+        z-index: -1;
+        display: inline;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        filter: blur(3px);
+        filter: contrast(0.6);
+        filter: brightness(0.4);
+    }
+    .hero-right img {
+        object-fit: cover;
+    }
+    .hero-main {
+        margin-inline: 3rem;
+    }
+    .hero-left{
+        width: 100%;
+    }
+    .hero-left h1 {
+        font-size: 2rem;
+    }
+    .hero-left p {
+        font-size: 0.9rem;
+    }
+    .hero-left .btn-download {
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        width: auto;
+        transition: background-color 0.4s ease;
+        justify-content: space-evenly;
+    }
+    .hero-left svg{
+        scale: 0.8;
+    }
+}

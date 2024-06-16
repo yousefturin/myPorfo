@@ -1,4 +1,3 @@
-// src/components/SvgComponent.js
 import React from 'react';
 import InlineSVG from 'react-inlinesvg';
 import svgData from '../assets/SVG/SvgStorage';
@@ -10,9 +9,9 @@ import svgData from '../assets/SVG/SvgStorage';
  * @param {string} props.svgKey - The key to identify the SVG markup in the svgData object.
  * @param {number} props.width - The width of the SVG component.
  * @param {number} props.height - The height of the SVG component.
- * @param {string} props.fill - The fill color of the SVG component.
- * @param {string} props.stroke - The stroke color of the SVG component.
- * @param {number} props.strokeWidth - The stroke width of the SVG component.
+ * @param {string} [props.fill] - The fill color of the SVG component (optional).
+ * @param {string} [props.stroke] - The stroke color of the SVG component (optional).
+ * @param {number} [props.strokeWidth] - The stroke width of the SVG component (optional).
  * @returns {JSX.Element} - The rendered SVG component.
  */
 export default function SvgComponent({ svgKey, width, height, fill, stroke, strokeWidth }) {
@@ -23,12 +22,21 @@ export default function SvgComponent({ svgKey, width, height, fill, stroke, stro
         return null;
     }
 
-    const styledSvgMarkup = svgMarkup
+    let styledSvgMarkup = svgMarkup
         .replace(/width="[^"]*"/, `width="${width}"`)
-        .replace(/height="[^"]*"/, `height="${height}"`)
-        .replace(/fill="[^"]*"/g, `fill="${fill}"`)
-        .replace(/stroke="[^"]*"/g, `stroke="${stroke}"`)
-        .replace(/strokeWidth="[^"]*"/g, `strokeWidth="${strokeWidth}"`);
+        .replace(/height="[^"]*"/, `height="${height}"`);
+
+    if (fill !== undefined) {
+        styledSvgMarkup = styledSvgMarkup.replace(/fill="[^"]*"/g, `fill="${fill}"`);
+    }
+
+    if (stroke !== undefined) {
+        styledSvgMarkup = styledSvgMarkup.replace(/stroke="[^"]*"/g, `stroke="${stroke}"`);
+    }
+
+    if (strokeWidth !== undefined) {
+        styledSvgMarkup = styledSvgMarkup.replace(/stroke-width="[^"]*"/g, `stroke-width="${strokeWidth}"`);
+    }
 
     return <InlineSVG src={styledSvgMarkup} />;
 }

@@ -1,16 +1,48 @@
-
-.latest-project-main{
+.latest-project-main {
     padding: 3rem 0;
-    width: 100%;
-    height: 76vh;
-    justify-content: space-evenly;
+    height: auto;
+    height: 90vh;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
-    align-items: fle;
+    align-items: center;
 }
 
-.latest-left{
-    width: 36%;
+.latest-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 6rem;
+}
+
+.latest-lef-right-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+.latest-top-header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.latest-top-header h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: sf-bold;
+}
+
+.latest-left {
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -18,44 +50,48 @@
     align-items: flex-start;
     text-align: left;
 }
-.latest-left h1{
+
+.latest-left h1 {
     font-size: 2rem;
     font-family: 'sf-bold';
     color: #ffffff;
 }
-.latest-left h2{
+
+.latest-left h2 {
     font-size: 1.2rem;
     font-family: 'sf-bold';
     color: #ffffff;
 }
-.latest-left p{
+
+.latest-left p {
     font-size: 1rem;
     font-family: 'sf-regular';
     color: #b4b4b4;
     margin: 0rem;
     width: 100%;
 }
-.latest-right{
-    width: 28%;
+
+.latest-right {
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
     gap: 1rem;
 }
+
+/* TODO fix the image size */
 .latest-right img {
     width: auto;
-    height: 80%;
-    
+    height: 60vh;
+    object-fit: contain;
+    margin: auto;
+
 }
-.latest-right h1{
-    color: #fff;
-    font-size: 2rem;
-    font-family: sf-bold;
-}
-.latest-tools{
+
+.latest-tools {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -63,18 +99,22 @@
     width: 100%;
     height: 10vh;
 }
-.latest-tools h3{
+
+.latest-tools h3 {
     font-size: 1rem;
     font-family: sf-thin;
     color: #ffffff;
     margin: 0;
 }
-.tools-left h3, .tools-right h3{
+
+.tools-left h3,
+.tools-right h3 {
     font-size: 1.2rem;
     font-family: sf-regular;
 }
-.tools-left{
-    width:32%;
+
+.tools-left {
+    width: 32%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -83,8 +123,9 @@
     background: #1C1C1E;
     border-radius: 0.75rem;
 }
-.tools-right{
-    width:24%;
+
+.tools-right {
+    width: 24%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -93,14 +134,16 @@
     background: #1C1C1E;
     border-radius: 0.75rem;
 }
-.tools-middle{
-    width:42%;
+
+.tools-middle {
+    width: 42%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.tools-middle-Wrapper{
+
+.tools-middle-Wrapper {
     width: 100%;
     height: 100%;
     display: flex;
@@ -108,6 +151,7 @@
     align-items: center;
     flex-direction: column;
 }
+
 .tools-middle-top {
     width: 100%;
     height: 49%;
@@ -116,8 +160,9 @@
     align-items: center;
     gap: 0.3rem;
 }
-.tools-middle-bottom{
-    background:#1C1C1E;
+
+.tools-middle-bottom {
+    background: #1C1C1E;
     border-radius: 0.563rem;
     width: 100%;
     height: 49%;
@@ -126,24 +171,28 @@
     align-items: center;
     gap: 0.3rem;
 }
-.tools-middle-top-wrapper{
+
+.tools-middle-top-wrapper {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.tools-middle-top-left, .tools-middle-top-right{
+
+.tools-middle-top-left,
+.tools-middle-top-right {
     width: 49%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:0.3rem;
+    gap: 0.3rem;
     background: #1C1C1E;
     border-radius: 0.563rem;
 }
-.latest-left .btn-download{
+
+.latest-left .btn-download {
     background-color: #007AFF;
     border: none;
     color: #ffffff;
@@ -152,12 +201,12 @@
     text-decoration: none;
     display: flex;
     gap: 0.5rem;
-    width: 12rem;
     font-size: 1rem;
     align-self: start;
     transition: background-color 0.4s ease;
 }
-.btn-download:hover{
+
+.btn-download:hover {
     background-color: #0056b3;
     color: #ffffff;
     transition: 0.3s;
@@ -166,5 +215,113 @@
 
 
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .latest-project-main {
+        display: block;
+        height: auto;
+    }
 
+    .latest-wrapper {
+        margin-inline: 3rem;
+    }
 
+    .latest-top-header {
+        margin-left: 3rem;
+    }
+
+    .latest-top-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .latest-lef-right-wrapper {
+        display: block;
+    }
+
+    .latest-right {
+        display: block;
+        width: auto;
+        position: absolute;
+        z-index: -1;
+        left: -48%;
+    }
+
+    .latest-right img {
+        height: 68vh;
+    }
+
+    .latest-left {
+        width: auto;
+        position: relative;
+        padding-left: 7rem;
+    }
+
+    .latest-left h1 {
+        font-size: 1.5rem;
+    }
+
+    .latest-left p {
+        font-size: 0.9rem;
+    }
+
+    .latest-left h2 {
+        font-size: 1rem;
+    }
+
+    .latest-tools {
+        align-items: stretch;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .latest-tools h3 {
+        font-size: 0.8rem;
+    }
+
+    .tools-left,
+    .tools-middle,
+    .tools-right {
+        width: auto;
+        margin-bottom: 0.2rem;
+    }
+
+    .tools-middle-top {
+        margin-bottom: 0.2rem;
+    }
+
+    .latest-left .btn-download {
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        width: auto;
+        transition: background-color 0.4s ease;
+        justify-content: space-evenly;
+    }
+
+    .latest-left svg {
+        scale: 0.8;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .latest-tools {
+        align-items: stretch;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .latest-tools h3 {
+        font-size: 0.8rem;
+    }
+
+    .tools-left,
+    .tools-middle,
+    .tools-right {
+        width: auto;
+        margin-bottom: 0.2rem;
+    }
+
+    .tools-middle-top {
+        margin-bottom: 0.2rem;
+    }
+}

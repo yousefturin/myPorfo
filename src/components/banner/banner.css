@@ -1,0 +1,21 @@
+/* Banner.css */
+.banner {
+    width: 100%;
+    padding: 10px;
+    background-color:  #007bff91;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    bottom:0 ;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+    font-family: sf-regular;
+}
+
+/* Media query for mobile and tablet devices */
+@media (max-width: 768px) {
+    .banner {
+        display: block; /* Show banner for devices with width <= 768px */
+    }
+}

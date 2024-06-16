@@ -1,0 +1,48 @@
+.skill-main {
+  padding: 3rem 0;
+  height: 90vh;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 6rem;
+}
+.skill-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.skill-wrapper-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.skill-top-header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skill-top-header h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: sf-bold;
+}
+.skill-top-header h2{
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: sf-bold;  
+  margin: 0;
+}
+.skill-extra{
+  margin-left: 6rem;
+}
