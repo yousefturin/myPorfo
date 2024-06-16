@@ -22,7 +22,7 @@ export default function LatestProject() {
                             <p>Reisto is a social media food recipes cross-application designed to bring together food enthusiasts from around the world. Users can share their favorite recipes, discover new dishes, and interact with a community of like-minded individuals.</p>
                         </div>
                         <div style={{ width: "100%" }}>
-                            <h2>Developed with software and tools blow</h2>
+                            <h2>Developed with </h2>
                             <div className="latest-tools">
                                 <div className="tools-left">
                                     <div>
@@ -94,7 +94,7 @@ export default function LatestProject() {
                             </div>
                         </div>
                         <div>
-                            <h2>Check out the source code</h2>
+                            <h2>Read more about the source</h2>
                         </div>
                         <a  href="https://github.com/yousefturin/reisto" target="_blank" rel="noopener noreferrer" className='btn-download'>
                             <SvgComponent

@@ -1,15 +1,16 @@
 import React from 'react'
-import SvgComponent from '../../utils/SvgComponent'
-import './cards.css'
-import latestImage from '../../assets/images/latest-project-image.png'
 
-export default function Card() {
+import './cards.css'
+
+export default function Card({ cardImage, cardTitle, cardDescription }) {
     return (
         <div className="card-main">
-        <div className="card-main-wrapper">
-            <h2>Social media application.</h2>
-            <p>Full stack, UI/UX design and research</p>
-            {/* <div className="btn-actions">
+            <div className="card-main-wrapper">
+                <div className="info-wrapper">
+                    <h2>{cardTitle}</h2>
+                    <p>{cardDescription}</p>
+                </div>
+                {/* <div className="btn-actions">
                 <button className='btn-download'>
                     <SvgComponent
                         svgKey="GitHubSVG"
@@ -31,10 +32,10 @@ export default function Card() {
                     />
                 </button>
             </div> */}
-            <div className="image-wrapper">
-                <img src={latestImage} alt='hero' className='project-image' />
+                <div className="image-wrapper">
+                    <img src={cardImage} alt='hero' className='project-image' />
+                </div>
             </div>
         </div>
-    </div>
     )
 }
