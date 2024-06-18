@@ -27,7 +27,7 @@ export default function Card({ cardImage, cardTitle, cardDescription }) {
                         svgKey="ArrowRightSvg"
                         width={16}
                         height={16}
-                        stroke='#007AFF'
+                        stroke='#79b50f'
                         fill='none'
                     />
                 </button>

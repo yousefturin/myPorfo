@@ -19,14 +19,16 @@
 
 .education-top-header {
     width: 100%;
-    height: 10vh;
+    /* height: 10vh; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    /* margin-bottom: 3rem; */
 }
+
 .education-top-header-2 {
     width: 100%;
-    height: 10vh;
+    /* height: 10vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 
 .education-bottom-honors img {
@@ -65,10 +67,11 @@
 }
 
 .education-bottom-honors h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: sf-bold;
     color: #fff;
     width: 50%;
+    margin: 1.5rem 0 0.8rem 0;
 }
 
 .education-bottom-honors p {
@@ -81,7 +84,7 @@
 
 .education-bottom-honors-left,
 .education-bottom-honors-right {
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -104,12 +107,12 @@
     cursor: pointer;
 }
 
-.education-bottom-honors img:hover {
+/* .education-bottom-honors img:hover {
     transform: scale(1.1115);
     cursor: pointer;
-}
+} */
 
-@media only screen and (min-width: 320px) and (max-width: 767px)  {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
     .education-main {
         margin-inline: 3rem;
         height: auto;
@@ -122,7 +125,8 @@
     .education-top-info {
         height: 32%;
     }
-/* 
+
+    /* 
     .education-top-header {
         height: auto;
     } */
@@ -140,7 +144,17 @@
 
     .education-bottom-honors {
         flex-direction: column;
-        gap: 5rem
+        gap: 3rem;
+        padding-top: 1rem;
+    }
+    .education-bottom-honors img,
+    .education-bottom-honors h4,
+    .education-bottom-honors p {
+        width: 70%;
+    }
+    .education-bottom-honors h4 {
+        font-size: 1rem;
+        margin: 1rem 0 0.5rem 0;
     }
 
     .education-bottom-honors-left,
