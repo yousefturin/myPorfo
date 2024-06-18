@@ -1,6 +1,7 @@
 import React from 'react'
 import './footer.css'
 import SvgComponent from '../../utils/SvgComponent'
+import EmailForm from './EmailForm';
 export default function FooterSection() {
 
     const getCurrentYear = () => {
@@ -9,6 +10,9 @@ export default function FooterSection() {
     
     return (
         <div className='footer-main'>
+            <div className="footer-top">
+                {/* <EmailForm /> */}
+            </div>
             <div className="footer-bottom">
                 <div className="footer-bottom-name">
                     <h2>Yusef<br />Rayyan.</h2>

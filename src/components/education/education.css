@@ -24,6 +24,13 @@
     justify-content: flex-start;
     align-items: center;
 }
+.education-top-header-2 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .education-top-header h1 {
     color: #fff;
@@ -31,11 +38,11 @@
     font-family: sf-bold;
 }
 
-.education-top-header h2 {
+.education-top-header-2 h2 {
     color: #fff;
     font-size: 1.2rem;
     font-family: sf-bold;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
 }
 
 .education-extra {
@@ -45,7 +52,7 @@
 .education-bottom-honors {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-top: 2rem;
 }
@@ -59,15 +66,15 @@
 
 .education-bottom-honors h4 {
     font-size: 1.2rem;
-    font-family: "sf-bold";
+    font-family: sf-bold;
     color: #fff;
     width: 50%;
 }
 
 .education-bottom-honors p {
     font-size: 0.8rem;
-    font-family: "sf-regular";
-    color: #b4b4b4;
+    font-family: sf-regular;
+    color: #c9c9c9;
     margin: 0;
     width: 50%;
 }
@@ -93,16 +100,16 @@
 
 .education-bottom-honors-left:hover,
 .education-bottom-honors-right:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .education-bottom-honors img:hover {
-    transform: scale(1.25);
+    transform: scale(1.1115);
     cursor: pointer;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px)  {
     .education-main {
         margin-inline: 3rem;
         height: auto;
@@ -119,6 +126,9 @@
     .education-top-header {
         height: auto;
     } */
+    .education-top-header-2 h2 {
+        padding-top: 3rem;
+    }
 
     .education-extra {
         margin-left: 0;
@@ -130,7 +140,7 @@
 
     .education-bottom-honors {
         flex-direction: column;
-        gap: 2rem
+        gap: 5rem
     }
 
     .education-bottom-honors-left,

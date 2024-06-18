@@ -28,6 +28,16 @@
   src: local('sf-ultralight'),
     url(./fonts/sanfranciscodisplay-ultralight-webfont.woff) format('woff'),;
 }
+@font-face {
+  font-family: 'JetMono-regular';
+  src: local('sf-ultralight'),
+    url(./fonts/JetBrainsMono-Regular.ttf) format('truetype'),;
+}
+@font-face {
+  font-family: 'JetMono-light';
+  src: local('sf-ultralight'),
+    url(./fonts/JetBrainsMono-Light.ttf) format('truetype'),;
+}
 
 body {
   margin: 0;

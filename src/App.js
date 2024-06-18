@@ -18,7 +18,7 @@ function App() {
       <HeroSection />
       <LatestProject />
       <ProjectsCardsSection />
-      <EmployeeSection />
+      {/* <EmployeeSection /> */}
       <EducationSection />
       <SkillSection />
       <FooterSection />

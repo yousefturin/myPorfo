@@ -18,7 +18,7 @@ const HeroSection = () => {
         <div className='hero-main'>
 
             <div className="hero-left">
-                <div>
+            <div className='here-inner-left'>
                 <div className="empty-place"></div>
                 <p style={{ marginBottom: -20 }}>I am</p>
                 <h1>A Frontend and Mobile Developer</h1>

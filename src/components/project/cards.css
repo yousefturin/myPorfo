@@ -10,7 +10,7 @@
 
 .project-cards-main h1 {
   font-size: 2rem;
-  font-family: "sf-bold";
+  font-family: sf-bold;
   color: #ffffff;
 }
 
@@ -64,7 +64,7 @@
   min-width: 300px;
   max-width: 364px;
   height: 450px;
-  background: #1c1c1e;
+  background: #272727;
   border-radius: 19px;
   overflow: hidden;
   margin-top: 3rem;
@@ -108,16 +108,17 @@
 }
 
 .card-main h2 {
-  font-size: 1.2rem;
-  font-family: "sf-bold";
+  font-size: 1.5rem;
+  font-family: sf-bold;
   color: #ffffff;
   margin: 0;
 }
 
 .card-main p {
   font-size: 1rem;
-  font-family: "sf-regular";
-  color: #b4b4b4;
+  font-family: sf-regular;
+  color: #c9c9c9;
+  margin-top: 0.3rem;
 }
 
 .btn-actions {
@@ -209,7 +210,7 @@
   transition: none;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .project-cards-main {
     margin-inline: 3rem;
   }
@@ -222,7 +223,7 @@
     min-width: 100px;
     max-width: 263px;
     height: 450px;
-    background: #1c1c1e;
+    background: #272727;
     border-radius: 19px;
     overflow: hidden;
     margin-top: 3rem;
@@ -231,7 +232,7 @@
   }
 
   .card-main h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .card-main p {

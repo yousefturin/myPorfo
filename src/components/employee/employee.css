@@ -64,7 +64,7 @@
 
 .employee-top-info-middle h2 {
   font-size: 1.5rem;
-  font-family: "sf-bold";
+  font-family: sf-bold;
   color: #ffffff;
   margin-top: 0;
   width: 100%;
@@ -72,8 +72,8 @@
 
 .employee-top-info-middle p {
   font-size: 1rem;
-  font-family: "sf-regular";
-  color: #b4b4b4;
+  font-family: sf-regular;
+  color: #c9c9c9;
   margin-top: 0;
   width: 100%;
 }
@@ -89,7 +89,7 @@
 
 .employee-top-info-right h3 {
   font-size: 1rem;
-  font-family: "sf-regular";
+  font-family: sf-regular;
   color: #7e7e7e;
   margin: 0;
 }
@@ -120,7 +120,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  background: #262626;
+  background: #272727;
   border-radius: 19px;
   transition: transform 0.4s ease;
 }
@@ -132,7 +132,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background: #262626;
+  background: #272727;
   border-radius: 19px;
   transition: transform 0.4s ease;
 }
@@ -141,7 +141,7 @@
 .employee-bottom-info-right h4,
 .employee-bottom-info-middle h4 {
   font-size: 0.725rem;
-  font-family: "sf-regular";
+  font-family: sf-regular;
   color: #ffffff;
   margin: 0;
   padding-inline: 1rem;
@@ -195,7 +195,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  background: #262626;
+  background: #272727;
   border-radius: 19px;
   flex-direction: column;
   justify-content: space-evenly;
@@ -208,7 +208,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #262626;
+  background: #272727;
   border-radius: 19px;
   transition: transform 0.4s ease;
 }
@@ -229,7 +229,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #262626;
+  background: #272727;
   border-radius: 19px;
   transition: transform 0.4s ease;
 }
@@ -270,7 +270,7 @@
   cursor: pointer;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px)  {
   .employee-main {
     margin-inline: 3rem;
   }
@@ -315,6 +315,7 @@
 
   .employee-top-info-right {
     gap: 2rem;
+    display: none;
   }
 
   .employee-bottom-info {

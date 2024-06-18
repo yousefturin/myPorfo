@@ -14,8 +14,7 @@ export default function EducationSection() {
                 </div>
                 <InfoSection image={EducationImage} title={"Bachelor in Computer Engineering"}
                     subtitle={"Beykoz Üniversitesi"} startDate={"Jul   2024"} endDate={"Sep 2019"} />
-                <div className="education-top-header">
-                    <div className="education-extra" />
+                <div className="education-top-header-2">
                     <h2>Honors & awards.</h2>
                 </div>
                 <div className="education-bottom-honors">
