@@ -22,7 +22,6 @@ export default function MenuBarSection() {
                             width={28}
                             height={28}
                             fill="white"
-                            className='linkedin-svg'
                         />
                     </a>
                     <a href="https://www.linkedin.com/in/yusef-rayyan-j1999/" target="_blank" rel="noopener noreferrer">
@@ -31,9 +30,16 @@ export default function MenuBarSection() {
                             width={28}
                             height={28}
                             fill="white"
-                            className='linkedin-svg'
                         />
                     </a>
+                    {/* <a href="https://github.com/yousefturin" target="_blank" rel="noopener noreferrer">
+                        <SvgComponent
+                            svgKey="CvSvg"
+                            width={28}
+                            height={28}
+                            fill="none"
+                        />
+                    </a> */}
                 </div>
             </div>
         </div>

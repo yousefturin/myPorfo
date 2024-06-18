@@ -1,0 +1,77 @@
+/* src/components/FAQ.css */
+
+.faq-section {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sf-regular;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: sf-bold;
+}
+.faq-item p {
+    font-size: 0rem;
+}
+.faq-list {
+    border-top: 1px solid #383838;
+}
+
+.faq-item {
+    border-bottom: 1px solid #383838;
+    padding: 15px 0;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #e8e8e8;
+}
+
+
+.answer {
+    display: hi;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 1rem;
+    padding: 0;
+    color: #555;
+    transition: max-height 0.7s ease, padding 0.7s ease;
+}
+
+.answer.active {
+    max-height: 200px; /* Set a max-height greater than the tallest possible content */
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+.arrow-segment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+    border-radius: 50%;
+    background-color: #383838;
+
+}
+
+.arrow-segment-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease;
+}
+.arrow-segment-wrapper.rotate {
+    transform: rotate(180deg);
+}

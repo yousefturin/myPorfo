@@ -1,0 +1,57 @@
+/* src/components/Form.css */
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sf-regular;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #e8e8e8;
+}
+
+.form-input,
+.form-textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #383838;
+    border-radius: 7px;
+    font-size: 16px;
+    background: #383838;
+    color: #ffffff;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 84px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    caret-color: #79b50f;
+}
+
+.form-submit {
+    font-family: sf-regular;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #79b50f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+    background-color: #699f0c;
+}

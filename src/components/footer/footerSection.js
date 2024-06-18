@@ -2,16 +2,23 @@ import React from 'react'
 import './footer.css'
 import SvgComponent from '../../utils/SvgComponent'
 import EmailForm from './EmailForm';
+import FAQ from '../FAQ/FAQ';
+
 export default function FooterSection() {
 
     const getCurrentYear = () => {
         return new Date().getFullYear();
     };
-    
+
     return (
         <div className='footer-main'>
             <div className="footer-top">
-                {/* <EmailForm /> */}
+                <div className="footer-top-right">
+                    <EmailForm />
+                </div>
+                <div className="footer-top-left">
+                    <FAQ />
+                </div>
             </div>
             <div className="footer-bottom">
                 <div className="footer-bottom-name">
@@ -36,8 +43,8 @@ export default function FooterSection() {
                     </a>
                 </div>
                 <p>© {getCurrentYear()} Yusef. All rights reserved</p>
+                <p>Made with ❤️ Yusef Rayyan</p>
             </div>
-            <p>Made with ❤️ Yusef Rayyan</p>
         </div>
     )
 }

@@ -9,17 +9,20 @@ import SkillSection from './components/skills/SkillSection';
 import MenuBarSection from './components/menu/MenuBarSection';
 import FooterSection from './components/footer/footerSection';
 import Banner from './components/banner/banner';
-import { useRef } from 'react';
+import React from 'react';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
-  
-  const projectSectionRef = useRef(null);
+
+  const projectSectionRef = React.useRef(null);
+
 
   const scrollToProjects = () => {
-      if (projectSectionRef.current) {
-          projectSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-      }
+    if (projectSectionRef.current) {
+      projectSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
+
 
   return (
     <div className="App">
@@ -32,6 +35,7 @@ function App() {
       {/* <EducationSection /> */}
       <SkillSection />
       <FooterSection />
+      <ScrollToTop />
     </div>
   );
 }

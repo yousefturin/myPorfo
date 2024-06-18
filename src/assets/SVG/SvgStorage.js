@@ -24,6 +24,13 @@ const svgData = {
         d="M256 7.025C118.494 7.025 7.025 118.494 7.025 256S118.494 504.975 256 504.975 504.976 393.506 504.976 256C504.975 118.494 393.504 7.025 256 7.025zm-66.427 369.343h-54.665V199.761h54.665v176.607zM161.98 176.633c-17.853 0-32.326-14.591-32.326-32.587 0-17.998 14.475-32.588 32.326-32.588s32.324 14.59 32.324 32.588c.001 17.997-14.472 32.587-32.324 32.587zm232.45 199.735h-54.4v-92.704c0-25.426-9.658-39.619-29.763-39.619-21.881 0-33.312 14.782-33.312 39.619v92.704h-52.43V199.761h52.43v23.786s15.771-29.173 53.219-29.173c37.449 0 64.257 22.866 64.257 70.169l-.001 111.825z"
         fill="url(#a)" />
 </svg>`,
+    CvSvg: `
+    <svg width="24"  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path
+		d="M16 7V4C16 2.89543 15.1046 2 14 2H10C8.89543 2 8 2.89543 8 4V7M22 12L12.3922 13.9216C12.1333 13.9733 11.8667 13.9733 11.6078 13.9216L2 12M4 22H20C21.1046 22 22 21.1046 22 20V9C22 7.89543 21.1046 7 20 7H4C2.89543 7 2 7.89543 2 9V20C2 21.1046 2.89543 22 4 22Z"
+		stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+    `,
     DownloadSvg: `
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 3V17M12 17L6 11M12 17L18 11M3 21H21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -35,6 +42,11 @@ const svgData = {
     ArrowDownSvg: `
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20 8L12 16L4 8" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>`,
+    ArrowUpSvg: `
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M4 16L12 8L20 16" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+	</path>
 </svg>`,
     ArrowRightSvg: `
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

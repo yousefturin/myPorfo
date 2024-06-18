@@ -2,12 +2,12 @@
     /* padding-top: 3rem; */
     /* padding-bottom: 3rem; */
     margin-top: 3rem;
-    height: 80vh;
-    justify-content: flex-end;
+    height: auto;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #262626;
+    background: #0e0e0e;
 }
 
 .footer-main p {
@@ -51,7 +51,28 @@
     font-size: 0.7rem;
     margin: auto;
     padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
 }
+
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-top-right,
+.footer-top-left {
+    flex: 1;
+    min-width: 300px;
+    width: 300px;
+    margin: 10px; /* or make it auto */
+    overflow-y: auto; /* Allow vertical scrolling if content exceeds max-height */
+}
+
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
     .footer-main {

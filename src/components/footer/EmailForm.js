@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+import './EmailForm.css';
 export default function EmailForm() {
     const form = useRef();
 
@@ -22,14 +22,14 @@ export default function EmailForm() {
     };
 
     return (
-        <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="from_name" />
-            <label>Email</label>
-            <input type="email" name="from_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
+            <label className="form-label">Name</label>
+            <input type="text" name="from_name" className="form-input" placeholder='John' />
+            <label className="form-label">Email</label>
+            <input type="email" name="from_email" className="form-input" placeholder='john@example.com' />
+            <label className="form-label">Message</label>
+            <textarea name="message" className="form-textarea"></textarea>
+            <input type="submit" value="Send" className="form-submit" />
         </form>
     );
 };
