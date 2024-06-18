@@ -39,6 +39,10 @@
     margin: 0rem;
     width: 100%;
 }
+.hero-left  .here-inner-left p:first-of-type {
+    font-size: 1.5rem;
+    font-family: sf-bold;
+}
 
 .hero-left .btn-download {
     background-color: #79b50f;

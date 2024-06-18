@@ -7,7 +7,7 @@ export default function MenuBarSection() {
         <div className='menu-bar'>
             <div className="menu-wrapper">
                 <div className="left-menu-bar">
-                    <p style={{ fontSize: 22 }}>👋🏼 "</p>
+                    <p style={{ fontSize: 22 ,paddingRight:5}}>👋🏼 </p>
                     <p className='text-logo'> Hi, Yusef</p>
                 </div>
                 <div className="middle-menu-bar">

@@ -4,8 +4,7 @@ import latestImage from '../../assets/images/latest-project-image.png'
 import SvgComponent from '../../utils/SvgComponent'
 export default function LatestProject() {
     return (
-
-        <div className='latest-project-main'>
+        <div className='latest-project-main' id='section2'>
             <div className="latest-wrapper">
                 <div className="latest-top-header">
                     <div className="latest-extra" />

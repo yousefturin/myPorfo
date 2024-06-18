@@ -1,3 +1,4 @@
+
 .menu-bar {
   height: 8vh;
   background-color: #050505;
@@ -15,7 +16,7 @@
 }
 
 .left-menu-bar {
-  width: 18%;
+  width: 25%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -56,7 +57,7 @@
 }
 
 .right-menu-bar {
-  width: 18%;
+  width: 25%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -70,9 +71,21 @@
 }
 
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px){
+@media only screen and (min-width: 320px) and (max-width: 768px){
+  .menu-bar {
+    border-radius: 30px;
+    top: 1rem;
+    position: fixed;
+    background-color: #05050561;
+    outline: 1px solid #ffffff1c;
+    backdrop-filter: blur(10px);
+    z-index: 99999999;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
     .menu-wrapper {
-    margin-inline: 3rem;
+    margin-inline: 2rem;
   }
 
   .left-menu-bar {
