@@ -1,37 +1,30 @@
 import React from 'react'
-
 import './cards.css'
+import SvgComponent from '../../utils/SvgComponent'
 
-export default function Card({ cardImage, cardTitle, cardDescription }) {
+export default function Card({ cardImage, cardTitle, cardDescription, cardLink, cardSource, cardLogo }) {
     return (
         <div className="card-main">
             <div className="card-main-wrapper">
                 <div className="info-wrapper">
                     <h2>{cardTitle}</h2>
                     <p>{cardDescription}</p>
+                    <a href={cardLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mini-card-project">
+                        <button className='btn-mini-card-goto-project'>
+                            <SvgComponent
+                                svgKey={cardLogo}
+                                width={16}
+                                height={16}
+                                fill="white"
+                                stroke='white'
+                            />
+                            {cardSource}
+                        </button>
+                    </a>
                 </div>
-                {/* <div className="btn-actions">
-                <button className='btn-download'>
-                    <SvgComponent
-                        svgKey="GitHubSVG"
-                        width={16}
-                        height={16}
-                        fill="white"
-                        stroke='white'
-                    />
-                    Source
-                </button>
-                <button className='btn-read-more'>
-                    Read More
-                    <SvgComponent
-                        svgKey="ArrowRightSvg"
-                        width={16}
-                        height={16}
-                        stroke='#79b50f'
-                        fill='none'
-                    />
-                </button>
-            </div> */}
                 <div className="image-wrapper">
                     <img src={cardImage} alt='hero' className='project-image' />
                 </div>

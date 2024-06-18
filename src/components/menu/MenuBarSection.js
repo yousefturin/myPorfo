@@ -19,17 +19,19 @@ export default function MenuBarSection() {
                     <a href="https://github.com/yousefturin" target="_blank" rel="noopener noreferrer">
                         <SvgComponent
                             svgKey="GitHubSVG"
-                            width={24}
-                            height={24}
+                            width={28}
+                            height={28}
                             fill="white"
+                            className='linkedin-svg'
                         />
                     </a>
                     <a href="https://www.linkedin.com/in/yusef-rayyan-j1999/" target="_blank" rel="noopener noreferrer">
                         <SvgComponent
                             svgKey="LinkedInSGV"
-                            width={24}
-                            height={24}
+                            width={28}
+                            height={28}
                             fill="white"
+                            className='linkedin-svg'
                         />
                     </a>
                 </div>

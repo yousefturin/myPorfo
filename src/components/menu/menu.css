@@ -65,9 +65,13 @@
   gap: 1rem;
   flex-direction: row;
 }
+.right-menu-bar a {
+  transition: transform 0.4s ease;
+}
 
 .right-menu-bar a:hover {
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 

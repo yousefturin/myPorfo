@@ -6,6 +6,9 @@
     flex-direction: row;
     align-items: center;
     margin-inline: 6rem;
+    /* background-image: url(../../assets/images/hero-image.png);
+    background-size: cover;
+    background-position: center; */
 }
 .here-inner-left{
     display: flex;
@@ -60,7 +63,7 @@
 }
 
 .btn-download:hover {
-    background-color: #0056b3;
+    background-color: #699f0c;
     color: #ffffff;
     transition: 0.3s;
     cursor: pointer;
@@ -102,6 +105,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* display: none; */
 }
 
 .hero-right img {

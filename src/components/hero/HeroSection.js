@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './hero.css'
 import SvgComponent from '../../utils/SvgComponent'
 import heroImage from '../../assets/images/hero-image.png'
-const HeroSection = () => {
+const HeroSection = ({ scrollToProjects }) => {
     const [isDownloaded, setIsDownloaded] = useState(false);
     const handleDownload = () => {
         const link = document.createElement('a');
@@ -34,13 +34,14 @@ const HeroSection = () => {
                         Download CV
                     </button>
                 </div>
-                <div className="hero-left-bottom">
+                <div className="hero-left-bottom" onClick={scrollToProjects}>
                     <p>My Projects</p>
                     <SvgComponent
                         svgKey="ArrowDownSvg"
                         width={16}
                         height={16}
-                        stroke='#8d8c8c'
+                        stroke='#ffffff'
+                        
                     />
                 </div>
 

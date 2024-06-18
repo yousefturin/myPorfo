@@ -121,47 +121,35 @@
   margin-top: 0.3rem;
 }
 
-.btn-actions {
+.mini-card-project {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 2rem;
+  text-decoration: none;
+  /* margin-top: 2rem; */
 }
 
-.btn-actions .btn-download {
-  background-color: #79b50f;
+.mini-card-project  .btn-mini-card-goto-project {
+  background-color: #78b50f8b;
   border: none;
   color: #ffffff;
   padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
   display: flex;
-  gap: 0.5rem;
   font-size: 0.8rem;
   align-self: start;
-  width: 50%;
-  justify-content: center;
-}
-
-.btn-actions .btn-read-more {
-  background-color: transparent;
-  border: none;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
   gap: 0.5rem;
-  font-size: 0.8rem;
-  font-family: sf-bold;
-  width: 50%;
-  justify-content: end;
+  justify-content: center;
+  border-radius: 5rem;
+  outline: 1px solid #e6ffba5c;
+  transition: background-color 0.3s;
 }
 
-.btn-download:hover {
-  background-color: #0056b3;
+
+.btn-mini-card-goto-project:hover {
+  background-color: #699f0c;
   color: #ffffff;
-  transition: 0.3s;
   cursor: pointer;
 }
 
