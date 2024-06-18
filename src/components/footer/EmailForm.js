@@ -22,14 +22,23 @@ export default function EmailForm() {
     };
 
     return (
-        <form ref={form} onSubmit={sendEmail} className="contact-form">
-            <label className="form-label">Name</label>
-            <input type="text" name="from_name" className="form-input" placeholder='John' />
-            <label className="form-label">Email</label>
-            <input type="email" name="from_email" className="form-input" placeholder='john@example.com' />
-            <label className="form-label">Message</label>
-            <textarea name="message" className="form-textarea"></textarea>
-            <input type="submit" value="Send" className="form-submit" />
-        </form>
+        <div className="faq-section">
+            <h2 style={{ marginBottom: 0 }}>Contact me</h2>
+            <form ref={form} onSubmit={sendEmail} className="contact-form">
+                <div className="form-group">
+                    <input type="text" name="from_name" className="form-input" placeholder=' ' />
+                    <label className="form-label">Name</label>
+                </div>
+                <div className="form-group">
+                    <input type="email" name="from_email" className="form-input" placeholder=' ' />
+                    <label className="form-label">Email</label>
+                </div>
+                <div className="form-group">
+                    <textarea name="message" className="form-textarea" placeholder=' '></textarea>
+                    <label className="form-label">Message</label>
+                </div>
+                <input type="submit" value="Send" className="form-submit" />
+            </form>
+        </div>
     );
 };
