@@ -4,7 +4,7 @@ import latestImage from '../../assets/images/latest-project-image.png'
 import SvgComponent from '../../utils/SvgComponent'
 export default function LatestProject({ projectSectionRef }) {
     return (
-        <div  ref={projectSectionRef} className='latest-project-main' id='section2'>
+        <section ref={projectSectionRef} className='latest-project-main' id='section2'>
             <div className="latest-wrapper">
                 <div className="latest-top-header">
                     <div className="latest-extra" />
@@ -96,23 +96,25 @@ export default function LatestProject({ projectSectionRef }) {
                         </div>
                         <div className='latest-left-bottom-btn-action'>
                             <h2>Read more about the source</h2>
+                            <div className="btn-wrapper">
+                                <a href="https://github.com/yousefturin/reisto" target="_blank" rel="noopener noreferrer" className='btn-download'>
+                                    <SvgComponent
+                                        svgKey="GitHubSVG"
+                                        width={16}
+                                        height={16}
+                                        fill="white"
+                                        stroke='white'
+                                    />
+                                    Source Code
+                                </a>
+                            </div>
 
-                            <a href="https://github.com/yousefturin/reisto" target="_blank" rel="noopener noreferrer" className='btn-download'>
-                                <SvgComponent
-                                    svgKey="GitHubSVG"
-                                    width={16}
-                                    height={16}
-                                    fill="white"
-                                    stroke='white'
-                                />
-                                Source Code
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </section>
 
 
     )

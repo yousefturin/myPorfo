@@ -22,7 +22,7 @@ export default function EmailForm() {
     };
 
     return (
-        <div className="faq-section">
+        <section className="faq-section">
             <h2 style={{ marginBottom: 0 }}>Contact me</h2>
             <form ref={form} onSubmit={sendEmail} className="contact-form">
                 <div className="form-group">
@@ -39,6 +39,6 @@ export default function EmailForm() {
                 </div>
                 <input type="submit" value="Send" className="form-submit" />
             </form>
-        </div>
+        </section>
     );
 };

@@ -4,7 +4,7 @@ import SvgComponent from '../../utils/SvgComponent';
 
 export default function MenuBarSection() {
     return (
-        <div className='menu-bar'>
+        <section className='menu-bar'>
             <div className="menu-wrapper">
                 <div className="left-menu-bar">
                     <p style={{ fontSize: 22 ,paddingRight:5}}>👋🏼 </p>
@@ -42,6 +42,6 @@ export default function MenuBarSection() {
                     </a> */}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

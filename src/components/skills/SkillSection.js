@@ -1,58 +1,41 @@
 import React from 'react'
 import './skill.css'
-import ShapeSection from '../common/ShapeSection'
+import SkillsSection from '../common/ShapeSection'
 export default function SkillSection() {
+    const frontEndSkills = [
+        { name: 'React Native', icon: 'ReactNativeSvg', dimension: '90px' },
+        { name: 'React', icon: 'ReactSvg', dimension: '90px' },
+        { name: 'HTML', icon: 'HTMLSvg', dimension: '90px' },
+        { name: 'CSS', icon: 'CssSvg', dimension: '90px' },
+        { name: 'BootStrap', icon: 'BootStrapSvg', dimension: '90px' },
+    ];
+
+    const ProgrammingLangues = [
+        { name: 'JavaScript', icon: 'JavaScriptSvg', dimension: '90px' },
+        { name: 'Python', icon: 'PythonSvg', dimension: '90px' },
+        { name: 'C#', icon: 'CSharpSvg', dimension: '90px' },
+        { name: 'C++', icon: 'CPlusPlusSvg', dimension: '90px' },
+        { name: 'C', icon: 'CSvg', dimension: '90px' },
+        { name: 'Bash', icon: 'BashSvg', dimension: '90px' },
+    ];
+    const backEndSkills = [
+        { name: 'PostgreSQL', icon: 'PostSQLSvg', dimension: '90px' },
+        { name: 'ASP.NET', icon: 'dotNetSvg', dimension: '90px' },
+        { name: 'Firebase', icon: 'FirebaseLargeSvg', dimension: '90px' },
+        { name: 'Node.js', icon: 'NodeJsSvg', dimension: '90px' },
+        { name: 'Flask', icon: 'FlaskSvg', dimension: '90px' }
+    ];
     return (
-        <div className='skill-main'>
+        <section className='skill-main'>
             <div className="skill-wrapper">
                 <div className="skill-top-header">
                     <h1>Technical skills.</h1>
                 </div>
-                <div className="skill-top-header">
-                    <div className="skill-extra" />
-                    <h2>Programming languages & Frameworks</h2>
-                </div>
-                <div className="skill-wrapper-section">
-                    <ShapeSection leftSvg="ReactSvg"
-                        middleTopRightSvg="JavaScriptSvg"
-                        middleTopLeftSvg="CssSvg"
-                        middleBottomLeftSvg="ReactNativeSvg"
-                        middleBottomRightSvg="PythonSvg"
-                        rightSvg="CPlusPlusSvg"
-                        leftTitle="React "
-                        middleTopRightTitle="JavaScript"
-                        middleTopLeftTitle="CSS"
-                        middleBottomLeftTitle="React Native"
-                        middleBottomRightTitle="Python"
-                        rightTitle="C++"
-                        leftDimension={128}
-                        middleTopRightDimension={84}
-                        middleTopLeftDimension={64}
-                        middleBottomLeftDimension={84}
-                        middleBottomRightDimension={48}
-                        rightDimension={64} />
-
-                    <ShapeSection leftSvg="NodeJsSvg"
-                        middleTopRightSvg="HTMLSvg"
-                        middleTopLeftSvg="GitSvg"
-                        middleBottomLeftSvg="MatlabSvg"
-                        middleBottomRightSvg="TypeScriptSvg"
-                        rightSvg="CSharpSvg"
-                        leftTitle="NodeJS"
-                        middleTopRightTitle="HTML"
-                        middleTopLeftTitle="Git"
-                        middleBottomLeftTitle="Matlab"
-                        middleBottomRightTitle="TypeScript"
-                        rightTitle="C#"
-                        leftDimension={128}
-                        middleTopRightDimension={84}
-                        middleTopLeftDimension={64}
-                        middleBottomLeftDimension={84}
-                        middleBottomRightDimension={48}
-                        rightDimension={64} />
-
-                </div>
+                <SkillsSection title="Programming languages" skills={ProgrammingLangues} />
+                <SkillsSection title="Front-End" skills={frontEndSkills} />
+                <SkillsSection title="Back-End and Database" skills={backEndSkills} />
             </div>
-        </div>
+
+        </section>
     )
 }

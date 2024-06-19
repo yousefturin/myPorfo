@@ -4,7 +4,7 @@ import SvgComponent from '../../utils/SvgComponent'
 
 export default function Card({ cardImage, cardTitle, cardDescription, cardLink, cardSource, cardLogo }) {
     return (
-        <div className="card-main">
+        <section className="card-main">
             <div className="card-main-wrapper">
                 <div className="info-wrapper">
                     <h2>{cardTitle}</h2>
@@ -29,6 +29,6 @@ export default function Card({ cardImage, cardTitle, cardDescription, cardLink, 
                     <img src={cardImage} alt='hero' className='project-image' />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

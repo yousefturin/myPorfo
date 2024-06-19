@@ -11,7 +11,7 @@ export default function FooterSection() {
     };
 
     return (
-        <div className='footer-main'>
+        <section className='footer-main'>
             <div className="footer-top">
                 <div className="footer-top-right">
                     <EmailForm />
@@ -45,6 +45,6 @@ export default function FooterSection() {
                 <p>© {getCurrentYear()} Yusef. All rights reserved</p>
                 <p>Made with ❤️ Yusef Rayyan</p>
             </div>
-        </div>
+        </section>
     )
 }

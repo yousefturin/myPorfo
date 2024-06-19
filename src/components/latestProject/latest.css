@@ -120,7 +120,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    background: #272727;
+    background: #383838;
     border-radius: 0.75rem;
 }
 
@@ -131,7 +131,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #272727;
+    background: #383838;
     border-radius: 0.75rem;
 }
 
@@ -150,6 +150,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    gap:0.2rem;
 }
 
 .tools-middle-top {
@@ -162,7 +163,7 @@
 }
 
 .tools-middle-bottom {
-    background: #272727;
+    background: #383838;
     border-radius: 0.563rem;
     width: 100%;
     height: 49%;
@@ -189,8 +190,9 @@
     justify-content: center;
     align-items: center;
     gap: 0.3rem;
-    background: #272727;
+    background: #383838;
     border-radius: 0.563rem;
+    min-height: 40px;
 }
 
 .latest-left .btn-download {
@@ -234,7 +236,10 @@
     }
 
     .latest-top-header h1 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+    }
+    .tools-middle-Wrapper{
+        gap:0;
     }
 
     .latest-right {
@@ -258,7 +263,7 @@
     }
 
     .latest-left h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .latest-left p {
@@ -283,30 +288,41 @@
     .tools-middle,
     .tools-right {
         width: auto;
-        margin-bottom: 0.2rem;
+        /* margin-bottom: 0.2rem; */
         border-radius: 0.4rem;
     }
-
+    .tools-left{
+        margin-bottom: 0.2rem;
+    }
+    .tools-right{
+        margin-top: 0.2rem;
+    }
     .tools-middle-top-left,
     .tools-middle-top-right,
     .tools-middle-bottom {
         border-radius: 0.35rem;
+        min-height: 40px;
     }
 
     .tools-middle-top {
         margin-bottom: 0.2rem;
+    }   
+    .latest-left-bottom-btn-action{
+        width: 100%;
     }
 
     .latest-left .btn-download {
         color: #ffffff;
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-        width: auto;
+        padding: 10px 0;
+        font-size: 1rem;
+        width: 100%;
         transition: background-color 0.4s ease;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
     }
-
-    .latest-left svg {
+    .btn-wrapper svg{
+        scale: 1;
+    }
+    .latest-tools svg {
         scale: 0.8;
     }
 }
@@ -318,6 +334,9 @@
 
     .latest-wrapper {
         margin-inline: 3rem;
+    }
+    .tools-middle-Wrapper{
+        gap:0;
     }
 
     .latest-top-header h1 {

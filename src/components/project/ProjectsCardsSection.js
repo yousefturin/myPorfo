@@ -95,7 +95,7 @@ export default function ProjectsCardsSection() {
     };
 
     return (
-        <div className='project-cards-main'>
+        <section className='project-cards-main'>
             <div className="project-cards-wrapper">
                 <div>
                     <h1>Projects I worked.</h1>
@@ -130,6 +130,6 @@ export default function ProjectsCardsSection() {
 
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
