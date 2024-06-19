@@ -3,7 +3,7 @@
     width: 100%;
     padding: 10px;
     background-color:  #78b50f9d;
-    color: #ffffff;
+    color: var(--text--primary);
     text-align: center;
     font-weight: bold;
     position: fixed;

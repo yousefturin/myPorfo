@@ -41,7 +41,7 @@ const HeroSection = ({ scrollToProjects }) => {
                         svgKey="ArrowDownSvg"
                         width={16}
                         height={16}
-                        stroke='#ffffff'
+                        stroke='var(--text--primary)'
 
                     />
                 </div>

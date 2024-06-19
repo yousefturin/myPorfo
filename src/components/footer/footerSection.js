@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css'
 import SvgComponent from '../../utils/SvgComponent'
-import EmailForm from './EmailForm';
+import EmailForm from '../EmailForm/EmailForm';
 import FAQ from '../FAQ/FAQ';
 
 export default function FooterSection() {

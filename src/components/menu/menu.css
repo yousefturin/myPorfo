@@ -1,7 +1,7 @@
 
 .menu-bar {
   height: 8vh;
-  /* background-color: #050505; */
+  /* background-color: var(--bg); */
   display: flex;
   justify-content: space-evenly;
 }
@@ -25,13 +25,13 @@
 
 .text-logo {
   font-family: sf-bold;
-  color: #ffffff;
+  color: var(--text--primary);
   font-size: 1.375rem;
 }
 
 .middle-menu-bar {
   font-family: sf-regular;
-  color: #ffffff;
+  color: var(--text--primary);
   font-size: 1.125rem;
   width: 0%;
   height: 100%;
@@ -44,13 +44,11 @@
 
 .middle-menu-bar p {
   padding: 30px 20px;
-  transition: background-color 0.8s ease;
-  transition: color 0.4s ease;
-  transition: transform 0.4s ease;
+  transition: var(--transition-normal);
 }
 
 .middle-menu-bar p:hover {
-  color: #79b50f;
+  color: var(--color-main--primary);
   transform: scale(1.1);
   cursor: pointer;
   background-color: #f2ffff;
@@ -66,7 +64,7 @@
   flex-direction: row;
 }
 .right-menu-bar a {
-  transition: transform 0.4s ease;
+  transition: var(--transition-normal);
   display: flex;
 }
 
@@ -81,8 +79,8 @@
     border-radius: 30px;
     top: 1rem;
     position: fixed;
-    background-color: #05050561;
-    outline: 1px solid #ffffff1c;
+    background-color: var(--bg)61;
+    outline: 1px solid var(--text--primary)1c;
     backdrop-filter: blur(10px);
     z-index: 99999999;
     width: 90%;

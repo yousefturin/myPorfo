@@ -1,6 +1,7 @@
 import React from 'react'
 import './skill.css'
-import SkillsSection from '../common/ShapeSection'
+import SkillsSection from '../common/SkillsSection'
+
 export default function SkillSection() {
     const frontEndSkills = [
         { name: 'React Native', icon: 'ReactNativeSvg', dimension: '90px' },

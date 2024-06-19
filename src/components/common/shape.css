@@ -11,7 +11,7 @@
 .skills h2 {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #bebdbd;
+    color: var(--text--quinary);
     font-family: sf-medium;
 }
 
@@ -25,7 +25,7 @@
     justify-self: flex-start;
 }
 .skill {
-    background-color: #383838;
+    background-color: var(--bg--tertiary);
     border-radius: 10px;
     padding: 5px;
     width: 150px;
@@ -35,13 +35,13 @@
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease;
+    transition: var(--transition-normal);
 }
 
 .skill p {
     font-size: 1rem;
     margin: 0;
-    color: #e8e8e8;
+    color: var(--text--tertiary);
 }
 
 .skill:hover {

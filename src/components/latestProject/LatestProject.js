@@ -29,7 +29,7 @@ export default function LatestProject({ projectSectionRef }) {
                                             svgKey="ReactNativeSvg"
                                             width={44}
                                             height={44}
-                                            fill='#c9c9c9'
+                                            fill='var(--text--secondary)'
                                         />
                                     </div>
                                     <div style={{ width: "30%" }}>
@@ -46,7 +46,7 @@ export default function LatestProject({ projectSectionRef }) {
                                                             svgKey="ExpoSvg"
                                                             width={24}
                                                             height={24}
-                                                            fill='#c9c9c9'
+                                                            fill='var(--text--secondary)'
                                                         />
                                                     </div>
                                                     <h3>Expo</h3>
@@ -57,7 +57,7 @@ export default function LatestProject({ projectSectionRef }) {
                                                             svgKey="i18nextSvg"
                                                             width={24}
                                                             height={24}
-                                                            fill='#c9c9c9'
+                                                            fill='var(--text--secondary)'
                                                         />
                                                     </div>
 
@@ -71,7 +71,7 @@ export default function LatestProject({ projectSectionRef }) {
                                                     svgKey="JavaScriptSvg"
                                                     width={24}
                                                     height={24}
-                                                    fill='#c9c9c9'
+                                                    fill='var(--text--secondary)'
                                                 />
                                             </div>
                                             <h3>JavaScript</h3>
@@ -85,7 +85,7 @@ export default function LatestProject({ projectSectionRef }) {
                                             svgKey="FirebaseSvg"
                                             width={38}
                                             height={38}
-                                            fill='#c9c9c9'
+                                            fill='var(--text--secondary)'
                                         />
                                     </div>
                                     <div>

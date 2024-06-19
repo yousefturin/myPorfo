@@ -40,7 +40,7 @@ const FAQ = () => {
                                         svgKey="ArrowDownSvg"
                                         width={18}
                                         height={18}
-                                        stroke='#e8e8e8'
+                                        stroke='var(--text--tertiary)'
                                     />
                                 </span>
                             </div>

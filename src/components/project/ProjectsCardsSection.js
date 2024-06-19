@@ -114,7 +114,7 @@ export default function ProjectsCardsSection() {
                             svgKey="ArrowLeftSvg"
                             width={16}
                             height={16}
-                            stroke={offset === 0 ? '#c9c9c9' : '#79b50f'}
+                            stroke={offset === 0 ? 'var(--text--secondary)' : 'var(--color-main--primary)'}
                             fill='none'
                         />
                     </button>
@@ -123,7 +123,7 @@ export default function ProjectsCardsSection() {
                             svgKey="ArrowRightSvg"
                             width={16}
                             height={16}
-                            stroke={offset >= cards.length - Math.floor(window.innerWidth / cardWidth) ? '#c9c9c9' : '#79b50f'}
+                            stroke={offset >= cards.length - Math.floor(window.innerWidth / cardWidth) ? 'var(--text--secondary)' : 'var(--color-main--primary)'}
                             fill='none'
                         />
                     </button>
