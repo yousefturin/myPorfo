@@ -13,13 +13,21 @@ const validationSchema = Yup.object().shape({
 
 const Notification = ({ message, onClose }) => {
     React.useEffect(() => {
-        const timer = setTimeout(onClose, 5000);
+        const timer = setTimeout(onClose, 3000);
         return () => clearTimeout(timer);
     }, [onClose]);
 
     return (
         <div className="notification">
-            {message}
+            <div className='notification-wrapper'>
+                <SvgComponent
+                    svgKey="CheckTrueSvg"
+                    width={16}
+                    height={16}
+                    stroke='white'
+                />
+                {message}
+            </div>
             <div className="notification-timer"></div>
         </div>
     );
@@ -41,10 +49,11 @@ export default function EmailForm() {
                 () => {
                     console.log('SUCCESS!');
                     resetForm();
-                    setNotification('Message sent successfully!');
+                    setNotification('Message sent successfully! 👍🏼');
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
+                    setNotification('Message Failed! 😢');
                 }
             )
             .finally(() => {

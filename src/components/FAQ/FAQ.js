@@ -9,18 +9,26 @@ const FAQ = () => {
     const questions = [
         {
             question: "What is your experience in React?",
-            answer: "I have over 3 years of experience in building React applications, focusing on both frontend and full-stack development."
+            answer: "I have developed several full-stack applications using React, focusing on creating outstanding UI/UX. My projects include configuring security for URLs and implementing comprehensive front-end functionalities."
         },
         {
             question: "Can you work with other JavaScript frameworks?",
-            answer: "Yes, I have experience with Vue.js and Angular as well."
+            answer: "Yes, I have developed a fully-functional social media application using React Native, which involved UI/UX research, and I also have experience with Next.js. Additionally, I created a React Native app for Muslim prayer timings and related features."
         },
         {
             question: "Do you have experience with backend development?",
-            answer: "Yes, I have worked with Node.js, Express, and have experience with databases like MongoDB and SQL."
+            answer: "Yes, I have built full-stack applications with Node.js, Flask, and Django. My experience includes implementing authentication, backend logic, and working with databases like MongoDB, SQL, and Firebase."
         },
-        // Add more questions and answers as needed
+        {
+            question: "Can you elaborate on your work with Python and AI?",
+            answer: "Certainly. I have developed applications using Python for computer vision tasks such as parking space tracking using AI, face and voice emotion recognition, and letter recognition. I also created a Photoshop-like application using Flask and SQLite, leveraging ResNet-101 and DeOldify models for image processing."
+        },
+        {
+            question: "Can you describe your project management experience?",
+            answer: "Throughout my university and side projects, I have managed and fully configured several applications from start to finish. This includes conducting UI/UX research, implementing both frontend and backend components, and ensuring the applications meet all project requirements."
+        }
     ];
+    
 
     const toggleAnswer = (index) => {
         setActiveIndex(activeIndex === index ? null : index);

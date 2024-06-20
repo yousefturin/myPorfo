@@ -1,19 +1,11 @@
 
-import React, { useState } from 'react'
+import React from 'react'
 import './hero.css'
 import SvgComponent from '../../utils/SvgComponent'
 import heroImage from '../../assets/images/hero-image.png'
+import useDownloadCV from '../../utils/DownloadCV'
 const HeroSection = ({ scrollToProjects }) => {
-    const [isDownloaded, setIsDownloaded] = useState(false);
-    const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = `${process.env.PUBLIC_URL}/cv.pdf`; // URL to the CV file in the public folder
-        link.download = 'Yusef_Rayyan_CV_2024.pdf'; // Filename for the downloaded file
-        document.body.appendChild(link);
-        link.click();
-        setIsDownloaded(true);
-        document.body.removeChild(link);
-    };
+    const { handleDownload, isDownloaded } = useDownloadCV();
     return (
         <section className='hero-main'>
 
@@ -32,7 +24,6 @@ const HeroSection = ({ scrollToProjects }) => {
                                 stroke='white'
                             />
                         Download CV
-
                     </button>
                 </div>
                 <div className="hero-left-bottom" onClick={scrollToProjects}>
@@ -42,10 +33,8 @@ const HeroSection = ({ scrollToProjects }) => {
                         width={16}
                         height={16}
                         stroke='var(--text--primary)'
-
                     />
                 </div>
-
             </div>
             <div className="hero-right">
                 <img src={heroImage} alt='hero' className='hero-image' />

@@ -15,6 +15,16 @@
     font-size: 0.6rem;
 }
 
+.footer-contact-icons button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin:0;
+    padding: 0;
+    transition: var(--transition-normal);
+}
+
 .footer-contact-icons {
     display: flex;
     align-items: center;
@@ -27,7 +37,8 @@
     transition: var(--transition-normal);
 }
 
-.footer-contact-icons a:hover {
+.footer-contact-icons a:hover,
+.footer-contact-icons button:hover {
     transform: scale(1.5);
     cursor: pointer;
 }
@@ -69,8 +80,10 @@
     flex: 1;
     min-width: 300px;
     width: 300px;
-    margin: 10px; /* or make it auto */
-    overflow-y: auto; /* Allow vertical scrolling if content exceeds max-height */
+    margin: 10px;
+    /* or make it auto */
+    overflow-y: auto;
+    /* Allow vertical scrolling if content exceeds max-height */
 }
 
 

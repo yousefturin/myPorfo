@@ -34,10 +34,10 @@ export default function MenuBarSection() {
                     </a>
                     {/* <a href="https://github.com/yousefturin" target="_blank" rel="noopener noreferrer">
                         <SvgComponent
-                            svgKey="CvSvg"
+                            svgKey="MailSvg"
                             width={28}
                             height={28}
-                            fill="none"
+                            fill="#ffffff"
                         />
                     </a> */}
                 </div>

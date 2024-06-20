@@ -21,6 +21,8 @@
   --transition-slow: all 0.9s ease;
   --transition-normal: all 0.6s ease;
   --transition-fast: all 0.4s ease;
+  --menu-primary-color:#05050561;
+  --menu-secondary-color:#ffffff1c;
 
 }
 

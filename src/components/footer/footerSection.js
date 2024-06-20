@@ -3,9 +3,11 @@ import './footer.css'
 import SvgComponent from '../../utils/SvgComponent'
 import EmailForm from '../EmailForm/EmailForm';
 import FAQ from '../FAQ/FAQ';
+import useDownloadCV from '../../utils/DownloadCV';
 
 export default function FooterSection() {
 
+    const { handleDownload } = useDownloadCV();
     const getCurrentYear = () => {
         return new Date().getFullYear();
     };
@@ -39,6 +41,30 @@ export default function FooterSection() {
                             width={24}
                             height={24}
                             fill="white"
+                        />
+                    </a>
+                    <button onClick={handleDownload}>
+                        <SvgComponent
+                            svgKey="CvSvg"
+                            width={24}
+                            height={24}
+                            fill="#ffffff"
+                        />
+                    </button>
+                    <a href="https://medium.com/@yusefturin" target="_blank" rel="noopener noreferrer">
+                        <SvgComponent
+                            svgKey="MediumSvg"
+                            width={24}
+                            height={24}
+                            fill="#ffffff"
+                        />
+                    </a>
+                    <a href="https://stackoverflow.com/users/25346742/yusefturin" target="_blank" rel="noopener noreferrer">
+                        <SvgComponent
+                            svgKey="StackOverFlowSvg"
+                            width={24}
+                            height={24}
+                            fill="#ffffff"
                         />
                     </a>
                 </div>
