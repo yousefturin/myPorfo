@@ -17,49 +17,49 @@ export default function ProjectsCardsSection() {
             image: image1,
             title: 'Social media.',
             description: 'Full stack, UI/UX design and research',
-            link:'https://github.com/yousefturin/reisto',
-            source:'Reisto',
-            log:'GitHubSVG',
+            link: 'https://github.com/yousefturin/reisto',
+            source: 'Reisto',
+            log: 'GitHubSVG',
         },
         {
             image: image2,
             title: 'Religious.',
             description: 'Full stack, UI/UX design and research',
-            link:'https://github.com/yousefturin/thikir',
-            source:'Mufradun',
-            log:'GitHubSVG',
+            link: 'https://github.com/yousefturin/thikir',
+            source: 'Mufradun',
+            log: 'GitHubSVG',
         },
         {
             image: image3,
             title: 'Photo editor.',
             description: 'Frontend, Backend, UI/UX design',
-            link:'https://github.com/yousefturin/APARTSTUDIO',
-            source:'Apart',
-            log:'GitHubSVG',
+            link: 'https://github.com/yousefturin/APARTSTUDIO',
+            source: 'Apart',
+            log: 'GitHubSVG',
         },
         {
             image: image4,
             title: 'Quiz games.',
             description: 'Full-stack, UI/UX design',
-            link:'https://github.com/yousefturin/quizzki',
-            source:'Quizzki',
-            log:'GitHubSVG',
+            link: 'https://github.com/yousefturin/quizzki',
+            source: 'Quizzki',
+            log: 'GitHubSVG',
         },
         {
             image: image5,
             title: 'Encryption system.',
             description: 'Full stack, UI/UX design and research',
-            link:'https://github.com/yousefturin/zakod',
-            source:'Zakod',
-            log:'GitHubSVG',
+            link: 'https://github.com/yousefturin/zakod',
+            source: 'Zakod',
+            log: 'GitHubSVG',
         },
         {
             image: image6,
             title: 'Link builder.',
             description: 'Frontend, Backend, UI/UX design',
-            link:'https://github.com/yousefturin/linktreeReactNewBuild',
-            source:'Biloder',
-            log:'GitHubSVG',
+            link: 'https://github.com/yousefturin/linktreeReactNewBuild',
+            source: 'Biloder',
+            log: 'GitHubSVG',
         }
     ]
 
@@ -104,7 +104,7 @@ export default function ProjectsCardsSection() {
                 <div className='project-card-padding' ref={cardsContainerRef}>
                     <div className='cards-container' style={{ transform: getTransformValue() }}>
                         {cards.map((card, index) => (
-                            <Card key={index} cardImage={card.image} cardTitle={card.title} cardDescription={card.description} cardLink={card.link} cardSource={card.source} cardLogo={card.log}  />
+                            <Card key={index} cardImage={card.image} cardTitle={card.title} cardDescription={card.description} cardLink={card.link} cardSource={card.source} cardLogo={card.log} />
                         ))}
                     </div>
                 </div>
