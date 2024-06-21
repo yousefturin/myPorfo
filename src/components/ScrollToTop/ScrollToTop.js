@@ -40,7 +40,7 @@ export default function ScrollToTop() {
             svgKey="ArrowUpSvg"
             width={18}
             height={18}
-            stroke='#fff'
+            stroke='var(--text--primary)'
         />
     </button>
 

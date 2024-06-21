@@ -1,6 +1,6 @@
 import React from 'react'
 import './latest.css'
-import latestImage from '../../assets/images/latest-project-image.png'
+import latestImage from '../../assets/images/latest-project-image.avif'
 import SvgComponent from '../../utils/SvgComponent'
 export default function LatestProject({ projectSectionRef }) {
     return (
@@ -97,7 +97,7 @@ export default function LatestProject({ projectSectionRef }) {
                         <div className='latest-left-bottom-btn-action'>
                             <h2>Read more about the source</h2>
                             <div className="btn-wrapper">
-                                <a href="https://github.com/yousefturin/reisto" target="_blank" rel="noopener noreferrer" className='btn-download'>
+                                <a href="https://github.com/yousefturin/reisto" target="_blank" title='github link' rel="noopener noreferrer" className='btn-download'>
                                     <SvgComponent
                                         svgKey="GitHubSVG"
                                         width={16}

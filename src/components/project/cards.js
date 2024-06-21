@@ -10,10 +10,11 @@ export default function Card({ cardImage, cardTitle, cardDescription, cardLink, 
                     <h2>{cardTitle}</h2>
                     <p>{cardDescription}</p>
                     <a href={cardLink}
+                        title='goto project'
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mini-card-project">
-                        <button className='btn-mini-card-goto-project'>
+                        <button className='btn-mini-card-goto-project' title='button goto project'>
                             <SvgComponent
                                 svgKey={cardLogo}
                                 width={16}

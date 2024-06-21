@@ -15,6 +15,7 @@ export default function SkillsSection({ title, skills }) {
                             svgKey={skill.icon}
                             width={skill.dimension}
                             height={skill.dimension}
+                            title={skill.name}
                         />
                         <p>{skill.name}</p>
                     </div>

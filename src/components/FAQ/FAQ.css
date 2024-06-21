@@ -14,9 +14,11 @@
     color: var(--text--primary);
     font-family: sf-bold;
 }
+
 .faq-item p {
     font-size: 0rem;
 }
+
 .faq-list {
     border-top: 1px solid var(--bg--tertiary);
 }
@@ -41,7 +43,6 @@
 
 
 .answer {
-    display: hi;
     max-height: 0;
     overflow: hidden;
     font-size: 1rem;
@@ -54,6 +55,7 @@
     max-height: 200px;
     padding: 0.625rem 0;
     font-size: 1rem;
+    font-family: sf-regular;
 }
 
 .arrow-segment {
@@ -66,20 +68,23 @@
 
 }
 
-.arrow-segment-wrapper{
+.arrow-segment-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: var(--transition-normal);
 }
+
 .arrow-segment-wrapper.rotate {
     transform: rotate(180deg);
 }
+
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .faq-section h2{
+    .faq-section h2 {
         font-size: 1.2rem;
     }
-    .question h3{
+
+    .question h3 {
         font-size: 1rem;
     }
-}  
+}

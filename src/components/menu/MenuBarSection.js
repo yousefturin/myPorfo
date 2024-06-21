@@ -16,7 +16,7 @@ export default function MenuBarSection() {
                     <p>Contact</p> */}
                 </div>
                 <div className="right-menu-bar">
-                    <a href="https://github.com/yousefturin" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/yousefturin" title='github link' target="_blank" rel="noopener noreferrer">
                         <SvgComponent
                             svgKey="GitHubSVG"
                             width={28}
@@ -24,7 +24,7 @@ export default function MenuBarSection() {
                             fill="white"
                         />
                     </a>
-                    <a href="https://www.linkedin.com/in/yusef-rayyan-j1999/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/yusef-rayyan-j1999/" title='linkedin link' target="_blank" rel="noopener noreferrer">
                         <SvgComponent
                             svgKey="LinkedInSGV"
                             width={28}
@@ -37,7 +37,7 @@ export default function MenuBarSection() {
                             svgKey="MailSvg"
                             width={28}
                             height={28}
-                            fill="#ffffff"
+                            fill="var(--text--primary)"
                         />
                     </a> */}
                 </div>

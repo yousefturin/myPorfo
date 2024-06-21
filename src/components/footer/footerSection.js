@@ -27,44 +27,49 @@ export default function FooterSection() {
                     <h2>Yusef<br />Rayyan.</h2>
                 </div>
                 <div className="footer-contact-icons">
-                    <a href="https://github.com/yousefturin" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/yousefturin" target="_blank" rel="noopener noreferrer" title='github link'>
                         <SvgComponent
                             svgKey="GitHubSVG"
                             width={24}
                             height={24}
                             fill="white"
+                            title='github icon'
                         />
                     </a>
-                    <a href="https://www.linkedin.com/in/yusef-rayyan-j1999/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/yusef-rayyan-j1999/" target="_blank" rel="noopener noreferrer" title='linkedin link'>
                         <SvgComponent
                             svgKey="LinkedInSGV"
                             width={24}
                             height={24}
                             fill="white"
+                            title='linkedin icon'
                         />
                     </a>
-                    <button onClick={handleDownload}>
+                    <button onClick={handleDownload} title='download CV'>
                         <SvgComponent
                             svgKey="CvSvg"
                             width={24}
                             height={24}
-                            fill="#ffffff"
+                            fill="var(--text--primary)"
+                            title='download cv icon'
                         />
                     </button>
-                    <a href="https://medium.com/@yusefturin" target="_blank" rel="noopener noreferrer">
+                    <a href="https://medium.com/@yusefturin" target="_blank" rel="noopener noreferrer" title='medium link'>
                         <SvgComponent
                             svgKey="MediumSvg"
                             width={24}
                             height={24}
-                            fill="#ffffff"
+                            fill="var(--text--primary)"
+                            title='medium icon'
                         />
                     </a>
-                    <a href="https://stackoverflow.com/users/25346742/yusefturin" target="_blank" rel="noopener noreferrer">
+                    <a href="https://stackoverflow.com/users/25346742/yusefturin" target="_blank" rel="noopener noreferrer" title='stack over flow link'>
                         <SvgComponent
                             svgKey="StackOverFlowSvg"
                             width={24}
                             height={24}
-                            fill="#ffffff"
+                            fill="var(--text--primary)"
+                            title='stack over flow icon'
                         />
                     </a>
                 </div>

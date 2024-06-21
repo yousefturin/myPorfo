@@ -13,6 +13,11 @@ const svgData = {
     </g>
 </svg>
     `,
+    NpmSvg: `
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+	<path d="M14.59.58a14,14,0,1,0,14,14A14,14,0,0,0,14.59.58Zm7.56,21.57H18.33V10.84H14.52V22.15H7V7H22.15Z"
+		transform="translate(-0.59 -0.58)" fill="#fff" />
+</svg>`,
     LinkedInSGV: `
     <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2500" viewBox="7.025 7.025 497.951 497.95">
     <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-974.482" y1="1306.773" x2="-622.378" y2="1658.877"

@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-inline: 6rem;
   flex-direction: row;
 }
@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  position: relative;
+  /* position: relative; */
   /* Ensure pseudo-element positions correctly */
   /* overflow: hidden; */
 }
@@ -35,11 +35,11 @@
 .project-card-padding::before {
   content: '';
   position: absolute;
-  top: 0;
+  /* top: 0; */
   left: 0;
-  width: 40px;
-  height: 100%;
-  box-shadow: inset 100px 0 26px -89px rgba(0, 0, 0, 0.50);
+  width: 300px;
+  height: 70%;
+  box-shadow: inset 119px 0 65px -42px rgba(0, 0, 0, 0.50);
   pointer-events: none;
   z-index: 1;
 }
@@ -177,10 +177,12 @@
   display: flex;
   padding: 0.8rem;
   transition: var(--transition-normal);
+  outline: 1px solid var(--menu-secondary-color);
 }
 
 .btn-card-navigation:hover {
   background-color: rgba(64, 64, 64, 0.366);
+  outline: 1px solid var(--menu-secondary-color);
   color: var(--text--primary);
   transform: scale(1.1);
 }
@@ -230,11 +232,11 @@
   .project-card-padding::before {
     content: '';
     position: absolute;
-    top: 0;
+    /* top: 0; */
     left: 0;
-    width: 40px;
-    height: 100%;
-    box-shadow: inset 100px 0 26px -89px rgba(0, 0, 0, 0.266);
+    width: 60px;
+    height: 70%;
+    box-shadow: inset 74px 0 37px -53px  rgba(0, 0, 0, 0.50);
     pointer-events: none;
     z-index: 1;
   }

@@ -36,7 +36,7 @@
 }
 
 .latest-top-header h1 {
-    color: #fff;
+    color: var(--text--primary);
     font-size: 2rem;
     font-family: sf-bold;
 }
@@ -212,6 +212,7 @@
     border-radius: 3px;
     font-family: sf-regular;
     transition: var(--transition-normal);
+    outline: 1px solid var(--color-main--tertiary-outline);
 }
 
 .btn-download:hover {

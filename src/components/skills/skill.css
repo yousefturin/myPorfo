@@ -32,12 +32,12 @@
 }
 
 .skill-top-header h1 {
-  color: #fff;
+  color: var(--text--primary);
   font-size: 2rem;
   font-family: sf-bold;
 }
 .skill-top-header h2{
-  color: #fff;
+  color: var(--text--primary);
   font-size: 1.2rem;
   font-family: sf-bold;  
   margin: 0;

@@ -2,17 +2,26 @@ import React, { useState, useEffect, useRef } from 'react';
 import Card from './cards';
 import './cards.css';
 import SvgComponent from '../../utils/SvgComponent';
-import image1 from "../../assets/images/project-image-1.png"
-import image2 from "../../assets/images/project-image-2.png"
-import image3 from "../../assets/images/project-image-3.png"
-import image4 from "../../assets/images/project-image-4.png"
-import image5 from "../../assets/images/project-image-5.png"
-import image6 from "../../assets/images/project-image-6.png"
+import image1 from "../../assets/images/project-image-1.avif"
+import image2 from "../../assets/images/project-image-2.avif"
+import image3 from "../../assets/images/project-image-3.avif"
+import image4 from "../../assets/images/project-image-4.avif"
+import image5 from "../../assets/images/project-image-5.avif"
+import image6 from "../../assets/images/project-image-6.avif"
+import image7 from "../../assets/images/project-image-7.avif"
 export default function ProjectsCardsSection() {
     const [offset, setOffset] = useState(0);
     const [cardWidth, setCardWidth] = useState(0);
     const cardsContainerRef = useRef(null);
     const cards = [
+        {
+            image: image7,
+            title: 'Svg render.',
+            description: 'React-Native, Npm package',
+            link: 'https://www.npmjs.com/package/react-native-svg-rendo',
+            source: 'react-native-svg-rendo',
+            log: 'NpmSvg',
+        },
         {
             image: image1,
             title: 'Social media.',
@@ -109,7 +118,7 @@ export default function ProjectsCardsSection() {
                     </div>
                 </div>
                 <div className='controls'>
-                    <button onClick={handleLeftClick} className={`btn-card-navigation ${offset === 0 ? 'disabled' : ''}`}>
+                    <button onClick={handleLeftClick} className={`btn-card-navigation ${offset === 0 ? 'disabled' : ''}`} title='left arrow navigation'>
                         <SvgComponent
                             svgKey="ArrowLeftSvg"
                             width={16}
@@ -118,7 +127,7 @@ export default function ProjectsCardsSection() {
                             fill='none'
                         />
                     </button>
-                    <button onClick={handleRightClick} className={`btn-card-navigation ${offset >= cards.length - Math.floor(window.innerWidth / cardWidth) ? 'disabled' : ''}`}>
+                    <button onClick={handleRightClick} className={`btn-card-navigation ${offset >= cards.length - Math.floor(window.innerWidth / cardWidth) ? 'disabled' : ''}`} title='right arrow navigation'>
                         <SvgComponent
                             svgKey="ArrowRightSvg"
                             width={16}

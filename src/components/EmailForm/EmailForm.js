@@ -73,25 +73,26 @@ export default function EmailForm() {
                 onSubmit={sendEmail}
             >
                 {({ isSubmitting, errors, touched }) => (
-                    <Form className="contact-form">
+                    <Form className="contact-form" title='contact form'>
                         <div className={`form-group ${errors.from_name && touched.from_name ? 'error' : ''}`}>
                             <Field type="text" name="from_name" className="form-input" placeholder=' ' />
-                            <label className="form-label">Name</label>
+                            <label className="form-label" title='name'>Name</label>
                         </div>
                         <div className={`form-group ${errors.from_email && touched.from_email ? 'error' : ''}`}>
                             <Field type="email" name="from_email" className="form-input" placeholder=' ' />
-                            <label className="form-label">Email</label>
+                            <label className="form-label" title='email'>Email</label>
                         </div>
                         <div className={`form-group ${errors.message && touched.message ? 'error' : ''}`}>
                             <Field as="textarea" name="message" className="form-textarea" placeholder=' ' />
-                            <label className="form-label">Message</label>
+                            <label className="form-label" title='message'>Message</label>
                         </div>
-                        <button type="submit" className="form-submit" disabled={isSubmitting}>
+                        <button type="submit" className="form-submit" disabled={isSubmitting} title='submit contact button'>
                             <SvgComponent
                                 svgKey="SendSvg"
                                 width={16}
                                 height={16}
                                 stroke='white'
+                                title='send icon'
                             />
                             Send
                         </button>

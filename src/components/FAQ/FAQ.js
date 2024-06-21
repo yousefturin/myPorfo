@@ -49,6 +49,7 @@ const FAQ = () => {
                                         width={18}
                                         height={18}
                                         stroke='var(--text--tertiary)'
+                                        title='arrow down icon'
                                     />
                                 </span>
                             </div>

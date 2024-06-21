@@ -18,7 +18,7 @@
 .footer-contact-icons button {
     background: none;
     border: none;
-    color: #fff;
+    color: var(--text--primary);
     cursor: pointer;
     margin:0;
     padding: 0;
@@ -51,7 +51,7 @@
 }
 
 .footer-bottom h2 {
-    color: #fff;
+    color: var(--text--primary);
     font-size: 1.5rem;
     margin: auto;
     padding: 1rem;
