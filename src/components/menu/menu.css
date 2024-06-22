@@ -3,6 +3,16 @@
   /* background-color: var(--bg); */
   display: flex;
   justify-content: space-evenly;
+  border-radius: 10px;
+  top: 1rem;
+  position: fixed;
+  background-color: var(--menu-primary-color);
+  outline: 1px solid var(--menu-secondary-color);
+  backdrop-filter: blur(10px);
+  z-index: 99999999;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .menu-wrapper {
@@ -11,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-inline: 6rem;
+  margin-inline: 3rem;
 }
 
 .left-menu-bar {
@@ -68,6 +78,28 @@
   display: flex;
 }
 
+.menu-btn-download-pop-up {
+  display: none;
+  background-color: var(--btn--primary);
+  border: none;
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1rem;
+  transition: var(--transition-normal);
+  border-radius: 3px;
+  font-family: sf-bold;
+  animation: fadeIn 300ms ease-in-out;
+}
+
+.menu-btn-download-pop-up:hover {
+  background-color: var(--btn-primary-hover);
+  cursor: pointer;
+}
+
 .right-menu-bar a:hover {
   cursor: pointer;
   transform: scale(1.2);
@@ -76,20 +108,11 @@
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .menu-bar {
-    border-radius: 30px;
-    top: 1rem;
-    position: fixed;
-    background-color: var(--menu-primary-color);
-    outline: 1px solid var(--menu-secondary-color);
-    backdrop-filter: blur(10px);
-    z-index: 99999999;
-    width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 6vh;
   }
 
   .menu-wrapper {
-    margin-inline: 2rem;
+    margin-inline: 1rem;
   }
 
   .left-menu-bar {
@@ -101,6 +124,11 @@
   }
 
   .right-menu-bar {
-    width: 50%;
+    width: 70%;
+  }
+
+  .menu-btn-download-pop-up {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
 }

@@ -20,7 +20,7 @@ export default function LatestProject({ projectSectionRef }) {
                             <h1>Social Media Application</h1>
                             <p>Reisto is a social media app for food enthusiasts worldwide. Share recipes, discover new dishes, and connect with a community of like-minded food lovers.</p>
                         </div>
-                        <div style={{ width: "100%" }}>
+                        <div className='latest-badges'>
                             <h2>Developed with </h2>
                             <div className="latest-tools">
                                 <div className="tools-left">
@@ -96,14 +96,13 @@ export default function LatestProject({ projectSectionRef }) {
                         </div>
                         <div className='latest-left-bottom-btn-action'>
                             <h2>Read more about the source</h2>
-                            <div className="btn-wrapper">
+                            <div className="link-wrapper">
                                 <a href="https://github.com/yousefturin/reisto" target="_blank" title='github link' rel="noopener noreferrer" className='btn-download'>
                                     <SvgComponent
                                         svgKey="GitHubSVG"
-                                        width={16}
-                                        height={16}
-                                        fill="white"
-                                        stroke='white'
+                                        width={18}
+                                        height={18}
+                                        fill="black"
                                     />
                                     Source Code
                                 </a>

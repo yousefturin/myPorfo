@@ -40,6 +40,11 @@ const svgData = {
 		transform="translate(-0.59 -0.58)" fill="#fff" />
 </svg>
     `,
+    ArrowRightDownSvg: `
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M18.5 18.5L5.5 5.5M18.5 18.5H8.5M18.5 18.5V8.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+		stroke-linejoin="round"></path>
+</svg>`,
     MediumSvg: `
     <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 	<path

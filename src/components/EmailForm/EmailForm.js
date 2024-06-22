@@ -91,7 +91,7 @@ export default function EmailForm() {
                                 svgKey="SendSvg"
                                 width={16}
                                 height={16}
-                                stroke='white'
+                                stroke='black'
                                 title='send icon'
                             />
                             Send

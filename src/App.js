@@ -8,14 +8,15 @@ import SkillSection from './components/skills/SkillSection';
 // import EmployeeSection from './components/employee/EmployeeSection';
 import MenuBarSection from './components/menu/MenuBarSection';
 import FooterSection from './components/footer/footerSection';
-import Banner from './components/banner/banner';
+// import Banner from './components/banner/banner';
 import React from 'react';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
 
   const projectSectionRef = React.useRef(null);
-
+  const btnScrollToTopRef = React.useRef(null);
+  const btnDownloadCVPopUpRef = React.useRef(null);
 
   const scrollToProjects = () => {
     if (projectSectionRef.current) {
@@ -23,11 +24,38 @@ function App() {
     }
   };
 
+  React.useEffect(() => {
+    // Get the button:
+    const scrollToTopBtn = btnScrollToTopRef.current;
+    const downloadCVBtn = btnDownloadCVPopUpRef.current;
+    // When the user scrolls down 450px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+      if (scrollTop > 700) {
+        scrollToTopBtn.style.display = "flex";
+      } else if (scrollTop > 450) {
+        downloadCVBtn.style.display = "flex";
+      } else {
+        scrollToTopBtn.style.display = "none";
+        downloadCVBtn.style.display = "none";
+      }
+    }
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.onscroll = null;
+    };
+  }, []);
 
   return (
     <div className="App">
-      <Banner />
-      <MenuBarSection />
+      {/* <Banner /> */}
+      <MenuBarSection btnDownloadCVPopUpRef={btnDownloadCVPopUpRef} />
       <HeroSection scrollToProjects={scrollToProjects} />
       <LatestProject projectSectionRef={projectSectionRef} />
       <ProjectsCardsSection />
@@ -35,7 +63,7 @@ function App() {
       {/* <EducationSection /> */}
       <SkillSection />
       <FooterSection />
-      <ScrollToTop />
+      <ScrollToTop btnScrollToTopRef={btnScrollToTopRef} />
     </div>
   );
 }

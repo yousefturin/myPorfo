@@ -1,9 +1,8 @@
 .project-cards-main {
-  padding: 3rem 0;
+  padding: 5rem 0;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  /* overflow: hidden; */
   margin-inline: 6rem;
   flex-direction: row;
 }
@@ -27,15 +26,11 @@
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  /* position: relative; */
-  /* Ensure pseudo-element positions correctly */
-  /* overflow: hidden; */
 }
 
 .project-card-padding::before {
   content: '';
   position: absolute;
-  /* top: 0; */
   left: 0;
   width: 300px;
   height: 70%;
@@ -132,7 +127,7 @@
 }
 
 .mini-card-project .btn-mini-card-goto-project {
-  background-color: var(--color-main--tertiary);
+  background-color: transparent;
   border: none;
   color: var(--text--primary);
   padding: 0.5rem 1rem;
@@ -144,14 +139,19 @@
   gap: 0.5rem;
   justify-content: center;
   border-radius: 5rem;
-  outline: 1px solid var(--color-main--tertiary-outline);
+  font-family: sf-bold;
+  outline: 1px solid var(--btn-secondary);
+  transition: var(--transition-normal);
+}
+.card-effect-over-for-btn-go-to-project {
+  background-color: var(--color-main--tertiary-outline) !important;
+  outline: 3px solid var(--text--primary) !important;
   transition: var(--transition-normal);
 }
 
-
 .btn-mini-card-goto-project:hover {
-  background-color: var(--color-main--secondary);
-  color: var(--text--primary);
+  background-color: var(--color-main--tertiary-outline);
+  outline: 4px solid var(--text--primary) !important;
   cursor: pointer;
 }
 

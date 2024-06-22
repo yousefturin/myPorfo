@@ -28,6 +28,7 @@
     transition: var(--transition-normal);
     transition: var(--transition-normal);
     box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    animation: slideInFromBottom 2s ease-in-out;
 }
 
 .btn-scroll-to-top:hover {
