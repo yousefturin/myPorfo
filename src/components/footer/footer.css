@@ -86,10 +86,3 @@
     /* Allow vertical scrolling if content exceeds max-height */
 }
 
-
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
-    .footer-main {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-}
