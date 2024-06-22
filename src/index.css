@@ -21,7 +21,7 @@
   --btn-secondary: #4a4a4a;
   --btn-primary-hover: #e3f9df;
 
-  
+
   --transition-slow: all 0.9s ease;
   --transition-normal: all 0.6s ease;
   --transition-fast: all 0.4s ease;
@@ -29,8 +29,6 @@
   --menu-secondary-color: #ffffff1c;
 
 }
-
-
 
 @font-face {
   font-family: 'sf-bold';
@@ -127,73 +125,70 @@ h2 {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes slideInLeft {
   0% {
-      transform: translateX(-100%);
-      opacity: 0;
+    transform: translateX(-100%);
+    opacity: 0;
   }
 
   100% {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes slideInFromTop {
   0% {
-      transform: translateY(-100%);
-      opacity: 0;
+    transform: translateY(-100%);
+    opacity: 0;
   }
 
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes slideInFromBottom {
   0% {
-      transform: translateY(300%);
-      opacity: 0;
+    transform: translateY(300%);
+    opacity: 0;
   }
 
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes slideInRight {
   0% {
-      transform: translateX(100%);
-      opacity: 0;
+    transform: translateX(100%);
+    opacity: 0;
   }
 
   100% {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes scroll {
   0% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
 
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
 /* .animate-section----------------------------------- */
-
-
-

@@ -2,9 +2,9 @@ import React from 'react'
 import './latest.css'
 import latestImage from '../../assets/images/latest-project-image.avif'
 import SvgComponent from '../../utils/SvgComponent'
-export default function LatestProject({ projectSectionRef }) {
+export default function LatestProject() {
     return (
-        <section ref={projectSectionRef} className='latest-project-main' id='section2'>
+        <section  className='latest-project-main' id='section2'>
             <div className="latest-wrapper">
                 <div className="latest-top-header">
                     <div className="latest-extra" />

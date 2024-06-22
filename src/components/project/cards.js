@@ -12,6 +12,7 @@ export default function Card({ cardImage, cardTitle, cardDescription, cardLink, 
     const handleMouseLeave = () => {
         setIsHovered(false);
     };
+    
     return (
         <section className="card-main" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className="card-main-wrapper">

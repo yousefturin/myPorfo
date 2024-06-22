@@ -54,8 +54,8 @@ function App() {
     <div className="App">
       <MenuBarSection btnDownloadCVPopUpRef={btnDownloadCVPopUpRef} />
       <HeroSection scrollToProjects={scrollToProjects} />
-      <LatestProject projectSectionRef={projectSectionRef} />
-      <ProjectsCardsSection />
+      <LatestProject />
+      <ProjectsCardsSection projectSectionRef={projectSectionRef} />
       <SkillSection />
       <FooterSection />
       <ScrollToTop btnScrollToTopRef={btnScrollToTopRef} />

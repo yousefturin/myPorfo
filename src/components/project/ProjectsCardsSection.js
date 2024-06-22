@@ -9,7 +9,7 @@ import image4 from "../../assets/images/project-image-4.avif"
 import image5 from "../../assets/images/project-image-5.avif"
 import image6 from "../../assets/images/project-image-6.avif"
 import image7 from "../../assets/images/project-image-7.avif"
-export default function ProjectsCardsSection() {
+const ProjectsCardsSection = ({ projectSectionRef }) => {
     const [offset, setOffset] = useState(0);
     const [cardWidth, setCardWidth] = useState(0);
     const cardsContainerRef = useRef(null);
@@ -104,7 +104,7 @@ export default function ProjectsCardsSection() {
     };
 
     return (
-        <section className='project-cards-main'>
+        <section ref={projectSectionRef} className='project-cards-main'>
             <div className="project-cards-wrapper">
                 <div>
                     <h1>Projects I worked.</h1>
@@ -142,3 +142,4 @@ export default function ProjectsCardsSection() {
         </section>
     );
 }
+export default ProjectsCardsSection

@@ -55,16 +55,6 @@ const HeroSection = ({ scrollToProjects }) => {
                     </div>
 
                 </div>
-                {/* <div className="hero-left-bottom" onClick={scrollToProjects}>
-                    <p>My Projects</p>
-                    <SvgComponent
-                        svgKey="ArrowDownSvg"
-                        width={16}
-                        height={16}
-                        stroke='var(--text--primary)'
-                        title='scroll to projects icon'
-                    />
-                </div> */}
             </div>
             <div className="hero-right">
                 <img src={heroImage} alt='hero' className='hero-image' />
