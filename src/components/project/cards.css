@@ -209,7 +209,7 @@
   }
 
   .card-main {
-    min-width: 100px;
+    min-width: 200px;
     max-width: 263px;
     height: 450px;
     background: #272727;
@@ -240,12 +240,5 @@
     z-index: 1;
   }
 
-  .card-main {
-    flex: 0 0 calc(33.333333% - 2rem);
-    /* Three cards per row */
-    box-sizing: border-box;
-    z-index: 2;
-    /* Ensure cards are above other elements but below shadow */
-  }
 
 }

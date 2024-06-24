@@ -1,0 +1,155 @@
+.wrapper-blog-post {
+    background: #ffffff;
+    margin: 0;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding-bottom: 5rem;
+}
+.blog-inner-image-wrapper{
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+.blog-inner-image-wrapper img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.blogPost {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 40px 20px;
+    font-family: "Georgia", serif;
+    line-height: 1.8;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.title {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-family: sf-black;
+    color: #050505;
+}
+
+.wrapper-date-timeReading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.readingTime {
+    font-size: 1rem;
+    color: #888;
+    margin: 0;
+}
+
+.first-divider {
+    margin: 30px 0 0 0;
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.second-divider {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 0px 0 30px 0;
+}
+
+.header {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-family: sf-bold;
+    letter-spacing: -0.003em;
+    color: #050505;
+}
+.span-extracted{
+    font-size: 1rem;
+    background: #e0e0e0;
+    font-family: monospace;
+    padding: 0.1rem 0.2rem;
+    border-radius: 4px;
+}
+.link-extracted{
+    color: #79b50f;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: sf-bold;
+}
+.paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+    letter-spacing: -0.003em;
+    font-family: source-serif-text, serif;
+}
+.code-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+.code {
+    display: flex; /* Flex is not necessary for a code block */
+    background-color: #f6f8fa;
+    padding: 2rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #333;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 24px;
+    font-family: monospace;
+    overflow-x: auto; /* Ensures code block handles overflow within the wrapper */
+    white-space: pre-wrap; /* Prevents wrapping of code */
+}
+@media only screen and (max-width: 767px) {
+    .wrapper-blog-post {
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .header {
+        font-size: 1.1rem;
+    }
+    .paragraph {
+        font-size: 1rem;
+    }
+    .span-extracted{
+        font-size: 0.8rem;
+    }
+    .code {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper-blog-post {
+        padding-bottom: 4rem;
+    }
+    .title {
+        font-size: 2.4rem;
+    }
+    .header {
+        font-size: 1.2rem;
+    }
+    .paragraph {
+        font-size: 1.1rem;
+    }
+    .span-extracted{
+        font-size: 0.9rem;
+    }
+    .code {
+        padding: 1.5rem;
+        font-size: 0.85rem;
+    }
+}

@@ -29,7 +29,11 @@
   --menu-secondary-color: #ffffff1c;
 
 }
-
+@font-face {
+  font-family: 'sf-black';
+  src: local('sf-black'),
+    url(./fonts/sanfranciscodisplay-black-webfont.ttf) format('truetype'), ;
+}
 @font-face {
   font-family: 'sf-bold';
   src: local('sf-Bold'),
@@ -77,6 +81,24 @@
   src: local('sf-ultralight'),
     url(./fonts/JetBrainsMono-Light.ttf) format('truetype'), ;
 }
+
+
+
+
+
+@font-face {
+  font-family: 'source-serif';
+  src: local('source-serif'),
+    url(./fonts/SourceSerif4-Regular.ttf) format('truetype'), ;
+}
+
+@font-face {
+  font-family: 'source-serif-text';
+  src: local('source-serif-text'),
+    url(./fonts/SourceSerif4SmText-Regular.ttf) format('truetype'), ;
+}
+
+
 
 body {
   margin: 0;
