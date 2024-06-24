@@ -8,7 +8,7 @@ const blogPost = [
     {
         "id": 1,
         "imageURL": "blog-Id-1.webp",
-        "link": "how-to-convert-your-project-from-typescript-to-javascript-automated",
+        "link": "how-to-create-custom-svg-icons-in-react",
         "title": "How to create custom SVG icons in React",
         "description": "In this article, we will learn how to create custom SVG icons in React.",
         "content": [
@@ -181,7 +181,7 @@ const blogPost = [
             },
             {
                 "type": "paragraph",
-                "content": "Check out the [react-native-svg](LINK-TEXT,https://www.npmjs.com/package/react-native-svg-rendo) documentation for more information on working with SVGs in React Native."
+                "content": "Check out the [react-native-svg-rendo](LINK-TEXT,https://www.npmjs.com/package/react-native-svg-rendo) documentation for a ready package to load SVG."
             },
         ]
     }

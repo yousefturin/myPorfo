@@ -212,5 +212,14 @@ h2 {
     transform: translateX(-100%);
   }
 }
+@keyframes scrollSmallScreens {
+  0% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 /* .animate-section----------------------------------- */

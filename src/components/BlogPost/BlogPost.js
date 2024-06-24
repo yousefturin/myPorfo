@@ -2,6 +2,7 @@ import React from 'react';
 import './BlogPost.css'; // Import CSS module for styles
 import { useParams } from 'react-router-dom';
 import blogPosts from '../../constants/blogsPosts';
+import { Helmet } from 'react-helmet';
 
 const BlogPost = () => {
     const { postId } = useParams();
@@ -73,6 +74,16 @@ const BlogPost = () => {
 
     return (
         <div className="wrapper-blog-post">
+            <Helmet>
+                <title>{title ? title.content : 'Blog Post'}</title>
+                <meta property="og:title" content={title ? title.content : 'Blog Post'} />
+                <meta property="og:image" content={imageSrc} />
+                <meta property="og:description" content={`${readingTime} min read`} />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={title ? title.content : 'Blog Post'} />
+                <meta name="twitter:image" content={imageSrc} />
+                <meta name="twitter:description" content={`${readingTime} min read`} />
+            </Helmet>
             <div className="blogPost">
                 {title && renderContent(title, titleIndex)}
                 <hr className="first-divider" />

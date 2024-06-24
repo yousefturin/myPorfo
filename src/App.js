@@ -7,6 +7,7 @@ import BlogPost from './components/BlogPost/BlogPost';
 import FooterSection from './components/footer/footerSection';
 import RestView from './components/ResetView/ResetView';
 
+
 function App() {
   return (
     <div className="App">
