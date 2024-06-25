@@ -2,10 +2,11 @@
   padding: 5rem 0;
   display: flex;
   justify-content: flex-end;
-  margin-inline: 6rem;
   flex-direction: row;
 }
-
+.header-project-cards{
+  margin: 0 6rem;
+}
 .project-cards-main h1 {
   font-size: 2rem;
   font-family: sf-bold;
@@ -27,21 +28,13 @@
   gap: 2rem;
 }
 
-.project-card-padding::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 300px;
-  height: 70%;
-  box-shadow: inset 119px 0 65px -42px rgba(0, 0, 0, 0.50);
-  pointer-events: none;
-  z-index: 1;
-}
 
 .cards-container {
   display: flex;
   transition: transform 0.9s ease;
   gap: 2rem;
+  overflow-x: scroll;
+  padding: 0 6rem 3rem 6rem;
 }
 
 .card-main {
@@ -161,6 +154,7 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  display: none;
 }
 
 .controls .btn-card-navigation {
@@ -200,10 +194,9 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .project-cards-main {
-    margin-inline: 3rem;
+  .header-project-cards{
+    margin: 0 3rem;
   }
-
   .project-cards-main h1 {
     font-size: 1.5rem;
   }
@@ -218,8 +211,12 @@
     margin-top: 3rem;
     transition: var(--transition-normal);
     cursor: pointer;
+    flex: 1 0 auto;
   }
-
+  .cards-container {
+    padding: 0 3rem 2rem 3rem;
+  }
+  
   .card-main h2 {
     font-size: 1.2rem;
   }
@@ -234,8 +231,8 @@
     /* top: 0; */
     left: 0;
     width: 60px;
-    height: 70%;
-    box-shadow: inset 74px 0 37px -53px  rgba(0, 0, 0, 0.50);
+    height: 80%;
+    box-shadow: inset 74px 0 37px -53px  rgba(0, 0, 0, 0.5);
     pointer-events: none;
     z-index: 1;
   }
