@@ -156,7 +156,8 @@
 
 .blog-controls {
     margin: 3rem;
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: row;
     justify-content: center;
     align-items: center;

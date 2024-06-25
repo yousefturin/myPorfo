@@ -11,9 +11,9 @@
     /* Make sure it does not overlap */
     border: none;
     /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: var(--color-main--primary);
+    background-color: var(--menu-primary-color);
+    outline: 1px solid var(--menu-secondary-color);
+    backdrop-filter: blur(10px);
     /* Set a background color */
     color: white;
     /* Text color */
@@ -32,7 +32,8 @@
 }
 
 .btn-scroll-to-top:hover {
-    background-color: var(--color-main--secondary);
+    background-color: var(--color-main--tertiary-outline);
+    outline: 3px solid var(--text--primary) !important;
     transform: scale(1.1);
     /* Add a dark-grey background on hover */
 }

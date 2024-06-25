@@ -40,7 +40,7 @@ const BlogPost = () => {
             if (part.match(/\[.*?\]\(LINK-TEXT,.*?\)/)) {
                 const linkText = part.match(/\[(.*?)\]\(LINK-TEXT,.*?\)/)[1];
                 const linkHref = part.match(/\[.*?\]\(LINK-TEXT,(.*?)\)/)[1];
-                return <a className='link-extracted' href={linkHref} key={index}>{linkText}</a>;
+                return <a title={`read more about ${linkText}`} className='link-extracted' href={linkHref} key={index}>{linkText}</a>;
             }
             if (part.match(/\[.*?\]\(BACKGROUND-TEXT\)/)) {
                 const backgroundText = part.replace(/\[(.*?)\]\(BACKGROUND-TEXT\)/, '$1');

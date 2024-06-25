@@ -32,6 +32,11 @@
   justify-content: flex-start;
 }
 
+.left-menu-bar svg {
+  width: 80px;
+  height: 80px;
+}
+
 .text-logo {
   font-family: sf-bold;
   color: var(--text--primary);
@@ -117,6 +122,11 @@
 
   .left-menu-bar {
     width: 50%;
+  }
+
+  .left-menu-bar svg {
+    width: 60px;
+    height: 60px;
   }
 
   .middle-menu-bar {

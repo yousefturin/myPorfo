@@ -4,7 +4,7 @@ import latestImage from '../../assets/images/latest-project-image.avif'
 import SvgComponent from '../../utils/SvgComponent'
 export default function LatestProject() {
     return (
-        <section  className='latest-project-main' id='section2'>
+        <section className='latest-project-main' id='section2'>
             <div className="latest-wrapper">
                 <div className="latest-top-header">
                     <div className="latest-extra" />
@@ -24,15 +24,14 @@ export default function LatestProject() {
                             <h2>Developed with </h2>
                             <div className="latest-tools">
                                 <div className="tools-left">
-                                    <div style={{ display: "flex" }}>
+                                    <div className='tools-all-svg-in-tools' >
                                         <SvgComponent
-                                            svgKey="ReactNativeSvg"
+                                            svgKey="ReactNativeCircleSvg"
                                             width={44}
                                             height={44}
-                                            fill='var(--text--secondary)'
                                         />
                                     </div>
-                                    <div style={{ width: "30%" }}>
+                                    <div >
                                         <h3>React Native</h3>
                                     </div>
                                 </div>
@@ -43,10 +42,10 @@ export default function LatestProject() {
                                                 <div className="tools-middle-top-left">
                                                     <div style={{ display: "flex" }}>
                                                         <SvgComponent
-                                                            svgKey="ExpoSvg"
-                                                            width={24}
-                                                            height={24}
-                                                            fill='var(--text--secondary)'
+                                                            svgKey="ExpoCircleSvg"
+                                                            width={28}
+                                                            height={28}
+
                                                         />
                                                     </div>
                                                     <h3>Expo</h3>
@@ -54,10 +53,10 @@ export default function LatestProject() {
                                                 <div className="tools-middle-top-right">
                                                     <div style={{ display: "flex" }}>
                                                         <SvgComponent
-                                                            svgKey="i18nextSvg"
-                                                            width={24}
-                                                            height={24}
-                                                            fill='var(--text--secondary)'
+                                                            svgKey="i18nextCircleSvg"
+                                                            width={28}
+                                                            height={28}
+
                                                         />
                                                     </div>
 
@@ -66,26 +65,28 @@ export default function LatestProject() {
                                             </div>
                                         </div>
                                         <div className="tools-middle-bottom">
-                                            <div style={{ display: "flex" }}>
+                                            <div className='tools-all-svg-in-tools'>
                                                 <SvgComponent
-                                                    svgKey="JavaScriptSvg"
-                                                    width={24}
-                                                    height={24}
-                                                    fill='var(--text--secondary)'
+                                                    svgKey="JavaScriptCircleSvg"
+                                                    width={28}
+                                                    height={28}
                                                 />
                                             </div>
-                                            <h3>JavaScript</h3>
+                                            <div>
+
+                                                <h3>JavaScript</h3>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="tools-right">
 
-                                    <div>
+                                    <div className='tools-all-svg-in-tools'>
                                         <SvgComponent
-                                            svgKey="FirebaseSvg"
-                                            width={38}
-                                            height={38}
-                                            fill='var(--text--secondary)'
+                                            svgKey="FirebaseCircleSvg"
+                                            width={44}
+                                            height={44}
+
                                         />
                                     </div>
                                     <div>

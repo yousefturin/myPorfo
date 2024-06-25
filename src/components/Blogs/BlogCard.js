@@ -26,7 +26,7 @@ export default function BlogCard({ imageURL, cardTitle, cardDescription, cardLin
                 <div className="blog-info-wrapper">
                     <h2>{cardTitle}</h2>
                     <p>{cardDescription}</p>
-                    <Link className='mini-card-blog' to={`/blog/${cardLink}`}>
+                    <Link className='mini-card-blog' to={`/blog/${cardLink}`} title={`go to read about ${cardTitle}`}>
                         <button className={`btn-mini-card-goto-blog ${isHovered ? 'card-effect-over-for-btn-go-to-blog' : ''}`} title='button goto project'>
                             Read More
                             <SvgComponent

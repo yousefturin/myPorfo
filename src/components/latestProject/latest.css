@@ -97,19 +97,20 @@
 .latest-tools {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    gap: 0.2rem;
     align-items: center;
     width: 100%;
     height: 10vh;
 }
 
 .tools-left {
-    width: 32%;
+    width: 24%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 0.5rem;
+    flex-direction: column;
     background: var(--bg--tertiary);
     border-radius: 0.75rem;
 }
@@ -118,7 +119,7 @@
     width: 24%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     background: var(--bg--tertiary);
@@ -160,7 +161,7 @@
 
 .tools-middle-top {
     width: 100%;
-    height: 49%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +172,7 @@
     background: var(--bg--tertiary);
     border-radius: 0.563rem;
     width: 100%;
-    height: 49%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,16 +296,9 @@
     .tools-middle,
     .tools-right {
         width: auto;
-        /* margin-bottom: 0.2rem; */
+        flex-direction: row;
         border-radius: 0.4rem;
-    }
-
-    .tools-left {
-        margin-bottom: 0.2rem;
-    }
-
-    .tools-right {
-        margin-top: 0.2rem;
+        justify-content: flex-start;
     }
 
     .tools-middle-top-left,
@@ -330,6 +324,20 @@
         transition: var(--transition-normal);
         font-family: sf-regular;
     }
+    .tools-all-svg-in-tools {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tools-middle-bottom{
+        justify-content: flex-start;
+        gap:0
+    }
+    .tools-all-svg-in-tools svg{
+        width: 44px;
+        height: 44px;
+    }
 
     .btn-wrapper svg {
         scale: 1;
@@ -345,6 +353,9 @@
         display: block;
     }
 
+
+
+
     .latest-wrapper {
         margin-inline: 3rem;
     }
@@ -357,25 +368,10 @@
         font-size: 2rem;
     }
 
-    /* .latest-right {
-        width: auto;
-        height: auto;
-        position: absolute;
-        z-index: -1;
-        left: 2rem;
-    } */
-
     .latest-right img {
         height: 68vh;
         margin: 0;
     }
-
-    /* .latest-left {
-        width: 40%;
-        height: auto;
-        position: absolute;
-        right: 2rem;
-    } */
 
     .latest-left h1 {
         font-size: 2rem;
@@ -403,7 +399,7 @@
     .tools-middle,
     .tools-right {
         width: auto;
-        margin-bottom: 0.2rem;
+        flex-direction: row;
     }
 
     .tools-middle-top {

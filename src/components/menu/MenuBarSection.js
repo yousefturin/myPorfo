@@ -9,8 +9,11 @@ const MenuBarSection = ({ btnDownloadCVPopUpRef }) => {
         <section className='menu-bar'>
             <div className="menu-wrapper">
                 <div className="left-menu-bar">
-                    <p style={{ fontSize: 22, paddingRight: 5 }}>👋🏼 </p>
-                    <p className='text-logo'> Hi, Yusef</p>
+                    <SvgComponent
+                        svgKey="APPLOGO"
+                        width={60}
+                        height={60}
+                    />
                 </div>
                 <div className="middle-menu-bar">
                     {/* <p>About</p>
