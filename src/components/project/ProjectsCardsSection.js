@@ -106,7 +106,7 @@ const ProjectsCardsSection = ({ projectSectionRef }) => {
     return (
         <section ref={projectSectionRef} className='project-cards-main'>
             <div className="project-cards-wrapper">
-                <div>
+                <div className='header-project-cards'>
                     <h1>Projects I worked.</h1>
                 </div>
 
