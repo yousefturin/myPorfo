@@ -15,9 +15,7 @@
     font-family: sf-bold;
 }
 
-.faq-item p {
-    font-size: 0rem;
-}
+
 
 .faq-list {
     border-top: 1px solid var(--bg--tertiary);
@@ -47,6 +45,7 @@
     overflow: hidden;
     font-size: 1rem;
     padding: 0;
+    margin: 0;
     color: #555;
     transition: max-height 0.7s ease, padding 0.7s ease;
 }
