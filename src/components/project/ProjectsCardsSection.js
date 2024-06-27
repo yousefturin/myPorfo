@@ -9,11 +9,20 @@ import image4 from "../../assets/images/project-image-4.avif"
 import image5 from "../../assets/images/project-image-5.avif"
 import image6 from "../../assets/images/project-image-6.avif"
 import image7 from "../../assets/images/project-image-7.avif"
+import image8 from "../../assets/images/project-image-8.webp"
 const ProjectsCardsSection = ({ projectSectionRef }) => {
     const [offset, setOffset] = useState(0);
     const [cardWidth, setCardWidth] = useState(0);
     const cardsContainerRef = useRef(null);
     const cards = [
+        {
+            image: image8,
+            title: 'Normalize Size.',
+            description: 'React-Native, Npm package',
+            link: 'https://www.npmjs.com/package/react-native-normalized-size',
+            source: 'react-native-normalized',
+            log: 'NpmSvg',
+        },
         {
             image: image7,
             title: 'Svg render.',
