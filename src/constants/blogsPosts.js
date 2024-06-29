@@ -184,6 +184,248 @@ const blogPost = [
                 "content": "Check out the [react-native-svg-rendo](LINK-TEXT,https://www.npmjs.com/package/react-native-svg-rendo) documentation for a ready package to load SVG."
             },
         ]
+    },
+    {
+        "id": 2,
+        "imageURL": "blog-Id-2.webp",
+        "link": "how-to-create-responsive-elements-in-react-native",
+        "title": "How to create responsive elements in React-Native",
+        "description": "In this article, we will learn how to create responsive elements in React-Native.",
+        "content": [{
+            "type": "date",
+            "content": "2024-06-29"
+        },
+        {
+            "type": "title",
+            "content": "How to Create Responsive Elements in React Native"
+        },
+        {
+            "type": "header",
+            "content": "Introduction"
+        },
+        {
+            "type": "paragraph",
+            "content": "Creating responsive elements in React Native is crucial for ensuring your application looks great on a variety of devices. In this article, I'll share tips and best practices for building responsive elements that adapt to different screen sizes and orientations using the [Dimensions](BACKGROUND-TEXT) method from React Native."
+        },
+        {
+            "type": "header",
+            "content": "Setting Up the Utility Function"
+        },
+        {
+            "type": "paragraph",
+            "content": "First, let's create a utility function for making elements responsive. Start by creating a directory named [utils](BOLD-TEXT), and within that directory, create a file called [NormalizedSize.js](BOLD-TEXT)."
+        },
+        {
+            "type": "header",
+            "content": "Importing Dimensions"
+        },
+        {
+            "type": "paragraph",
+            "content": "We need to import the [Dimensions](BOLD-TEXT) method from React Native. To avoid passing [Dimensions](BOLD-TEXT) every time we call the function, we'll import it directly into our utility function:"
+        },
+        {
+            "type": "code",
+            "content": `import { Dimensions } from 'react-native';`
+        },
+        {
+            "type": "header",
+            "content": "Defining Base Guidelines"
+        },
+        {
+            "type": "paragraph",
+            "content": "Next, define the base guidelines for width and height. These standards are based on a ~5' screen mobile device:"
+        },
+        {
+            "type": "code",
+            "content": `function normalizedSize() {
+                    const { width, height } = Dimensions.get('window');
+                    const guidelineBaseWidth = 350;
+                    const guidelineBaseHeight = 680;
+                    //...
+                  }`
+        },
+        {
+            "type": "header",
+            "content": "Creating Scaling Methods"
+        },
+        {
+            "type": "header",
+            "content": "Horizontal Scaling"
+        },
+        {
+            "type": "paragraph",
+            "content": "We'll create a method to scale a given size based on the device width. The width from [Dimensions](BOLD-TEXT) returns the current width size of the used screen. Here's the algorithm for horizontal scaling:"
+        },
+        {
+            "type": "code",
+            "content": `scale = (device width / guideline base width) * given size`
+        },
+        {
+            "type": "paragraph",
+            "content": "For instance, scaling the number '18' on an iPhone 11 (width of 414px):"
+        },
+        {
+            "type": "code",
+            "content": `scale = (414 / 350) * 18 ≈ 21`
+        },
+        {
+            "type": "paragraph",
+            "content": "In code, the method looks like this:"
+        },
+        {
+            "type": "code",
+            "content": `const scale = size => width / guidelineBaseWidth * size;`
+        },
+        {
+            "type": "header",
+            "content": "Vertical Scaling"
+        },
+        {
+            "type": "paragraph",
+            "content": "Similarly, we'll create a method for vertical scaling based on the device height. Using the same iPhone 11 (height of 896px):"
+        },
+        {
+            "type": "code",
+            "content": `vertical scale = (device height / guideline base height) * given size`
+        },
+        {
+            "type": "paragraph",
+            "content": "For instance, scaling the number '18' vertically:"
+        },
+        {
+            "type": "code",
+            "content": "vertical scale = (896 / 680) * 18 ≈ 24"
+        },
+        {
+            "type": "paragraph",
+            "content": "In code, the method looks like this:"
+        },
+        {
+            "type": "code",
+            "content": "const verticalScale = size => height / guidelineBaseHeight * size;"
+        },
+        {
+            "type": "header",
+            "content": "Creating the Normalized Scale Method"
+        },
+        {
+            "type": "paragraph",
+            "content": "Finally, we'll create a method that provides the best results for responsive scaling across different devices. This method, [normalizedScale](BOLD-TEXT), will take a number to scale, a factor (default is 0.5), and an orientation for scaling."
+        },
+        {
+            "type": "header",
+            "content": "Horizontal Orientation"
+        },
+        {
+            "type": "paragraph",
+            "content": "For a horizontal orientation, using an iPhone 11 and iPad Pro as examples:"
+        },
+        {
+            "type": "code",
+            "content": "normalized scale = given size + ((device width / guideline base width * given size) - given size) * factor"
+        },
+        {
+            "type": "header",
+            "content": "iPhone 11:"
+        },
+        {
+            "type": "code",
+            "content": "normalized scale = 18 + ((414 / 350 * 18) - 18) * 0.5 ≈ 19"
+        },
+        {
+            "type": "header",
+            "content": "iPad Pro:"
+        },
+        {
+            "type": "code",
+            "content": "normalized scale = 18 + ((1024 / 350 * 18) - 18) * 0.5 ≈ 35"
+        },
+        {
+            "type": "header",
+            "content": "Vertical Orientation"
+        },
+        {
+            "type": "paragraph",
+            "content": "For a vertical orientation:"
+        },
+        {
+            "type": "code",
+            "content": "normalized scale = given size + ((device height / guideline base height * given size) - given size) * factor"
+        },
+        {
+            "type": "header",
+            "content": "iPhone 11:"
+        },
+        {
+            "type": "code",
+            "content": "normalized scale = 18 + ((896 / 680 * 18) - 18) * 0.5 ≈ 20"
+        },
+        {
+            "type": "header",
+            "content": "iPad Pro:"
+        },
+        {
+            "type": "code",
+            "content": "normalized scale = 18 + ((1366 / 680 * 18) - 18) * 0.5 ≈ 27"
+        },
+        {
+            "type": "paragraph",
+            "content": "In code, the method looks like this:"
+        },
+        {
+            "type": "code",
+            "content": `import { Dimensions } from 'react-native';
+
+            function normalizedSize(inputSize, factor = 0.5, orientation = "horizontal") {
+              const { width, height } = Dimensions.get('window');
+            
+              const guidelineBaseWidth = 350;
+              const guidelineBaseHeight = 680;
+            
+              const scale = size => width / guidelineBaseWidth * size;
+              const verticalScale = size => height / guidelineBaseHeight * size;
+            
+              if (orientation === "vertical") {
+                return inputSize + (verticalScale(inputSize) - inputSize) * factor;
+              }
+            
+              return inputSize + (scale(inputSize) - inputSize) * factor;
+            }
+            
+            export default normalizedSize;
+            `
+        },
+        {
+            "type": "header",
+            "content": "Using the Utility Function"
+        },
+        {
+            "type": "paragraph",
+            "content": "Now, you can use this function to create responsive elements in your React Native application:"
+        },
+        {
+            "type": "code",
+            "content": `import { SafeAreaView, Text } from 'react-native';
+            import React from 'react';
+            import normalizedSize from '../utils/normalizedSize';
+            
+            const App = () => {
+              return (
+                <SafeAreaView>
+                  <Text style={{ fontSize: normalizedSize(20) }}>Hello World!</Text>
+                </SafeAreaView>
+              );
+            };
+            
+            export default App;
+            
+            `
+        },
+        {
+            "type": "paragraph",
+            "content": "By following these steps, you can ensure your React Native application looks great on any device, providing a consistent and responsive user experience. If you are interested you can check the [react-native-normalized-size](LINK-TEXT,https://www.npmjs.com/package/react-native-normalized-size) package for a ready solution."
+        }
+        ]
     }
 ]
 export default blogPost;
