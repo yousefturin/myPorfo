@@ -19,7 +19,7 @@ const BlogPost = () => {
                 return <p className="paragraph" key={index}>{renderParagraph(item.content)}</p>;
             case 'code':
                 // Trim leading spaces to normalize indentation
-                const normalizedCode = item.content.trim().replace(/^\s+/gm, '');
+                const normalizedCode = item.content
                 return (
                     <div className='code-wrapper' key={index}>
                         <pre className="code"><code>{normalizedCode}</code></pre>
