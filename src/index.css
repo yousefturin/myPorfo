@@ -16,17 +16,64 @@
   --text--quaternary: #8d8c8c;
   --text--quinary: #bebdbd;
   --text-footer: #8a8a8a;
+  --text-footer-bottom: #c8c8c8;
 
   --btn--primary: #f0f6fc;
   --btn-secondary: #4a4a4a;
   --btn-primary-hover: #e3f9df;
 
-
+  --cards-shadow: rgba(0, 0, 0, 0.5);
   --transition-slow: all 0.9s ease;
   --transition-normal: all 0.6s ease;
   --transition-fast: all 0.4s ease;
   --menu-primary-color: #05050561;
   --menu-secondary-color: #ffffff1c;
+
+  --form-label-color: #686868;
+  --notification-time-color: #388e3c;
+  --faq-answer-color: #555;
+  --blog-post-primary: #f5f5f5;
+
+  --blog-time-reading-color: #888;
+}
+
+/* (TODO): fix the theme colors, there are too many incorrect colors across the app. */
+
+[data-theme='light'] {
+  --bg: #ffffff;
+  --bg--secondary: #f5f5f5;
+  --bg--tertiary: #e0e0e0;
+  --bg--quaternary: rgba(158, 158, 158, 0.121);
+  --bd--quinary: rgba(0, 0, 0, 0.067);
+  --color-main--primary: #79b50f;
+  --color-main--secondary: #679c0d;
+  --color-main--tertiary: #78b50f8b;
+  --color-main--tertiary-outline: #e6ffba5c;
+
+  --text--primary: #000000;
+  --text--sub-primary: #222222;
+  --text--secondary: #444444;
+  --text--tertiary: #666666;
+  --text--quaternary: #888888;
+  --text--quinary: #aaaaaa;
+  --text-footer: #cccccc;
+  --cards-shadow: rgba(255, 255, 255, 0.5);
+  --btn--primary: #050505;
+  --btn-secondary: #cccccc;
+  --btn-primary-hover: #323a30;
+
+  --transition-slow: all 0.9s ease;
+  --transition-normal: all 0.6s ease;
+  --transition-fast: all 0.4s ease;
+  --menu-primary-color: #ffffff61;
+  --menu-secondary-color: #0000001c;
+
+  --form-label-color: #686868;
+  --notification-time-color: #388e3c;
+  --faq-answer-color: #1b1b1b;
+  --blog-post-primary: #050505;
+
+  --blog-time-reading-color: #888;
 
 }
 
@@ -114,10 +161,6 @@ body {
 
 ::-webkit-scrollbar {
   width: 0.001em;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
