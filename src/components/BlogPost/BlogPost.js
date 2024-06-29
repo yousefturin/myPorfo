@@ -3,10 +3,16 @@ import './BlogPost.css'; // Import CSS module for styles
 import { useParams } from 'react-router-dom';
 import blogPosts from '../../constants/blogsPosts';
 import { Helmet } from 'react-helmet';
+import Prism from 'prismjs';
+import './prism-vsc-dark-plus.css'
 
 const BlogPost = () => {
     const { postId } = useParams();
     const blogContent = blogPosts.find(post => post.link === postId);
+
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
 
     // Function to render content based on type
     const renderContent = (item, index) => {
@@ -22,7 +28,7 @@ const BlogPost = () => {
                 const normalizedCode = item.content
                 return (
                     <div className='code-wrapper' key={index}>
-                        <pre className="code"><code>{normalizedCode}</code></pre>
+                        <pre><code className={`language-${item.lang}`}>{normalizedCode}</code></pre>
                     </div>
                 );
             default:

@@ -40,6 +40,7 @@ const blogPost = [
             },
             {
                 "type": "code",
+                "lang": "bash",
                 "content": `npm install react-native-svg`
             },
             {
@@ -48,6 +49,7 @@ const blogPost = [
             },
             {
                 "type": "code",
+                "lang": "javascript",
                 "content":
 `// App.js
 import React from 'react';
@@ -88,6 +90,7 @@ export default App;`
             },
             {
                 "type": "code",
+                "lang": "javascript",
                 "content": 
 `import { SvgXml } from "react-native-svg";
 import svgData from "../../assets/images/SVG/SvgStorage";
@@ -121,6 +124,7 @@ export default function SvgComponent({ svgKey, width, height, fill, stroke, stro
             },
             {
                 "type": "code",
+                "lang": "javascript",
                 "content": 
 `const svgData = {
 
@@ -149,6 +153,7 @@ export default svgData; `
             },
             {
                 "type": "code",
+                "lang": "javascript",
                 "content": 
 `// App.js
 import React from 'react';
@@ -224,6 +229,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "javascript",
             "content": `import { Dimensions } from 'react-native';`
         },
         {
@@ -236,6 +242,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "javascript",
             "content":
 `function normalizedSize() {
     const { width, height } = Dimensions.get('window');
@@ -258,6 +265,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "md",
             "content": `scale = (device width / guideline base width) * given size`
         },
         {
@@ -266,6 +274,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "md",
             "content": `scale = (414 / 350) * 18 ≈ 21`
         },
         {
@@ -274,6 +283,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "javascript",
             "content": `const scale = size => width / guidelineBaseWidth * size;`
         },
         {
@@ -286,6 +296,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "md",
             "content": `vertical scale = (device height / guideline base height) * given size`
         },
         {
@@ -294,6 +305,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "md",
             "content": "vertical scale = (896 / 680) * 18 ≈ 24"
         },
         {
@@ -302,6 +314,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "javascript",
             "content": "const verticalScale = size => height / guidelineBaseHeight * size;"
         },
         {
@@ -322,6 +335,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "md",
             "content": "normalized scale = given size + ((device width / guideline base width * given size) - given size) * factor"
         },
         {
@@ -330,6 +344,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "md",
             "content": "normalized scale = 18 + ((414 / 350 * 18) - 18) * 0.5 ≈ 19"
         },
         {
@@ -338,6 +353,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "md",
             "content": "normalized scale = 18 + ((1024 / 350 * 18) - 18) * 0.5 ≈ 35"
         },
         {
@@ -350,6 +366,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "md",
             "content": "normalized scale = given size + ((device height / guideline base height * given size) - given size) * factor"
         },
         {
@@ -358,6 +375,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "md",
             "content": "normalized scale = 18 + ((896 / 680 * 18) - 18) * 0.5 ≈ 20"
         },
         {
@@ -366,6 +384,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "md",
             "content": "normalized scale = 18 + ((1366 / 680 * 18) - 18) * 0.5 ≈ 27"
         },
         {
@@ -374,6 +393,7 @@ export default App;`
         },
         {
             "type": "code",
+            "lang": "javascript",
             "content": 
 `import { Dimensions } from 'react-native';
 
@@ -405,6 +425,7 @@ export default normalizedSize;`
         },
         {
             "type": "code",
+            "lang": "javascript",
             "content": 
 `import { SafeAreaView, Text } from 'react-native';
 import React from 'react';
