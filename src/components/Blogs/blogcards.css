@@ -33,7 +33,7 @@
     left: 0;
     width: 300px;
     height: 70%;
-    box-shadow: inset 119px 0 65px -42px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 119px 0 65px -42px var(--cards-shadow);
     pointer-events: none;
     z-index: 1;
 }
@@ -213,7 +213,7 @@
         min-width: 280px;
         max-width: 263px;
         height: 450px;
-        background: #272727;
+        background: var(--bg--tertiary);
         border-radius: 19px;
         overflow: hidden;
         margin-top: 3rem;
@@ -236,7 +236,7 @@
         left: 0;
         width: 60px;
         height: 70%;
-        box-shadow: inset 74px 0 37px -53px rgba(0, 0, 0, 0.50);
+        box-shadow: inset 74px 0 37px -53px var(--cards-shadow);
         pointer-events: none;
         z-index: 1;
     }

@@ -32,7 +32,7 @@ export default function FooterSection() {
                             svgKey="GitHubSVG"
                             width={24}
                             height={24}
-                            fill="white"
+                            fill="var(--text--primary)"
                             title='github icon'
                         />
                     </a>
@@ -41,7 +41,7 @@ export default function FooterSection() {
                             svgKey="LinkedInSGV"
                             width={24}
                             height={24}
-                            fill="white"
+                            fill="var(--text--primary)"
                             title='linkedin icon'
                         />
                     </a>

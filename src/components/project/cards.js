@@ -29,8 +29,8 @@ export default function Card({ cardImage, cardTitle, cardDescription, cardLink, 
                                 svgKey={cardLogo}
                                 width={16}
                                 height={16}
-                                fill="white"
-                                stroke='white'
+                                fill="var(--text--primary)"
+                                stroke="var(--text--primary)"
                             />
                             {cardSource}
                         </button>

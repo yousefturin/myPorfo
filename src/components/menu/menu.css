@@ -61,12 +61,12 @@
   transition: var(--transition-normal);
 }
 
-.middle-menu-bar p:hover {
+/* .middle-menu-bar p:hover {
   color: var(--color-main--primary);
   transform: scale(1.1);
   cursor: pointer;
   background-color: #f2ffff;
-}
+} */
 
 .right-menu-bar {
   width: 25%;

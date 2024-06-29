@@ -33,8 +33,8 @@ const HeroSection = ({ scrollToProjects }) => {
                                 svgKey={isDownloaded === true ? "DownloadDoneSvg" : "DownloadSvg"}
                                 width={16}
                                 height={16}
-                                fill={isDownloaded === true ? "none" : "white"}
-                                stroke='#050505'
+                                fill={isDownloaded === true ? "none" : "var(--text--primary)"}
+                                stroke='var(--bg)'
                                 title='download CV icon'
                                 strokeWidth={3}
                             />
@@ -46,8 +46,8 @@ const HeroSection = ({ scrollToProjects }) => {
                                 svgKey={"ArrowRightDownSvg"}
                                 width={16}
                                 height={16}
-                                fill={isDownloaded === true ? "none" : "white"}
-                                stroke='white'
+                                fill={isDownloaded === true ? "none" : "var(--text--primary)"}
+                                stroke='var(--text--primary)'
                                 title='download CV icon'
                                 strokeWidth={3}
                             />

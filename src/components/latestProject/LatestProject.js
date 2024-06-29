@@ -103,7 +103,7 @@ export default function LatestProject() {
                                         svgKey="GitHubSVG"
                                         width={18}
                                         height={18}
-                                        fill="black"
+                                        fill="var(--bg)"
                                     />
                                     Source Code
                                 </a>

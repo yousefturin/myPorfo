@@ -10,7 +10,7 @@
 }
 
 .footer-main p {
-    color: #8a8a8a;
+    color: var(--text-footer);
 }
 
 .footer-contact-icons button {
@@ -56,7 +56,7 @@
 }
 
 .footer-bottom p {
-    color: #c8c8c8;
+    color: var(--text-footer-bottom);
     font-size: 0.7rem;
     margin: auto;
     padding-top: 1rem;
