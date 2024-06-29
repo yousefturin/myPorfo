@@ -48,28 +48,27 @@ const blogPost = [
             },
             {
                 "type": "code",
-                "content": `
-                // App.js
-                import React from 'react';
-                import { View } from 'react-native';
-                import { Svg, Path } from 'react-native-svg';
+                "content":
+`// App.js
+import React from 'react';
+import { View } from 'react-native';
+import { Svg, Path } from 'react-native-svg';
 
-                const MySvgComponent = () => (
-                    <Svg width="100" height="100" viewBox="0 0 100 100">
-                        <Path d="M10 10 H 90 V 90 H 10 Z" fill="none" stroke="black" />
-                    </Svg>
-                );
+    const MySvgComponent = () => (
+        <Svg width="100" height="100" viewBox="0 0 100 100">
+            <Path d="M10 10 H 90 V 90 H 10 Z" fill="none" stroke="black" />
+        </Svg>
+    );
 
-                const App = () => {
-                    return (
-                        <View>
-                            <MySvgComponent />
-                        </View>
-                    );
-                };
+    const App = () => {
+        return (
+            <View>
+                <MySvgComponent />
+            </View>
+        );
+    };
 
-                export default App;
-                `
+export default App;`
             },
             {
                 "type": "paragraph",
@@ -89,28 +88,28 @@ const blogPost = [
             },
             {
                 "type": "code",
-                "content": `import { SvgXml } from "react-native-svg";
-                import svgData from "../../assets/images/SVG/SvgStorage";
+                "content": 
+`import { SvgXml } from "react-native-svg";
+import svgData from "../../assets/images/SVG/SvgStorage";
                 
-                /**
-                 * Renders an SVG component based on the provided parameters.
-                 *
-                 * @param {Object} props - The props object containing the following properties:
-                 * @param {string} props.svgKey - The key to identify the SVG markup in the svgData object.
-                 * @param {number} props.width - The width of the SVG component.
-                 * @param {number} props.height - The height of the SVG component.
-                 * @param {string} props.fill - The fill color of the SVG component.
-                 * @param {string} props.stroke - The stroke color of the SVG component.
-                 * @param {number} props.strokeWidth - The stroke width of the SVG component.
-                 * @returns {JSX.Element} - The rendered SVG component.
-                 */
-                export default function SvgComponent({ svgKey, width, height, fill, stroke, strokeWidth }) {
-                    const svgMarkup = svgData[svgKey];
-                    const svgProps = { width, height, fill, stroke, strokeWidth };
+/**
+ * Renders an SVG component based on the provided parameters.
+ *
+ * @param {Object} props - The props object containing the following properties:
+ * @param {string} props.svgKey - The key to identify the SVG markup in the svgData object.
+ * @param {number} props.width - The width of the SVG component.
+ * @param {number} props.height - The height of the SVG component.
+ * @param {string} props.fill - The fill color of the SVG component.
+ * @param {string} props.stroke - The stroke color of the SVG component.
+ * @param {number} props.strokeWidth - The stroke width of the SVG component.
+ * @returns {JSX.Element} - The rendered SVG component.
+ */
+export default function SvgComponent({ svgKey, width, height, fill, stroke, strokeWidth }) {
+    const svgMarkup = svgData[svgKey];
+    const svgProps = { width, height, fill, stroke, strokeWidth };
                 
-                    return <SvgXml xml={svgMarkup} {...svgProps} />;
-                }
-                `
+        return <SvgXml xml={svgMarkup} {...svgProps} />;
+}`
             },
             {
                 "type": "header",
@@ -122,18 +121,19 @@ const blogPost = [
             },
             {
                 "type": "code",
-                "content": `const svgData = {
+                "content": 
+`const svgData = {
 
-                    HomeSVG: <Svg viewBox="0 0 100 100">
-                    <Path d="M10 10 H 90 V 90 H 10 Z" />
-                </Svg>,
+    HomeSVG: '<Svg viewBox="0 0 100 100">
+                <Path d="M10 10 H 90 V 90 H 10 Z" />
+             </Svg>',
 
-                ChatSVG: <Svg viewBox="0 0 100 100">
-                    <Path d="M10 10 H 90 V 90 H 10 Z" />
-                </Svg>,
+    ChatSVG: '<Svg viewBox="0 0 100 100">
+                <Path d="M10 10 H 90 V 90 H 10 Z" />
+             </Svg>',
             }
                   
-                  export default svgData; `
+export default svgData; `
             },
             {
                 "type": "paragraph",
@@ -149,23 +149,22 @@ const blogPost = [
             },
             {
                 "type": "code",
-                "content": `// App.js
-                import React from 'react';
-                import { View } from 'react-native';
-                import SvgComponent from '../../utils/SvgComponents'
+                "content": 
+`// App.js
+import React from 'react';
+import { View } from 'react-native';
+import SvgComponent from '../../utils/SvgComponents'
+
+const App = () => {
+    return (
+    <View>
+        <SvgComponent svgKey="HomeSVG" width={60)} 
+            height={60} stroke={"#fff"} />
+    </View>
+    );
+};
                 
-                
-                
-                const App = () => {
-                  return (
-                    <View>
-                      <SvgComponent svgKey="HomeSVG" width={60)} 
-                          height={60} stroke={"#fff"} />
-                    </View>
-                  );
-                };
-                
-                export default App;`
+export default App;`
             },
             {
                 "type": "header",
@@ -237,12 +236,13 @@ const blogPost = [
         },
         {
             "type": "code",
-            "content": `function normalizedSize() {
-                    const { width, height } = Dimensions.get('window');
-                    const guidelineBaseWidth = 350;
-                    const guidelineBaseHeight = 680;
-                    //...
-                  }`
+            "content":
+`function normalizedSize() {
+    const { width, height } = Dimensions.get('window');
+    const guidelineBaseWidth = 350;
+    const guidelineBaseHeight = 680;
+    //...
+}`
         },
         {
             "type": "header",
@@ -374,26 +374,26 @@ const blogPost = [
         },
         {
             "type": "code",
-            "content": `import { Dimensions } from 'react-native';
+            "content": 
+`import { Dimensions } from 'react-native';
 
-            function normalizedSize(inputSize, factor = 0.5, orientation = "horizontal") {
-              const { width, height } = Dimensions.get('window');
+    function normalizedSize(inputSize, factor = 0.5, orientation = "horizontal") {
+        const { width, height } = Dimensions.get('window');
             
-              const guidelineBaseWidth = 350;
-              const guidelineBaseHeight = 680;
+        const guidelineBaseWidth = 350;
+        const guidelineBaseHeight = 680;
             
-              const scale = size => width / guidelineBaseWidth * size;
-              const verticalScale = size => height / guidelineBaseHeight * size;
+        const scale = size => width / guidelineBaseWidth * size;
+        const verticalScale = size => height / guidelineBaseHeight * size;
             
-              if (orientation === "vertical") {
-                return inputSize + (verticalScale(inputSize) - inputSize) * factor;
-              }
+        if (orientation === "vertical") {
+            return inputSize + (verticalScale(inputSize) - inputSize) * factor;
+        }
             
-              return inputSize + (scale(inputSize) - inputSize) * factor;
-            }
+        return inputSize + (scale(inputSize) - inputSize) * factor;
+    }
             
-            export default normalizedSize;
-            `
+export default normalizedSize;`
         },
         {
             "type": "header",
@@ -405,21 +405,20 @@ const blogPost = [
         },
         {
             "type": "code",
-            "content": `import { SafeAreaView, Text } from 'react-native';
-            import React from 'react';
-            import normalizedSize from '../utils/normalizedSize';
+            "content": 
+`import { SafeAreaView, Text } from 'react-native';
+import React from 'react';
+import normalizedSize from '../utils/normalizedSize';
             
-            const App = () => {
-              return (
-                <SafeAreaView>
-                  <Text style={{ fontSize: normalizedSize(20) }}>Hello World!</Text>
-                </SafeAreaView>
-              );
-            };
+    const App = () => {
+        return (
+            <SafeAreaView>
+                <Text style={{ fontSize: normalizedSize(20) }}>Hello World!</Text>
+            </SafeAreaView>
+        );
+    };
             
-            export default App;
-            
-            `
+export default App;`
         },
         {
             "type": "paragraph",
