@@ -10,10 +10,6 @@ const BlogPost = () => {
     const { postId } = useParams();
     const blogContent = blogPosts.find(post => post.link === postId);
 
-    React.useEffect(() => {
-        Prism.highlightAll();
-    }, []);
-
     // Function to render content based on type
     const renderContent = (item, index) => {
         switch (item.type) {
@@ -24,12 +20,8 @@ const BlogPost = () => {
             case 'paragraph':
                 return <p className="paragraph" key={index}>{renderParagraph(item.content)}</p>;
             case 'code':
-                // Trim leading spaces to normalize indentation
-                const normalizedCode = item.content
                 return (
-                    <div className='code-wrapper' key={index}>
-                        <pre><code className={`language-${item.lang}`}>{normalizedCode}</code></pre>
-                    </div>
+                    <CodeBlock key={index} code={item.content} language={item.lang} />
                 );
             default:
                 return null;
@@ -108,4 +100,20 @@ const BlogPost = () => {
     );
 };
 
+const CodeBlock = ({ code, language }) => {
+    // ref is needed otherwise all texts will be highlighted
+    const codeRef = React.useRef(null);
+
+    React.useEffect(() => {
+        if (codeRef.current) {
+            Prism.highlightElement(codeRef.current);
+        }
+    }, []);
+
+    return (
+        <div className='code-wrapper'>
+            <pre><code ref={codeRef} className={`language-${language}`}>{code}</code></pre>
+        </div>
+    );
+};
 export default BlogPost;

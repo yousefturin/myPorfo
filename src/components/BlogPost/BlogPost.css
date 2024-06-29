@@ -114,23 +114,24 @@
     overflow-x: auto;
 }
 
-pre[class*="language-"] {
-    background-color: var(--bg--secondary);
-    /* Dark background for code blocks */
+Pre[class*="language-"] {
+    display: block; /* Flex is not necessary for a code block */
+    background-color: var(--bg--secondary); /* Dark background for code blocks */
     padding: 2rem;
     border-radius: 5px;
     font-size: 0.9rem;
     line-height: 1.6;
-    color: var(--blog-post-primary);
-    /* Light color for code text */
-    border: 1px solid var(--bg--tertiary);
-    /* Border color */
+    color: var(--blog-post-primary); /* Light color for code text */
+    border: 1px solid var(--bg--tertiary); /* Border color */
     margin-bottom: 24px;
     font-family: monospace;
-    overflow-x: auto;
-    /* Ensures code block handles overflow within the wrapper */
-    white-space: pre-wrap;
-    /* Prevents wrapping of code */
+    overflow-x: auto; /* Ensures code block handles overflow within the wrapper */
+    white-space: pre-wrap !important; /* Prevents wrapping of code */
+}
+code[class*="language-"] {
+    display: block; /* Flex is not necessary for a code block */
+    overflow-x: auto; /* Ensures code block handles overflow within the wrapper */
+    white-space: pre-wrap !important; /* Prevents wrapping of code */
 }
 
 @media only screen and (max-width: 767px) {
@@ -155,9 +156,8 @@ pre[class*="language-"] {
         font-size: 0.8rem;
     }
 
-    .code {
-        padding: 1rem;
-        font-size: 0.8rem;
+    pre[class*="language-"] {
+        font-size: 0.8rem !important;
     }
 }
 
@@ -182,8 +182,7 @@ pre[class*="language-"] {
         font-size: 0.9rem;
     }
 
-    .code {
-        padding: 1.5rem;
-        font-size: 0.85rem;
+    code[class*="language-"] {
+        font-size: 0.85rem !important;
     }
 }
