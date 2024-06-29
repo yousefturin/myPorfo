@@ -42,7 +42,7 @@ const BlogsCardSection = () => {
     return (
         <section className='blog-cards-main'>
             <div className="blog-cards-wrapper">
-                <div>
+                <div className='header-blog-cards'>
                     <h1>Blogs.</h1>
                 </div>
 
