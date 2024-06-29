@@ -243,7 +243,7 @@
         /* top: 0; */
         left: 0;
         width: 60px;
-        height: 70%;
+        height: 600px;
         box-shadow: inset 74px 0 37px -53px var(--cards-shadow);
         pointer-events: none;
         z-index: 1;
