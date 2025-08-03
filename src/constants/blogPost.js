@@ -1,10 +1,4 @@
-
-// Bold Text : [ward](BOLD-TEXT)
-// Link Text : [here](LINK-TEXT,https://www.example.com) 
-// Background Text : [background](BACKGROUND-TEXT) 
-
-
-const blogPost = [
+const BlogPosts = [
     {
         "id": 1,
         "imageURL": "blog-Id-1.webp",
@@ -51,7 +45,7 @@ const blogPost = [
                 "type": "code",
                 "lang": "javascript",
                 "content":
-`// App.js
+                    `// App.js
 import React from 'react';
 import { View } from 'react-native';
 import { Svg, Path } from 'react-native-svg';
@@ -91,8 +85,8 @@ export default App;`
             {
                 "type": "code",
                 "lang": "javascript",
-                "content": 
-`import { SvgXml } from "react-native-svg";
+                "content":
+                    `import { SvgXml } from "react-native-svg";
 import svgData from "../../assets/images/SVG/SvgStorage";
                 
 /**
@@ -125,8 +119,8 @@ export default function SvgComponent({ svgKey, width, height, fill, stroke, stro
             {
                 "type": "code",
                 "lang": "javascript",
-                "content": 
-`const svgData = {
+                "content":
+                    `const svgData = {
 
     HomeSVG: '<Svg viewBox="0 0 100 100">
                 <Path d="M10 10 H 90 V 90 H 10 Z" />
@@ -154,8 +148,8 @@ export default svgData; `
             {
                 "type": "code",
                 "lang": "javascript",
-                "content": 
-`// App.js
+                "content":
+                    `// App.js
 import React from 'react';
 import { View } from 'react-native';
 import SvgComponent from '../../utils/SvgComponents'
@@ -244,7 +238,7 @@ export default App;`
             "type": "code",
             "lang": "javascript",
             "content":
-`function normalizedSize() {
+                `function normalizedSize() {
     const { width, height } = Dimensions.get('window');
     const guidelineBaseWidth = 350;
     const guidelineBaseHeight = 680;
@@ -394,8 +388,8 @@ export default App;`
         {
             "type": "code",
             "lang": "javascript",
-            "content": 
-`import { Dimensions } from 'react-native';
+            "content":
+                `import { Dimensions } from 'react-native';
 
     function normalizedSize(inputSize, factor = 0.5, orientation = "horizontal") {
         const { width, height } = Dimensions.get('window');
@@ -426,8 +420,8 @@ export default normalizedSize;`
         {
             "type": "code",
             "lang": "javascript",
-            "content": 
-`import { SafeAreaView, Text } from 'react-native';
+            "content":
+                `import { SafeAreaView, Text } from 'react-native';
 import React from 'react';
 import normalizedSize from '../utils/normalizedSize';
             
@@ -446,6 +440,6 @@ export default App;`
             "content": "By following these steps, you can ensure your React Native application looks great on any device, providing a consistent and responsive user experience. If you are interested you can check the [react-native-normalized-size](LINK-TEXT,https://www.npmjs.com/package/react-native-normalized-size) package for a ready solution."
         }
         ]
-    }
-]
-export default blogPost;
+    },
+];
+export default BlogPosts;
