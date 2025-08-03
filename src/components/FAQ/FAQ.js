@@ -48,7 +48,7 @@ const FAQ = () => {
                                         svgKey="ArrowDownSvg"
                                         width={18}
                                         height={18}
-                                        stroke='var(--text--tertiary)'
+                                        stroke='var(--color-main--primary)'
                                         title='arrow down icon'
                                     />
                                 </span>

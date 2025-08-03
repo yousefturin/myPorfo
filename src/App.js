@@ -1,41 +1,33 @@
 
 import './App.css';
-import HeroSection from './components/hero/HeroSection';
-import LatestProject from './components/latestProject/LatestProject';
-import ProjectsCardsSection from './components/project/ProjectsCardsSection';
-// import EducationSection from './components/education/EducationSection';
-import SkillSection from './components/skills/SkillSection';
-// import EmployeeSection from './components/employee/EmployeeSection';
-import MenuBarSection from './components/menu/MenuBarSection';
-import FooterSection from './components/footer/footerSection';
-import Banner from './components/banner/banner';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from 'react';
-import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Home from './components/Home/Home';
+import BlogPost from './components/BlogPost/BlogPost';
+import FooterSection from './components/footer/footerSection';
+import RestView from './components/ResetView/ResetView';
+// import { useTheme } from './context/ThemeProvider';
+
 
 function App() {
-
-  const projectSectionRef = React.useRef(null);
-
-
-  const scrollToProjects = () => {
-    if (projectSectionRef.current) {
-      projectSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-
+  // const { theme, toggleTheme } = useTheme();
   return (
     <div className="App">
-      <Banner />
-      <MenuBarSection />
-      <HeroSection scrollToProjects={scrollToProjects} />
-      <LatestProject projectSectionRef={projectSectionRef} />
-      <ProjectsCardsSection />
-      {/* <EmployeeSection /> */}
-      {/* <EducationSection /> */}
-      <SkillSection />
-      <FooterSection />
-      <ScrollToTop />
+      <Router>
+        <RestView />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/blog/:postId" element={<BlogPost />} />
+          <Route path="/ui-ux/:postId" element={<BlogPost />} />
+        </Routes>
+        <FooterSection />
+        {/* <div>
+          <p style={{ color: "#ffffff" }}>
+            The current theme is {theme}
+          </p>
+        </div>
+        <button onClick={toggleTheme}>Toggle Theme</button> */}
+      </Router>
     </div>
   );
 }

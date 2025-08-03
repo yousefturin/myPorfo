@@ -1,7 +1,6 @@
 .footer-main {
     /* padding-top: 3rem; */
     /* padding-bottom: 3rem; */
-    margin-top: 3rem;
     height: auto;
     justify-content: space-between;
     display: flex;
@@ -11,8 +10,7 @@
 }
 
 .footer-main p {
-    color: #8a8a8a;
-    font-size: 0.6rem;
+    color: var(--text-footer);
 }
 
 .footer-contact-icons button {
@@ -58,7 +56,7 @@
 }
 
 .footer-bottom p {
-    color: #c8c8c8;
+    color: var(--text-footer-bottom);
     font-size: 0.7rem;
     margin: auto;
     padding-top: 1rem;
@@ -86,10 +84,3 @@
     /* Allow vertical scrolling if content exceeds max-height */
 }
 
-
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
-    .footer-main {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-}

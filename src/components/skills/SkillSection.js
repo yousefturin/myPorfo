@@ -6,12 +6,15 @@ export default function SkillSection() {
     const frontEndSkills = [
         { name: 'React Native', icon: 'ReactNativeSvg', dimension: '90px' },
         { name: 'React', icon: 'ReactSvg', dimension: '90px' },
+        { name: 'Next', icon: 'NextSvg', dimension: '90px' },
+        { name: 'Vite', icon: 'ViteSvg', dimension: '90px' },
         { name: 'HTML', icon: 'HTMLSvg', dimension: '90px' },
         { name: 'CSS', icon: 'CssSvg', dimension: '90px' },
         { name: 'BootStrap', icon: 'BootStrapSvg', dimension: '90px' },
     ];
 
     const ProgrammingLangues = [
+        { name: 'TypeScript', icon: 'TypeScriptSvg', dimension: '90px' },
         { name: 'JavaScript', icon: 'JavaScriptSvg', dimension: '90px' },
         { name: 'Python', icon: 'PythonSvg', dimension: '90px' },
         { name: 'C#', icon: 'CSharpSvg', dimension: '90px' },

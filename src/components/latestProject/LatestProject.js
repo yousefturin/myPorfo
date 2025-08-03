@@ -2,9 +2,9 @@ import React from 'react'
 import './latest.css'
 import latestImage from '../../assets/images/latest-project-image.avif'
 import SvgComponent from '../../utils/SvgComponent'
-export default function LatestProject({ projectSectionRef }) {
+export default function LatestProject() {
     return (
-        <section ref={projectSectionRef} className='latest-project-main' id='section2'>
+        <section className='latest-project-main' id='section2'>
             <div className="latest-wrapper">
                 <div className="latest-top-header">
                     <div className="latest-extra" />
@@ -20,90 +20,94 @@ export default function LatestProject({ projectSectionRef }) {
                             <h1>Social Media Application</h1>
                             <p>Reisto is a social media app for food enthusiasts worldwide. Share recipes, discover new dishes, and connect with a community of like-minded food lovers.</p>
                         </div>
-                        <div style={{ width: "100%" }}>
+                        <div className='latest-badges'>
                             <h2>Developed with </h2>
                             <div className="latest-tools">
                                 <div className="tools-left">
-                                    <div style={{ display: "flex" }}>
+                                    <div className='tools-all-svg-in-tools' >
                                         <SvgComponent
-                                            svgKey="ReactNativeSvg"
+                                            svgKey="ReactNativeCircleSvg"
                                             width={44}
                                             height={44}
-                                            fill='var(--text--secondary)'
                                         />
                                     </div>
-                                    <div style={{ width: "30%" }}>
-                                        <h3>React Native</h3>
-                                    </div>
+
+                                    <h3>React Native</h3>
+
                                 </div>
+
                                 <div className="tools-middle">
                                     <div className="tools-middle-Wrapper">
-                                        <div className="tools-middle-top">
-                                            <div className="tools-middle-top-wrapper">
-                                                <div className="tools-middle-top-left">
-                                                    <div style={{ display: "flex" }}>
-                                                        <SvgComponent
-                                                            svgKey="ExpoSvg"
-                                                            width={24}
-                                                            height={24}
-                                                            fill='var(--text--secondary)'
-                                                        />
-                                                    </div>
-                                                    <h3>Expo</h3>
-                                                </div>
-                                                <div className="tools-middle-top-right">
-                                                    <div style={{ display: "flex" }}>
-                                                        <SvgComponent
-                                                            svgKey="i18nextSvg"
-                                                            width={24}
-                                                            height={24}
-                                                            fill='var(--text--secondary)'
-                                                        />
-                                                    </div>
 
-                                                    <h3>i18next</h3>
-                                                </div>
+
+                                        <div className="tools-middle-bottom">
+                                            <div className='tools-all-svg-in-tools'>
+                                                <SvgComponent
+                                                    svgKey="ExpoCircleSvg"
+                                                    width={28}
+                                                    height={28}
+                                                />
+                                            </div>
+                                            <div>
+
+                                                <h3>Expo</h3>
                                             </div>
                                         </div>
                                         <div className="tools-middle-bottom">
-                                            <div style={{ display: "flex" }}>
+                                            <div className='tools-all-svg-in-tools'>
                                                 <SvgComponent
-                                                    svgKey="JavaScriptSvg"
-                                                    width={24}
-                                                    height={24}
-                                                    fill='var(--text--secondary)'
+                                                    svgKey="i18nextCircleSvg"
+                                                    width={28}
+                                                    height={28}
                                                 />
                                             </div>
-                                            <h3>JavaScript</h3>
+                                            <div>
+
+                                                <h3>i18next</h3>
+                                            </div>
+                                        </div>
+                                        <div className="tools-middle-bottom">
+                                            <div className='tools-all-svg-in-tools'>
+                                                <SvgComponent
+                                                    svgKey="JavaScriptCircleSvg"
+                                                    width={28}
+                                                    height={28}
+                                                />
+                                            </div>
+                                            <div>
+
+                                                <h3>JavaScript</h3>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="tools-right">
 
-                                    <div>
+                                <div className="tools-right">
+                                    <div className='tools-all-svg-in-tools'>
                                         <SvgComponent
-                                            svgKey="FirebaseSvg"
-                                            width={38}
-                                            height={38}
-                                            fill='var(--text--secondary)'
+                                            svgKey="FirebaseCircleSvg"
+                                            width={44}
+                                            height={44}
+
                                         />
                                     </div>
-                                    <div>
-                                        <h3>Firebase</h3>
-                                    </div>
+
+                                    <h3>Firebase</h3>
+
                                 </div>
+
+
                             </div>
                         </div>
                         <div className='latest-left-bottom-btn-action'>
                             <h2>Read more about the source</h2>
-                            <div className="btn-wrapper">
+                            <div className="link-wrapper">
                                 <a href="https://github.com/yousefturin/reisto" target="_blank" title='github link' rel="noopener noreferrer" className='btn-download'>
                                     <SvgComponent
                                         svgKey="GitHubSVG"
-                                        width={16}
-                                        height={16}
-                                        fill="white"
-                                        stroke='white'
+                                        width={18}
+                                        height={18}
+                                        fill="var(--bg)"
                                     />
                                     Source Code
                                 </a>

@@ -1,5 +1,5 @@
 .App {
   overflow: hidden;
-  scrollbar-color: var(--text--primary) var(--bg);
+  scrollbar-color: var(--text--primary);
 }
 

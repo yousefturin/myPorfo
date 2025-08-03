@@ -75,23 +75,23 @@ export default function EmailForm() {
                 {({ isSubmitting, errors, touched }) => (
                     <Form className="contact-form" title='contact form'>
                         <div className={`form-group ${errors.from_name && touched.from_name ? 'error' : ''}`}>
-                            <Field type="text" name="from_name" className="form-input" placeholder=' ' />
-                            <label className="form-label" title='name'>Name</label>
+                            <Field type="text" id="from_name" name="from_name" title='name' className="form-input" placeholder=' ' />
+                            <label htmlFor="from_name" className="form-label" title='name'>Name</label>
                         </div>
                         <div className={`form-group ${errors.from_email && touched.from_email ? 'error' : ''}`}>
-                            <Field type="email" name="from_email" className="form-input" placeholder=' ' />
-                            <label className="form-label" title='email'>Email</label>
+                            <Field type="email" id="from_email" name="from_email" title='email' className="form-input" placeholder=' ' />
+                            <label htmlFor="from_email" className="form-label" title='email'>Email</label>
                         </div>
                         <div className={`form-group ${errors.message && touched.message ? 'error' : ''}`}>
-                            <Field as="textarea" name="message" className="form-textarea" placeholder=' ' />
-                            <label className="form-label" title='message'>Message</label>
+                            <Field as="textarea" id="message" name="message" title='message' className="form-textarea" placeholder=' ' />
+                            <label htmlFor="message"  className="form-label" title='message'>Message</label>
                         </div>
                         <button type="submit" className="form-submit" disabled={isSubmitting} title='submit contact button'>
                             <SvgComponent
                                 svgKey="SendSvg"
                                 width={16}
                                 height={16}
-                                stroke='white'
+                                stroke='black'
                                 title='send icon'
                             />
                             Send
