@@ -7,6 +7,7 @@ import MenuBarSection from '../menu/MenuBarSection';
 import React from 'react';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import BlogsCardSection from '../Blogs/BlogsCardSection';
+import UiUxProjectSection from '../../UIUX/UiUxProjectSection';
 
 function Home() {
 
@@ -53,6 +54,7 @@ function Home() {
             <MenuBarSection btnDownloadCVPopUpRef={btnDownloadCVPopUpRef} />
             <HeroSection scrollToProjects={scrollToProjects} />
             <LatestProject />
+            <UiUxProjectSection />
             <ProjectsCardsSection projectSectionRef={projectSectionRef} />
             <SkillSection />
             <BlogsCardSection />

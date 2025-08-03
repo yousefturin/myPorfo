@@ -31,37 +31,39 @@ export default function LatestProject() {
                                             height={44}
                                         />
                                     </div>
-                                    <div >
-                                        <h3>React Native</h3>
-                                    </div>
+
+                                    <h3>React Native</h3>
+
                                 </div>
+
                                 <div className="tools-middle">
                                     <div className="tools-middle-Wrapper">
-                                        <div className="tools-middle-top">
-                                            <div className="tools-middle-top-wrapper">
-                                                <div className="tools-middle-top-left">
-                                                    <div style={{ display: "flex" }}>
-                                                        <SvgComponent
-                                                            svgKey="ExpoCircleSvg"
-                                                            width={28}
-                                                            height={28}
 
-                                                        />
-                                                    </div>
-                                                    <h3>Expo</h3>
-                                                </div>
-                                                <div className="tools-middle-top-right">
-                                                    <div style={{ display: "flex" }}>
-                                                        <SvgComponent
-                                                            svgKey="i18nextCircleSvg"
-                                                            width={28}
-                                                            height={28}
 
-                                                        />
-                                                    </div>
+                                        <div className="tools-middle-bottom">
+                                            <div className='tools-all-svg-in-tools'>
+                                                <SvgComponent
+                                                    svgKey="ExpoCircleSvg"
+                                                    width={28}
+                                                    height={28}
+                                                />
+                                            </div>
+                                            <div>
 
-                                                    <h3>i18next</h3>
-                                                </div>
+                                                <h3>Expo</h3>
+                                            </div>
+                                        </div>
+                                        <div className="tools-middle-bottom">
+                                            <div className='tools-all-svg-in-tools'>
+                                                <SvgComponent
+                                                    svgKey="i18nextCircleSvg"
+                                                    width={28}
+                                                    height={28}
+                                                />
+                                            </div>
+                                            <div>
+
+                                                <h3>i18next</h3>
                                             </div>
                                         </div>
                                         <div className="tools-middle-bottom">
@@ -79,8 +81,8 @@ export default function LatestProject() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="tools-right">
 
+                                <div className="tools-right">
                                     <div className='tools-all-svg-in-tools'>
                                         <SvgComponent
                                             svgKey="FirebaseCircleSvg"
@@ -89,10 +91,12 @@ export default function LatestProject() {
 
                                         />
                                     </div>
-                                    <div>
-                                        <h3>Firebase</h3>
-                                    </div>
+
+                                    <h3>Firebase</h3>
+
                                 </div>
+
+
                             </div>
                         </div>
                         <div className='latest-left-bottom-btn-action'>

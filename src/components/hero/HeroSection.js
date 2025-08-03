@@ -6,7 +6,7 @@ import heroImage from '../../assets/images/hero-image-2.avif'
 import useDownloadCV from '../../utils/DownloadCV'
 const HeroSection = ({ scrollToProjects }) => {
     const { handleDownload, isDownloaded } = useDownloadCV();
-    
+
     return (
         <section className='hero-main'>
 
@@ -33,7 +33,7 @@ const HeroSection = ({ scrollToProjects }) => {
                                 svgKey={isDownloaded === true ? "DownloadDoneSvg" : "DownloadSvg"}
                                 width={16}
                                 height={16}
-                                fill={isDownloaded === true ? "none" : "var(--text--primary)"}
+                                fill={isDownloaded === true ? "none" : "var(--text--primary-invert)"}
                                 stroke='var(--bg)'
                                 title='download CV icon'
                                 strokeWidth={3}

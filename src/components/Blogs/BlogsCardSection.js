@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import BlogCard from './BlogCard';
 import './blogcards.css';
 import SvgComponent from '../../utils/SvgComponent';
-import blogPosts from '../../constants/blogsPosts';
+import blogPosts from '../../constants/blogPost';
 
 const BlogsCardSection = () => {
     const [offset, setOffset] = useState(0);
