@@ -36,7 +36,7 @@ export default function FooterSection() {
                             title='github icon'
                         />
                     </a>
-                    <a href="https://www.linkedin.com/in/yusef-rayyan-j1999/" target="_blank" rel="noopener noreferrer" title='linkedin link'>
+                    <a href="https://www.linkedin.com/in/yusefturin/" target="_blank" rel="noopener noreferrer" title='linkedin link'>
                         <SvgComponent
                             svgKey="LinkedInSGV"
                             width={24}

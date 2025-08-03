@@ -40,7 +40,7 @@ const MenuBarSection = ({ btnDownloadCVPopUpRef }) => {
                                 fill="var(--text--primary)"
                             />
                         </a>
-                        <a href="https://www.linkedin.com/in/yusef-rayyan-j1999/" title='linkedin link' target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/yusefturin/" title='linkedin link' target="_blank" rel="noopener noreferrer">
                             <SvgComponent
                                 svgKey="LinkedInSGV"
                                 width={28}
