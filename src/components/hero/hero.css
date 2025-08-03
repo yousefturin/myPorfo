@@ -26,6 +26,7 @@
     z-index: -1;
     object-fit: cover;
     animation: fadeIn 1.5s ease-in-out;
+    filter: brightness(1.9);
 }
 
 .here-inner-left {
@@ -43,7 +44,7 @@
 .hero-left-top-header h1 {
     font-size: 4.5rem;
     font-family: sf-bold;
-    color: var(--text--primary);
+    color: var(--text--primary-invert);
     margin: 1rem 0 0 0;
 }
 
@@ -89,7 +90,7 @@
 .btn-wrapper .btn-download-secondary {
     background-color: transparent;
     border: none;
-    color: var(--text--primary);
+    color: var(--white);
     padding: 1.1rem 2rem;
     text-align: center;
     text-decoration: none;
@@ -197,7 +198,6 @@
         top: 0;
         left: 0;
         width: 100%;
-        filter: brightness(0.9);
     }
 
     .here-inner-left>.first-paragraph {

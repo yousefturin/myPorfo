@@ -10,6 +10,7 @@
   --color-main--tertiary-outline: #e6ffba5c;
 
   --text--primary: #ffffff;
+  --text--primary-invert: #000000;
   --text--sub-primary: #eeeeee;
   --text--secondary: #c9c9c9;
   --text--tertiary: #e8e8e8;
@@ -19,6 +20,7 @@
   --text-footer-bottom: #c8c8c8;
 
   --btn--primary: #f0f6fc;
+  --btn--primary-invert: #050505;
   --btn-secondary: #4a4a4a;
   --btn-primary-hover: #e3f9df;
 
@@ -35,6 +37,7 @@
   --blog-post-primary: #f5f5f5;
 
   --blog-time-reading-color: #888;
+  --white: #ffffff;
 }
 
 /* (TODO): fix the theme colors, there are too many incorrect colors across the app. */
@@ -51,6 +54,7 @@
   --color-main--tertiary-outline: #e6ffba5c;
 
   --text--primary: #000000;
+  --text--primary-invert: #ffffff;
   --text--sub-primary: #222222;
   --text--secondary: #444444;
   --text--tertiary: #666666;
@@ -59,6 +63,7 @@
   --text-footer: #cccccc;
   --cards-shadow: rgba(255, 255, 255, 0.5);
   --btn--primary: #050505;
+  --btn--primary-invert: #ffffff;
   --btn-secondary: #cccccc;
   --btn-primary-hover: #323a30;
 
@@ -74,7 +79,7 @@
   --blog-post-primary: #050505;
 
   --blog-time-reading-color: #888;
-
+  --white: #ffffff;
 }
 
 @font-face {
