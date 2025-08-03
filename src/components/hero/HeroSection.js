@@ -47,7 +47,7 @@ const HeroSection = ({ scrollToProjects }) => {
                                 width={16}
                                 height={16}
                                 fill={isDownloaded === true ? "none" : "var(--text--primary)"}
-                                stroke='var(--text--primary)'
+                                stroke='var(--white)'
                                 title='download CV icon'
                                 strokeWidth={3}
                             />
