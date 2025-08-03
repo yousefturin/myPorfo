@@ -8,7 +8,6 @@ import './prism-vsc-dark-plus.css'
 
 const BlogPost = () => {
     const { postId } = useParams();
-    console.log('postId:', postId);
     const blogContent = blogPosts.find(post => post.link === postId);
 
     // Function to render content based on type
