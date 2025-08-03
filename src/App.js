@@ -18,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/blog/:postId" element={<BlogPost />} />
+          <Route path="/ui-ux/:postId" element={<BlogPost />} />
         </Routes>
         <FooterSection />
         {/* <div>
