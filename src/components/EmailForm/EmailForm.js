@@ -83,7 +83,7 @@ export default function EmailForm() {
                             <label htmlFor="from_email" className="form-label" title='email'>Email</label>
                         </div>
                         <div className={`form-group ${errors.message && touched.message ? 'error' : ''}`}>
-                            <Field as="textarea" id="message" name="message" title='name' className="form-textarea" placeholder=' ' />
+                            <Field as="textarea" id="message" name="message" title='message' className="form-textarea" placeholder=' ' />
                             <label htmlFor="message"  className="form-label" title='message'>Message</label>
                         </div>
                         <button type="submit" className="form-submit" disabled={isSubmitting} title='submit contact button'>
