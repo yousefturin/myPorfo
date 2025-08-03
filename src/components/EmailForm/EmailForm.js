@@ -79,7 +79,7 @@ export default function EmailForm() {
                             <label htmlFor="from_name" className="form-label" title='name'>Name</label>
                         </div>
                         <div className={`form-group ${errors.from_email && touched.from_email ? 'error' : ''}`}>
-                            <Field type="email" id="from_email" name="from_email" title='name' className="form-input" placeholder=' ' />
+                            <Field type="email" id="from_email" name="from_email" title='email' className="form-input" placeholder=' ' />
                             <label htmlFor="from_email" className="form-label" title='email'>Email</label>
                         </div>
                         <div className={`form-group ${errors.message && touched.message ? 'error' : ''}`}>
