@@ -15,7 +15,10 @@ export default function HeroSection() {
       className=" max-w-1400px  py-120 px-96 flex-row atc jc-sb gap-200 m-auto"
       style={{ position: "relative", overflow: "hidden" }}
     >
-      <div className="flex-column atfs flex-05 mob-flex-1">
+      <div
+        className="flex-column atfs flex-05 mob-flex-1"
+        style={{ zIndex: 1 }}
+      >
         <motion.span
           className="bg-secondary br-4 px-6 py-4 font-family-regular color-ink font-label-small"
           initial={{ opacity: 0, y: 16 }}
@@ -70,6 +73,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, x: 48 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease, delay: 0.18 }}
+        style={{ zIndex: 0 }}
       >
         <Image
           src={"/images/hero-image.avif"}
