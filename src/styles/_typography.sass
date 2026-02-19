@@ -1,0 +1,63 @@
+@use 'variables' as *
+@use "sass:map"
+
+@font-face
+    font-family: 'ProximaNova-Light'
+    src: url('/fonts/ProximaNova-Light.otf')
+
+@font-face
+    font-family: 'ProximaNova-Regular'
+    src: url('/fonts/ProximaNova-Regular.otf')
+
+@font-face
+    font-family: 'ProximaNova-SemiBold'
+    src: url('/fonts/ProximaNova-SemiBold.otf')
+
+@font-face
+    font-family: 'ProximaNova-Bold'
+    src: url('/fonts/ProximaNova-Bold.otf')
+
+@each $key, $val in $font-sizes
+    .font-#{$key}
+        font-size: $val
+        line-height: map.get($line-heights, $key)
+        font-weight: 500
+
+@each $key, $val in $font-weights
+    .font-w-#{$key}
+        font-weight: $val !important
+.font-family
+    &-light
+        font-family: 'ProximaNova-Light'
+    &-regular
+        font-family: 'ProximaNova-Regular'
+    &-medium
+        font-family: 'ProximaNova-SemiBold'
+    &-bold
+        font-family: 'ProximaNova-Bold'
+h4,
+h1,
+h2,
+h3,
+h5,
+h6,
+p,
+span
+    text-align: left
+b
+    font-family: 'ProximaNova-Bold'
+a
+    color: inherit
+    text-decoration: none
+.w-s-nowrap
+    white-space: nowrap !important
+.w-s-wrap
+    white-space: wrap !important
+.text-capitalize
+    text-transform: capitalize !important
+.link
+    word-wrap: break-word
+    cursor: pointer
+    text-decoration: underline !important
+    // text-decoration: none
+    // transition: all 0.2s ease-in-out

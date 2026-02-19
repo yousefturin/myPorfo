@@ -1,0 +1,42 @@
+
+@use 'variables' as *
+@use "sass:map"
+
+.label
+    pointer-events: none
+    font-size: map.get($font-sizes, "label-medium")
+    color: map.get($colors, "tertiary")
+    font-family: "ProximaNova-Regular"
+.input,
+.textarea
+    margin-top: rem(8)
+    width: calc(100%)
+    outline: none
+    font-family: "ProximaNova-Regular"
+    padding: rem(16)
+    color: map.get($colors, "ink-inverse")
+    font-size: map.get($font-sizes, "16px")
+    border: 1.6px solid map.get($colors, "ink-light")
+    border-radius: rem(8)
+    background: map.get($colors, "ink-medium")
+    &::placeholder
+        font-family: "ProximaNova-Regular"
+
+input-focused
+    border: 1.6px solid map.get($colors, "brand") !important
+.textarea
+    min-height: rem(128)
+    resize: none
+.input:focus,
+.textarea:focus
+    caret-color: map.get($colors,"brand" )
+    border: 1.6px solid map.get($colors, "brand")
+
+.input-inner-icon
+    position: absolute
+    top: 50%
+    right: rem(16)
+    transform: translateY(-35%)
+
+.input-error
+    border: 1.6px solid map.get($colors, "error") !important

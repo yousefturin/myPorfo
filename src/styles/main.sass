@@ -1,0 +1,47 @@
+@use "sass:map"
+@use 'variables' as *
+@use 'utilities'
+@use 'typography'
+@use 'responsive'
+@use 'components'
+@use 'helpers'
+
+html,
+body
+    max-width: map.get($max-widths, "100vw")
+    overflow-x: hidden
+    scroll-behavior: smooth
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    word-wrap: break-word
+    scrollbar-width: none
+    -ms-overflow-style: none
+    font-family: 'nenu-regular'
+    // outline: solid 1px tomato
+
+body
+    color: #ffffff
+    background: #1A1A19
+    margin: 0
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+::-webkit-scrollbar
+    width: 10px
+    height: 10px
+::-webkit-scrollbar
+    display: none
+
+::-webkit-scrollbar-track
+    border-radius: 50px
+
+::-webkit-scrollbar-thumb
+    background-color: #DBDBDB
+    border-radius: 16px
+
+::-webkit-scrollbar-thumb:hover
+    background: #9C9C9C
+    cursor: pointer

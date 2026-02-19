@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src/",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/app/*": ["src/app/*"],
+      "@/api/*": ["src/app/api/*"],
+      "@/components/*": ["components/*"],
+      "@/utils/*": ["utils/*"],
+      "@/layout/*": ["layout/*"],
+      "@/context/*": ["context/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/reducer/*": ["reducer/*"],
+      "@/constant/*": ["constant/*"],
+      "@/locales/*": ["locales/*"],
+      "@/lib/*": ["lib/*"],
+      "@/styles/*": ["styles/*"],
+      "@/assets/*": ["assets/*"],
+      "@/types": ["yusefturin/.next/types/index.ts"],
+      "@/types/*": ["yusefturin/.next/types/*"],
+      "@/stores/*": ["stores/*"],
+      "@/providers/*": ["providers/*"],
+      "@/config/*": ["config/*"],
+      "@/data/*": ["data/*"]
+    },
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/types/selectors.types.ts",
+    ".next/dev/types/**/*.ts",
+    "scripts/generate-logos.js"
+  ],
+  "exclude": ["node_modules"]
+}

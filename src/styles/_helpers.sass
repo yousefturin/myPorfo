@@ -1,0 +1,507 @@
+@use "sass:map"
+@use 'variables' as *
+
+.pointer
+    cursor: pointer
+.n-b
+    border: none !important
+.n-o
+    outline: none !important
+.overflow-h
+    overflow: hidden
+.overflow-x-h
+    overflow-x: hidden
+.overflow-x-a
+    overflow-x: auto
+.overflow-y-h
+    overflow-y: hidden
+.overflow-y-a
+    overflow-y: auto
+.overflow-a
+    overflow: auto
+.ob-b-16
+    bottom: -16% !important
+.ls--003
+    letter-spacing: -0.003em
+.lh-12
+    line-height: 1.2
+.lh-15
+    line-height: 1.5
+.lh-18
+    line-height: 1.8
+.column
+    flex-direction: column
+.column-reverse
+    flex-direction: column-reverse
+.t-overflow-ellipsis
+    text-overflow: ellipsis
+.row
+    flex-direction: row
+.row-reverse
+    flex-direction: row-reverse
+.dsp-n
+    display: none
+.dsp-f
+    display: flex
+.dsp-b
+    display: block
+.flex-column
+    display: flex
+    flex-direction: column
+.monospace
+    font-family: monospace
+.flex-row
+    display: flex
+    flex-direction: row
+.flex-row-reverse
+    display: flex
+    flex-direction: row-reverse
+.flex-column-reverse
+    display: flex
+    flex-direction: column-reverse
+
+.flex-dr-atc
+    display: flex
+    flex-direction: row !important
+    align-items: center
+.asp-r-1-2
+    aspect-ratio: 1 / 2
+.asp-r-1-1
+    aspect-ratio: 1 / 1
+.asp-r-2-1
+    aspect-ratio: 2 / 1
+.flex-dc-atc
+    display: flex
+    flex-direction: column !important
+    align-items: center
+.flex-atc-jc-sb
+    display: flex
+    justify-content: space-between
+    align-items: center
+.flex-dc-atfs-jcc
+    display: flex
+    flex-direction: column !important
+    align-items: flex-start
+    justify-content: center
+
+.flex-none
+    flex: none
+.flex-w
+    display: inline-flex
+    flex-wrap: wrap
+    max-width: map.get($max-widths, "100")
+    width: map.get($heights-widths, "100")
+    justify-content: flex-start
+    // gap: map.get($space, "20")
+    margin: 0 auto
+.wrap
+    flex-wrap: wrap
+
+.flex-s
+    align-self: stretch
+    display: inline-flex
+    flex: 1 1 0
+    flex-direction: column
+    justify-content: space-between
+.shrink-0
+    flex-shrink: 0
+.flex-n
+    flex: none
+.flex-1
+    flex: 1 1 0
+.flex-06
+    flex: 0.6 1 1
+.flex-04
+    flex: 0.4 1 0
+.flex-05
+    flex: 0.5 1 0
+.flex-2
+    flex: 2 1 0
+.flex-0
+    flex: 0 0 auto
+.jc-fs
+    justify-content: flex-start !important
+.jc-fe
+    justify-content: flex-end !important
+.jc-c
+    justify-content: center !important
+.jc-sb
+    justify-content: space-between !important
+.asfe
+    align-self: flex-end
+.asfs
+    align-self: flex-start
+.atc
+    align-items: center
+.atfe
+    align-items: flex-end
+.atfs
+    align-items: flex-start
+.initial
+    position: initial
+.absolute-
+    position: absolute
+.absolute
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+.fixed
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+.absolute-b-rl
+    position: absolute
+    bottom: 0
+    right: 0
+    left: 0
+.absolute-tr
+    position: absolute
+    top: 0
+    right: 0
+.absolute-tl
+    position: absolute
+    top: 0
+    left: 0
+.absolute-br
+    position: absolute
+    bottom: 0
+    right: 0
+.absolute-bl
+    position: absolute
+    bottom: 0
+    left: 0
+.absolute-t
+    position: absolute
+    top: 80
+    left: 50%
+    transform: translateX(-50%)
+.absolute-l
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+.asstr
+    align-self: stretch
+.relative
+    position: relative
+.absolute-c
+    position: absolute
+    bottom: 0
+    transform: translateY(-50%)
+    left: 50%
+.object-fit
+    object-fit: contain
+.object-cover
+    object-fit: cover
+.border-all
+    border: 1px solid map.get($colors, "tertiary")
+.border-b
+    border-bottom: 1px solid map.get($colors, "tertiary")
+.border-b-q
+    border-bottom: 1px solid map.get($colors, "quaternary")
+.border-t
+    border-top: 1px solid map.get($colors, "tertiary")
+.border-l
+    border-left: 1px solid map.get($colors, "tertiary") !important
+.border-r
+    border-right: 1px solid map.get($colors, "tertiary")
+.border-solid
+    border-style: solid !important
+.border-b-solid
+    border-bottom-style: solid !important
+.border-b-solid-1-quaternary
+    border-bottom: 1.6px solid map.get($colors, "quaternary") !important
+.border-b-solid-1-secondary
+    border-bottom: 1.6px solid map.get($colors, "secondary") !important
+.no-shdow
+    box-shadow: none
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    -o-box-shadow: none
+    -ms-box-shadow: none
+    transition: all 0.3s ease-in-out
+.truncate
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+.mr-0
+    margin-right: 0 !important
+.pr-10
+    padding-right: map.get($space, "10") !important
+.pl-10
+    padding-left: map.get($space, "10") !important
+
+.grid-two-cols-two-rows
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2, auto)
+.grid-2-cols
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 12px 24px
+
+.grid-wrap
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+
+.uppercase
+    text-transform: uppercase
+.scrollbar-small
+    scrollbar-gutter: stable both-edges
+    &::-webkit-scrollbar
+        width: rem(8)
+        height: rem(8)
+    &::-webkit-scrollbar-track
+        background: map.get($colors, "input-bg")
+        border-radius: rem(4)
+    &::-webkit-scrollbar-thumb
+        background: map.get($colors, "scrollbar-thumb")
+        border-radius: rem(4)
+    &::-webkit-scrollbar-thumb:hover
+        background: map.get($colors, "scrollbar-thumb-hover")
+
+.text-align-center
+    text-align: center
+.text-align-right
+    text-align: right
+.text-align-left
+    text-align: left
+// ScrollView Component Styles
+.scroll-view
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+    position: relative
+
+    &--vertical
+        overflow-x: hidden
+        overflow-y: auto
+
+    &--horizontal
+        overflow-x: auto
+        overflow-y: hidden
+        white-space: nowrap
+
+        & > *
+            display: inline-block
+            vertical-align: top
+
+    &--hide-scrollbar
+        scrollbar-width: none
+        -ms-overflow-style: none
+
+        &::-webkit-scrollbar
+            display: none
+
+    &--show-scrollbar
+        scrollbar-width: thin
+        scrollbar-color: rgba(155, 155, 155, 0.5) transparent
+
+        &::-webkit-scrollbar
+            width: 6px
+            height: 6px
+
+        &::-webkit-scrollbar-track
+            background: transparent
+
+        &::-webkit-scrollbar-thumb
+            background-color: rgba(155, 155, 155, 0.5)
+            border-radius: 3px
+
+            &:hover
+                background-color: rgba(155, 155, 155, 0.8)
+
+    &--scrolling
+        &::-webkit-scrollbar-thumb
+            background-color: rgba(155, 155, 155, 0.8)
+.object-position-t
+    object-position: top
+.object-position-b
+    object-position: bottom
+.object-position-c
+    object-position: center
+// Grid styles for ScrollView content
+.scroll-view-grid
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 12px 24px
+    padding: 16px
+
+    &__item
+        max-width: 482px
+        width: 100%
+        justify-self: center
+
+.border-top
+    border-top: 1px solid map.get($colors, "tertiary")
+
+.w-content
+    width: fit-content
+.grid-auto-rows
+    display: grid
+    grid-auto-rows: auto
+.grid-auto-cols
+    display: grid
+    grid-auto-columns: auto
+.grid-one-col
+    display: grid
+    grid-template-columns: 1fr
+.grid-one-row
+    display: grid
+    grid-template-rows: 1fr
+
+.grid-cols
+    display: grid
+    grid-template-columns: repeat(4, minmax(0, 280px))
+    grid-template-rows: repeat(2, auto)
+    @media (max-width: 1200px)
+        grid-template-columns: repeat(3, minmax(0, 280px))
+    @media (max-width: 900px)
+        grid-template-columns: repeat(2, minmax(0, 280px))
+.grid-cols-auto
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(0, 280px))
+    grid-template-rows: repeat(2, auto)
+    @media (max-width: 1200px)
+        grid-template-columns: repeat(3, minmax(0, 280px))
+    @media (max-width: 900px)
+        grid-template-columns: repeat(1, minmax(0, 100%))
+.grid-cols-wide
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    max-width: 1204px
+    @media (max-width: 900px)
+        grid-template-columns: 1fr
+.grid-two-cols
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+.grid-two-cols-1fr-2fr
+    display: grid
+    grid-template-columns: 1fr 2fr
+.grid-four-cols
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+.grid-five-cols
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+.grid-four-rows
+    display: grid
+    grid-template-rows: auto auto auto auto
+.grid-two-rows
+    display: grid
+    grid-template-rows: auto 1fr
+.grid
+    display: grid
+
+    &-3-col
+        grid-template-columns: repeat(3, 1fr)
+.js-items-c
+    justify-items: center
+// Grid direction utilities
+.grid-dir-rtl
+    direction: rtl
+.grid-dir-ltr
+    direction: ltr
+
+// Grid auto-flow utilities  
+.grid-flow-row
+    grid-auto-flow: row
+.grid-flow-col
+    grid-auto-flow: column
+.grid-flow-row-dense
+    grid-auto-flow: row dense
+.grid-flow-col-dense
+    grid-auto-flow: column dense
+.grid-3-cols
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+.grid-3-rows
+    display: grid
+    grid-template-rows: repeat(3, 1fr)
+
+.z-998
+    z-index: 998
+
+.z-999
+    z-index: 999
+
+.z-9999
+    z-index: 9999
+.z-99999
+    z-index: 99999
+.z-999999
+    z-index: 999999
+.pos-fixed
+    position: fixed
+
+.top-100
+    top: 100px
+.top-20
+    top: 20px
+.top-80
+    top: 80px
+.top-115
+    top: 115px
+.top-113
+    top: 113px
+.left-0
+    left: 0
+
+.right-0
+    right: 0
+
+.will-change-transform
+    will-change: transform
+
+.flex-0-0-48px
+    flex: 0 0 rem(48)
+.flex-0-0-auto
+    flex: 0 0 auto
+.flex-1-1-320px
+    flex: 1 1 rem(320)
+.flex-1-1-200px
+    flex: 1 1 rem(200)
+.flex-1-1-800px
+    flex: 1 1 rem(800)
+
+// Responsive gap utility
+.gap-100-responsive
+    gap: clamp(rem(32), 4vw, rem(100))
+
+.disc
+    list-style-type: disc
+.gradient-ink-bottom-100-1
+    background: linear-gradient(to top, rgba(26, 26, 26, 1) 0%, rgba(26, 26, 26, 0.1) 40%)
+
+.onHover-scale-105
+    transition: transform 0.3s ease-in-out
+    &:hover
+        transform: scale(1.05)
+.onHover-scale-102
+    transition: transform 0.3s ease-in-out
+    &:hover
+        transform: scale(1.02)
+.onHover-scale-101
+    transition: transform 0.3s ease-in-out
+    &:hover
+        transform: scale(1.01)
+.onHover-underline
+    position: relative
+    &::after
+        content: ""
+        position: absolute
+        left: 0
+        bottom: -4px
+        width: 100%
+        height: 2px
+        background-color: map.get($colors, "ink-inverse")
+        transform: scaleX(0)
+        transform-origin: right
+        transition: transform 0.3s ease-in-out
+    &:hover::after
+        transform: scaleX(1)
+        transform-origin: left

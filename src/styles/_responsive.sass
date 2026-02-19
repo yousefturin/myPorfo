@@ -1,0 +1,359 @@
+@use 'variables' as *
+@use "sass:map"
+
+@media (prefers-color-scheme: light)
+    html
+        color-scheme: light
+
+@media screen and (max-width: 1126px)
+    .mid-screen-grid-one-col
+        grid-template-columns: 1fr !important
+    .mid-screen-pt-0
+        padding-top: 0 !important
+    .mid-screen-gap-0
+        gap: 0 !important
+@media screen and (max-width:600px)
+    .mob-hide-600
+        display: none !important
+
+@media screen and (max-width: 900px)
+    .mob-hide-900
+        display: none !important
+@media screen and (max-width: 1065px)
+    .mob-grid-two-rows-two-cols
+        display: grid
+        grid-template-rows: auto 1fr
+        grid-template-columns: none !important
+    .mob-hide-1065
+        display: none !important
+@media screen and (min-width :768px)
+
+    .mob-gap-24
+        gap: rem(24) !important
+    .mob-min-h-300px
+        min-height: rem(300) !important
+
+    .mob-aspect-ratio-4-3
+        aspect-ratio: 4 / 3 !important
+    .desk-hide
+        display: none !important
+@media screen and (max-width: 768px)
+    .mob-pb-80
+        padding-bottom: rem(80) !important
+    .mob-atc
+        align-items: center !important
+    .mob-h-240px
+        height: rem(240) !important
+    .mob-max-w-335px
+        max-width: rem(335) !important
+    .mob-max-h-280px
+        max-height: rem(280) !important
+    .mob-pt-24
+        padding-top: rem(24) !important
+    .mob-pr-24
+        padding-right: rem(24) !important
+    .mob-pl-24
+        padding-left: rem(24) !important
+    .mob-py-24
+        padding-top: rem(24) !important
+        padding-bottom: rem(24) !important
+    .mob-py-64
+        padding-top: rem(64) !important
+        padding-bottom: rem(64) !important
+    .grid-2-cols
+        grid-template-columns: repeat(2, 1fr)
+    .mob-order--1
+        order: -1 !important
+    .mob-flex-1-1-320px
+        flex: 1 1 rem(320) !important
+    .mob-order-1
+        order: 1 !important
+    .mob-gap-8
+        gap: rem(8) !important
+    .mob-max-w-none
+        max-width: none !important
+    .mob-gap-0
+        gap: 0 !important
+    .mob-grid-one-col
+        grid-template-columns: 1fr !important
+    .mob-show-720
+        display: flex !important
+    .mob-hide-720
+        display: none !important
+    .mob-grid-two-rows
+        display: grid
+        grid-template-rows: auto 1fr
+        grid-template-columns: none !important
+    .mob-grid-2-cols
+        display: grid !important
+        grid-template-columns: 1fr 1fr !important
+        gap: rem(24) !important
+    .mob-atfs
+        align-items: flex-start !important
+    .mob-text-align-center
+        text-align: center !important
+    .mob-text-align-right
+        text-align: right !important
+    .mob-text-align-left
+        text-align: left !important
+    .mob-mt-48
+        margin-top: rem(48) !important
+    .mob-pl-20
+        padding-left: rem(20) !important
+    .mob-pr-20
+        padding-right: rem(20) !important
+    .mob-mb-64
+        margin-bottom: rem(64) !important
+    .mob-mt-64
+        margin-top: rem(64) !important
+    .mob-max-h-320px
+        max-height: rem(320) !important
+    .mob-min-w-288px
+        min-width: rem(288) !important
+    .mob-flex-row
+        flex-direction: row !important
+    .mob-px-20
+        padding-left: rem(20) !important
+        padding-right: rem(20) !important
+    .mob-mx-20
+        margin-left: rem(20) !important
+        margin-right: rem(20) !important
+    .mob-flex-column
+        flex-direction: column !important
+    .mob-flex-column-reverse
+        flex-direction: column-reverse !important
+    .mob-w-100
+        width: 100% !important
+    .mob-gap-32
+        gap: rem(32) !important
+    .mob-h-1px
+        height: rem(1) !important
+    .mob-h-100
+        height: 100% !important
+    .mob-flex-1
+        flex: 1 !important
+    .mob-hide
+        display: none !important
+    .grid-2-cols
+        grid-template-columns: 1fr !important
+    .mob-w-34px
+        width: rem(34) !important
+    .mob-h-34px
+        height: rem(34) !important
+    .mob-mr-24
+        margin-right: rem(24) !important
+    .mob-gap-24
+        gap: rem(24) !important
+    .mob-mt-24
+        margin-top: rem(24) !important
+    // ScrollView responsive grid
+    .scroll-view-grid
+        grid-template-columns: 1fr
+        gap: 12px
+        padding: 12px
+    @each $key, $val in  $font-sizes
+        .font-#{$key}-mob
+            font-size: $val
+            line-height: normal !important
+
+    .p-40
+        padding: rem(24) !important
+    .mx-40
+        margin-left: rem(24) !important
+        margin-right: rem(24) !important
+    .p-48
+        padding: rem(24) !important
+    .px-40
+        padding-left: rem(24) !important
+        padding-right: rem(24) !important
+    .pt-56
+        padding-top: rem(36) !important
+    .mb-96
+        margin-bottom: rem(36) !important
+    .py-32
+        padding-top: rem(24) !important
+        padding-bottom: rem(24) !important
+    .grid-1-col-mob
+        grid-template-columns: 1fr !important
+    .px-96
+        padding-left: rem(20) !important
+        padding-right: rem(20) !important
+    .mx-96
+        margin-left: rem(20) !important
+        margin-right: rem(20) !important
+    .pt-40
+        padding-top: rem(24) !important
+    .pb-40
+        padding-bottom: rem(24) !important
+    .pr-40
+        padding-right: rem(24) !important
+    .pl-40
+        padding-left: rem(24) !important
+    .p-56
+        padding: rem(32) !important
+    .mob-w-40px
+        width: rem(40) !important
+
+@media screen and (max-width: 960px)
+    .mob-p-24-960px
+        padding-left: rem(24) !important
+        padding-right: rem(24) !important
+    .mob-pt-24
+        padding-top: rem(24) !important
+    .mob-pr-24
+        padding-right: rem(24) !important
+    .mob-pl-24
+        padding-left: rem(24) !important
+    .mob-max-w-335px
+        max-width: rem(335) !important
+    .mob-max-h-280px
+        max-height: rem(280) !important
+    .mob-py-24
+        padding-top: rem(24) !important
+        padding-bottom: rem(24) !important
+    .mob-py-64
+        padding-top: rem(64) !important
+        padding-bottom: rem(64) !important
+    // .grid-2-cols
+    //     grid-template-columns: repeat(2, 1fr) !important (why it was like this??)
+    .mob-max-w-none
+        max-width: none !important
+    .mob-flex-1-1-320px
+        flex: 1 1 rem(320) !important
+    .mob-w-100
+        width: 100% !important
+    .mob-max-w-100
+        max-width: 100% !important
+    .mob-h-1px
+        height: rem(1) !important
+    .mob-px-20
+        padding-left: rem(20) !important
+        padding-right: rem(20) !important
+    // .mob-order--1
+    //     order: -1 !important
+    // .mob-order-1
+    //     order: 1 !important
+    .mob-gap-8
+        gap: rem(8) !important
+    .mob-pl-20
+        padding-left: rem(20) !important
+    .mob-gap-32
+        gap: rem(32) !important
+    .mob-pr-20
+        padding-right: rem(20) !important
+    .mob-ml-40
+        margin-left: rem(24)
+    .mob-mt-40
+        margin-top: rem(24)
+    .mob-w-34px
+        width: rem(34) !important
+    .mob-h-34px
+        height: rem(34) !important
+    .mob-flex-column
+        flex-direction: column !important
+    .mob-flex-column-reverse
+        flex-direction: column-reverse !important
+    .mob-mr-24
+        margin-right: rem(24) !important
+    .mob-gap-24
+        gap: rem(24) !important
+    .mob-mt-24
+        margin-top: rem(24) !important
+    @each $key, $val in  $font-sizes-responsive
+        .text-#{$key}
+            font-size: $val
+    .p-40
+        padding: rem(24) !important
+    .p-48
+        padding: rem(24) !important
+    .mx-40
+        margin-left: rem(24) !important
+        margin-right: rem(24) !important
+    .px-40
+        padding-left: rem(24) !important
+        padding-right: rem(24) !important
+    .pt-56
+        padding-top: rem(36) !important
+    .mb-96
+        margin-bottom: rem(36) !important
+    .py-32
+        padding-top: rem(24) !important
+        padding-bottom: rem(24) !important
+    .grid-3-col
+        grid-template-columns: repeat(2, 1fr)
+    .grid-3-rows
+        grid-template-rows: repeat(2, 1fr)
+
+@media screen and (max-width: 720px)
+    .mob-pb-80
+        padding-bottom: rem(80) !important
+    .mob-atc
+        align-items: center !important
+    .mob-h-240px
+        height: rem(240) !important
+    .mob-pt-24
+        padding-top: rem(24) !important
+    .mob-pr-24
+        padding-right: rem(24) !important
+    .mob-pl-24
+        padding-left: rem(24) !important
+    .mob-py-24
+        padding-top: rem(24) !important
+        padding-bottom: rem(24) !important
+    .mob-max-w-335px
+        max-width: rem(335) !important
+    .mob-max-h-280px
+        max-height: rem(280) !important
+    .mob-atfs
+        align-items: flex-start !important
+    .mob-text-align-center
+        text-align: center !important
+    .mob-text-align-right
+        text-align: right !important
+    .mob-text-align-left
+        text-align: left !important
+    .mob-mt-48
+        margin-top: rem(48) !important
+    .mob-mb-64
+        margin-bottom: rem(64) !important
+    .mob-mt-64
+        margin-top: rem(64) !important
+    .mob-hide-720
+        display: none !important
+    .mob-show-720
+        display: flex !important
+    .mob-w-34px
+        width: rem(34) !important
+    .mob-h-34px
+        height: rem(34) !important
+    .mob-mr-24
+        margin-right: rem(24) !important
+    .mob-gap-24
+        gap: rem(24) !important
+    .mob-mt-24
+        margin-top: rem(24) !important
+    @each $key, $val in  $font-sizes-responsive
+        .text-#{$key}
+            font-size: $val
+    .p-40
+        padding: rem(24) !important
+    .mx-40
+        margin-left: rem(24) !important
+        margin-right: rem(24) !important
+    .p-48
+        padding: rem(24) !important
+    .px-40
+        padding-left: rem(24) !important
+        padding-right: rem(24) !important
+    .pt-56
+        padding-top: rem(36) !important
+    .mb-96
+        margin-bottom: rem(36) !important
+    .py-32
+        padding-top: rem(24) !important
+        padding-bottom: rem(24) !important
+    .grid-1-col-mob
+        grid-template-columns: 1fr !important
+    .px-96
+        padding-left: rem(20) !important
+        padding-right: rem(20) !important

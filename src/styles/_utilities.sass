@@ -1,0 +1,111 @@
+@use 'variables' as *
+@use "sass:map"
+
+@each $key, $val in $opacity-levels
+    .opacity-#{$key}
+        opacity: $val
+
+@each $key, $val in $space
+    .m-#{$key}
+        margin: $val !important
+    .mt-#{$key}
+        margin-top: $val
+    .mb-#{$key}
+        margin-bottom: $val
+    .ml-#{$key}
+        margin-left: $val
+    .mr-#{$key}
+        margin-right: $val
+    .mx-#{$key}
+        margin-left: $val
+        margin-right: $val
+    .my-#{$key}
+        margin-top: $val
+        margin-bottom: $val
+    .p-#{$key}
+        padding: $val
+    .pt-#{$key}
+        padding-top: $val
+    .pb-#{$key}
+        padding-bottom: $val
+    .pl-#{$key}
+        padding-left: $val
+    .pr-#{$key}
+        padding-right: $val
+    .px-#{$key}
+        padding-inline: $val
+    .py-#{$key}
+        padding-block: $val
+    .br-#{$key}
+        border-radius: $val
+    .brrl-#{$key}
+        border-top-left-radius: $val
+        border-bottom-left-radius: $val
+    .brtb-#{$key}
+        border-top-left-radius: $val
+        border-top-right-radius: $val
+    .brtl-#{$key}
+        border-top-right-radius: $val
+    .brtr-#{$key}
+        border-top-left-radius: $val
+    .brbl-#{$key}
+        border-bottom-left-radius: $val
+    .brbr-#{$key}
+        border-bottom-right-radius: $val
+    .border-left-#{$key}
+        border-left: $val solid
+    .border-right-#{$key}
+        border-right: $val solid
+    .border-top-#{$key}
+        border-top: $val solid
+    .border-bottom-#{$key}
+        border-bottom: $val solid
+    .gap-#{$key}
+        gap: $val
+    .br-w-#{$key}
+        border-width: $val
+
+@each $key, $val in $z-indexes
+    .z-#{$key}
+        z-index: $val
+
+@each $key, $val in $max-widths
+    .max-w-#{$key}
+        max-width: $val
+
+@each $key, $val in $min-widths
+    .min-w-#{$key}
+        min-width: $val
+
+@each $key, $val in $max-heights
+    .max-h-#{$key}
+        max-height: $val
+
+@each $key, $val in $min-heights
+    .min-h-#{$key}
+        min-height: $val
+
+@each $key, $val in $heights-widths
+    .h-#{$key}
+        height: $val
+    .w-#{$key}
+        width: $val
+@each $rot in $rotations
+    .rotate-#{$rot}
+        transform: rotate($rot)
+        transition: transform 0.3s ease-in-out
+@each $key, $val in  $blur-sizes
+    .blur-#{$key}
+        -webkit-backdrop-filter: blur($val)
+        -moz-backdrop-filter: blur($val)
+        -ms-backdrop-filter: blur($val)
+        -o-backdrop-filter: blur($val)
+        backdrop-filter: blur($val)
+@each $key, $val in $colors
+    .bg-#{$key}
+        background: $val
+    .border-color-#{$key}
+        border-color: $val
+        // border-style: solid
+    .color-#{$key}
+        color: $val !important
