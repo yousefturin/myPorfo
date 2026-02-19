@@ -20,7 +20,7 @@ function isRateLimited(ip: string): boolean {
   return entry.count > RATE_LIMIT;
 }
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+
 
 const YOUR_EMAIL = "contact@yusefturin.com";
 const FROM_EMAIL = "contact@contact.yusefturin.com";
@@ -172,6 +172,7 @@ export async function POST(request: Request) {
         { status: 403 }
       );
     }
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     await resend.emails.send({
       from: FROM_EMAIL,
