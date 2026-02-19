@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <>
       <MenuSection />
+      <section id="hero-section"></section>
       <HeroSection />
       <section id="stack-section">
         <StackSection />
