@@ -23,8 +23,8 @@ export default function OtherWorkCard({
   url,
 }: OtherWorkCardProps) {
   return (
-    <div className="flex-column border-all br-8 px-24 py-16 atc gap-20 min-w-none bg-ink">
-      <div className="relative overflow-h br-8 onHover-scale-105">
+    <div className="flex-column border-all br-12 px-24 py-16 atc gap-20 min-w-none bg-ink">
+      <div className="relative overflow-h br-12 onHover-scale-105">
         <Image
           src={image.src}
           alt={image.alt}

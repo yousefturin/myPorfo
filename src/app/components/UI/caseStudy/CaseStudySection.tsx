@@ -1,22 +1,14 @@
 "use client";
 
-import { ease, viewport } from "@/utils/motionVariants";
-import { motion } from "framer-motion";
 import CaseStudy from "./components/CaseStudy";
 
 export default function CaseStudySection() {
   return (
     <div className="bg-ink w-100">
       <div className="max-w-1400px px-96 py-96 flex-column  m-auto">
-        <motion.h2
-          className="font-heading-mlarge font-family-bold color-ink-inverse"
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65, ease }}
-          viewport={viewport}
-        >
+        <h2 className="font-heading-mlarge font-family-bold color-ink-inverse">
           Case Studies
-        </motion.h2>
+        </h2>
         <CaseStudy
           title="Tiko Financial Ecosystem (Wallet & POS)"
           projectNumber="01"

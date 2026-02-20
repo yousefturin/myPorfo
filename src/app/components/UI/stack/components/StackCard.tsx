@@ -14,7 +14,7 @@ export default function StackCard({
   icon,
 }: StackCardProps) {
   return (
-    <div className="border-all br-8 bg-ink px-24 py-16 flex-row atc  gap-20 shrink-0 max-w-280px">
+    <div className="border-all br-12 bg-ink px-24 py-16 flex-row atc  gap-20 shrink-0 max-w-280px">
       <SvgComponent
         svgKey={icon}
         width={44}

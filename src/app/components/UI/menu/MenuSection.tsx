@@ -35,10 +35,18 @@ export default function MenuSection() {
   const isCollapsed = useScrollCollapse();
 
   return (
-    <div className="dsp-f atc jc-c pos-fixed right-0 left-0 z-999999">
+    <motion.div
+      className="pos-fixed z-999999"
+      style={{ top: "2rem" }}
+      animate={{
+        left: isCollapsed ? "2rem" : "50%",
+        x: isCollapsed ? "0%" : "-50%",
+      }}
+      transition={LAYOUT_EASE}
+    >
       <motion.div
         layout
-        className="mx-96 my-32 blur-4 z-999999 bg-ink-60 border-all"
+        className="blur-4 bg-ink-60 border-all"
         style={{ borderRadius: 12, overflow: "hidden" }}
         transition={{ layout: LAYOUT_EASE }}
       >
@@ -46,10 +54,6 @@ export default function MenuSection() {
           layout
           id="menu-section"
           className="p-12 flex-row atc"
-          style={{
-            gap: isCollapsed ? 0 : 32,
-            justifyContent: isCollapsed ? "center" : "space-between",
-          }}
           transition={{ layout: LAYOUT_EASE }}
         >
           <motion.div layout style={{ flexShrink: 0 }}>
@@ -68,10 +72,18 @@ export default function MenuSection() {
               <motion.div
                 key="nav"
                 className="flex-row gap-32 atc"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { delay: 0.25, duration: 0.2 } }}
-                exit={{ opacity: 0, transition: { duration: 0.12 } }}
-                style={{ overflow: "hidden", whiteSpace: "nowrap", flexShrink: 0 }}
+                initial={{ opacity: 0, marginLeft: 0 }}
+                animate={{
+                  opacity: 1,
+                  marginLeft: 32,
+                  transition: { delay: 0.25, duration: 0.2 },
+                }}
+                exit={{ opacity: 0, marginLeft: 0, transition: { duration: 0.12 } }}
+                style={{
+                  overflow: "hidden",
+                  whiteSpace: "nowrap",
+                  flexShrink: 0,
+                }}
               >
                 <Link
                   href="#projects-section"
@@ -106,9 +118,13 @@ export default function MenuSection() {
               <motion.div
                 key="social"
                 className="flex-row gap-32"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { delay: 0.25, duration: 0.2 } }}
-                exit={{ opacity: 0, transition: { duration: 0.12 } }}
+                initial={{ opacity: 0, marginLeft: 0 }}
+                animate={{
+                  opacity: 1,
+                  marginLeft: 32,
+                  transition: { delay: 0.25, duration: 0.2 },
+                }}
+                exit={{ opacity: 0, marginLeft: 0, transition: { duration: 0.12 } }}
                 style={{ overflow: "hidden", flexShrink: 0 }}
               >
                 <a
@@ -146,6 +162,6 @@ export default function MenuSection() {
           </AnimatePresence>
         </motion.div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }

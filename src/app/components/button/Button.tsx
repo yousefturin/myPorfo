@@ -202,7 +202,7 @@ const getButtonStyle = (
           : newColors["quaternary"],
     borderWidth: btnType === "ghost" ? "0" : btnType === "main" ? "0" : "1.6px",
     borderStyle: "solid",
-    borderRadius: "4px",
+    borderRadius: "8px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

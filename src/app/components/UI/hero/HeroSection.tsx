@@ -1,13 +1,10 @@
-"use client";
-
 import { newColors } from "@/styles/Sachem";
-import { ease } from "@/utils/motionVariants";
 import SvgComponent from "@/utils/SvgComponent";
 import { Button } from "app/components/button/Button";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import ScrollToProjects from "./ScrollToProjects";
+import CopyButton from "app/components/button/CopyButton";
 
 export default function HeroSection() {
   return (
@@ -19,38 +16,31 @@ export default function HeroSection() {
         className="flex-column atfs flex-05 mob-flex-1"
         style={{ zIndex: 1 }}
       >
-        <motion.span
-          className="bg-secondary br-4 px-6 py-4 font-family-regular color-ink font-label-small"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease }}
-        >
+        <span className="bg-secondary br-8 px-6 py-4 font-family-regular color-ink font-label-small">
           SENIOR MOBILE & FRONTEND ENGINEER
-        </motion.span>
-        <motion.h1
-          className="font-color-ink-inverse font-display-medium font-family-bold mt-56 mob-font-display-small"
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65, ease, delay: 0.12 }}
-        >
+        </span>
+        <h1 className="font-color-ink-inverse font-heading-mlarge font-family-bold mt-56">
           Building Scalable Fintech Infrastructure for 15,000+ Clients.
-        </motion.h1>
-        <motion.p
-          className="font-label-large color-ink-inverse font-family-regular mt-56"
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65, ease, delay: 0.24 }}
-        >
+        </h1>
+        <p className="font-label-large color-ink-inverse font-family-regular mt-32">
           I specialize in React Native and Next.js high-performance
           architecture. Currently managing the mobile and web payment ecosystem
           for Figensoft (Tiko)
-        </motion.p>
-        <motion.div
-          className="flex-row gap-24 mob-flex-column mt-56 w-100"
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65, ease, delay: 0.36 }}
-        >
+        </p>
+        <div className="flex-column atfs mt-24 mob-show">
+          <span className="font-label-medium font-family-bold color-ink-inverse truncate max-w-100">
+            Direct Contact
+          </span>
+          <div className="">
+            <CopyButton
+              isLoading={false}
+              text={"contact@yusefturin.com"}
+              variant="DEFAULT"
+              textStyle="font-label-medium color-ink-inverse font-family-regular truncate"
+            />
+          </div>
+        </div>
+        <div className="flex-row gap-24 mob-flex-column mt-56 w-100">
           <ScrollToProjects />
           <Button
             title="Github / Open Source"
@@ -66,26 +56,91 @@ export default function HeroSection() {
               />
             }
           />
-        </motion.div>
+        </div>
       </div>
-      <motion.div
-        className="flex-05 atc dsp-f jc-fe mob-absolute mob-opacity-01 mob-inset-0"
-        initial={{ opacity: 0, x: 48 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease, delay: 0.18 }}
+      <div
+        className="flex-05 atc dsp-f jc-c mob-absolute mob-opacity-01 mob-inset-0"
         style={{ zIndex: 0 }}
       >
-        <Image
-          src={"/images/hero-image.avif"}
+        <div className="flex-column gap-24 atfs">
+          <SvgComponent
+            svgKey="sanalPos"
+            className="onHover-scale-105"
+            width={223}
+            height={64}
+          />
+          <div className="flex-row gap-16">
+            <SvgComponent
+              svgKey="lunchCard"
+              className="onHover-scale-105"
+              width={64}
+              height={64}
+            />
+            <SvgComponent
+              svgKey="figensoft"
+              className="onHover-scale-105"
+              width={64}
+              height={64}
+            />
+            <SvgComponent
+              svgKey="azan"
+              className="onHover-scale-105"
+              width={64}
+              height={64}
+            />
+          </div>
+          <div className="flex-row gap-16">
+            <SvgComponent
+              svgKey="tiko"
+              className="onHover-scale-105"
+              width={64}
+              height={64}
+            />
+            <SvgComponent
+              svgKey="tikoPos"
+              className="onHover-scale-105"
+              width={64}
+              height={64}
+            />
+            <SvgComponent
+              svgKey="ciftic"
+              className="onHover-scale-105"
+              width={64}
+              height={64}
+            />
+          </div>
+          <div className="flex-row gap-16">
+            <SvgComponent
+              svgKey="LokatoSeller"
+              className="onHover-scale-105"
+              width={64}
+              height={64}
+            />
+            <SvgComponent
+              svgKey="LokatoDriver"
+              className="onHover-scale-105"
+              width={64}
+              height={64}
+            />
+            <SvgComponent
+              svgKey="Resto"
+              className="onHover-scale-105"
+              width={64}
+              height={64}
+            />
+          </div>
+        </div>
+        {/* <Image
+          src={"/images/test-hero-image.png"}
           alt={"Hero Image"}
           width={432}
           height={580}
-          style={{ width: "100%", height: "auto", maxWidth: 800 }}
+          style={{ width: "100%", height: "auto", maxWidth: 300 }}
           className="br-8 overflow-h mob-object-cover"
           fetchPriority="high"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 432px"
-        />
-      </motion.div>
+        /> */}
+      </div>
     </div>
   );
 }

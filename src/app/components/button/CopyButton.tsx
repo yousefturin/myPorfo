@@ -259,7 +259,7 @@ export default function CopyButton(props: CopyButtonProps) {
           )}
           {props.isLoading === false ? (
             <motion.button
-              className="n-o n-b bg-none dsp-f atc jc-c pt-4 ml-8 pointer"
+              className="n-o n-b bg-none dsp-f atc jc-c ml-8 pointer"
               whileTap={{ scale: 0.85 }}
               aria-label={
                 isCopied ? "Copied successfully" : "Copy to clipboard"
