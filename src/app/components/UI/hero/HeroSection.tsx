@@ -17,7 +17,7 @@ export default function HeroSection() {
         style={{ zIndex: 1 }}
       >
         <span className="bg-secondary br-8 px-6 py-4 font-family-regular color-ink font-label-small">
-          SENIOR MOBILE & FRONTEND ENGINEER
+          MOBILE & FRONTEND ENGINEER
         </span>
         <h1 className="font-color-ink-inverse font-heading-mlarge font-family-bold mt-56">
           Shipped 4 Fintech Apps from Scratch. React Native & Next.js
