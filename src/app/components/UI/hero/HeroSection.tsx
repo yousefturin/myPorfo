@@ -20,7 +20,8 @@ export default function HeroSection() {
           SENIOR MOBILE & FRONTEND ENGINEER
         </span>
         <h1 className="font-color-ink-inverse font-heading-mlarge font-family-bold mt-56">
-          Building Scalable Fintech Infrastructure for 15,000+ Clients.
+          Shipped 4 Fintech Apps from Scratch. React Native & Next.js
+          Specialist.
         </h1>
         <p className="font-label-large color-ink-inverse font-family-regular mt-32">
           I specialize in React Native and Next.js high-performance
